@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3134A0CB1A76760D002F548D /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3134A0CA1A76760D002F548D /* CardView.xib */; };
+		3134A0CF1A767A6B002F548D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134A0CE1A767A6B002F548D /* NewsViewController.swift */; };
+		3134A0D11A767AA4002F548D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134A0D01A767AA4002F548D /* CardView.swift */; };
 		31FF61351A71361E00B238F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FF61341A71361E00B238F5 /* AppDelegate.swift */; };
 		31FF61371A71361E00B238F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FF61361A71361E00B238F5 /* LoginViewController.swift */; };
 		31FF613A1A71361E00B238F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FF61381A71361E00B238F5 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3134A0CA1A76760D002F548D /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		3134A0CE1A767A6B002F548D /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		3134A0D01A767AA4002F548D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		31FF612F1A71361E00B238F5 /* AmsterdamMuseum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmsterdamMuseum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FF61331A71361E00B238F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31FF61341A71361E00B238F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,10 +84,13 @@
 			isa = PBXGroup;
 			children = (
 				31FF61341A71361E00B238F5 /* AppDelegate.swift */,
-				31FF61361A71361E00B238F5 /* LoginViewController.swift */,
-				31FF61381A71361E00B238F5 /* Main.storyboard */,
+				3134A0D01A767AA4002F548D /* CardView.swift */,
+				3134A0CA1A76760D002F548D /* CardView.xib */,
 				31FF613B1A71361E00B238F5 /* Images.xcassets */,
 				31FF613D1A71361E00B238F5 /* LaunchScreen.xib */,
+				31FF61361A71361E00B238F5 /* LoginViewController.swift */,
+				31FF61381A71361E00B238F5 /* Main.storyboard */,
+				3134A0CE1A767A6B002F548D /* NewsViewController.swift */,
 				31FF61321A71361E00B238F5 /* Supporting Files */,
 			);
 			path = AmsterdamMuseum;
@@ -194,6 +203,7 @@
 			files = (
 				31FF613A1A71361E00B238F5 /* Main.storyboard in Resources */,
 				31FF613F1A71361E00B238F5 /* LaunchScreen.xib in Resources */,
+				3134A0CB1A76760D002F548D /* CardView.xib in Resources */,
 				31FF613C1A71361E00B238F5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +224,8 @@
 			files = (
 				31FF61371A71361E00B238F5 /* LoginViewController.swift in Sources */,
 				31FF61351A71361E00B238F5 /* AppDelegate.swift in Sources */,
+				3134A0D11A767AA4002F548D /* CardView.swift in Sources */,
+				3134A0CF1A767A6B002F548D /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

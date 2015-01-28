@@ -10,6 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
 	
+	@IBOutlet var loginForm: UIView!
 	@IBOutlet var loginView: UIView!
 	@IBOutlet var startView: UIView!
 	@IBOutlet var nameField: UITextField!
@@ -42,6 +43,11 @@ class LoginViewController: UIViewController {
 				self.loginView.frame.size.width,
 				self.loginView.frame.size.height)
 		})
+	}
+	
+	@IBAction func go() {
+		self.loginView.hidden = true
+		self.performSegueWithIdentifier("toNews", sender: self)
 	}
 }
 
