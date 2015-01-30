@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5A52B218-DD82-48BF-AF23-DB78CBFAA8C7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AmsterdamMuseum</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D434E176889D8993238855B853B6880B83A9EAE8</key>
+		<string>github.com:bgraves/AmsterdamMuseum.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AmsterdamMuseum.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D434E176889D8993238855B853B6880B83A9EAE8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:bgraves/AmsterdamMuseum.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D434E176889D8993238855B853B6880B83A9EAE8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D434E176889D8993238855B853B6880B83A9EAE8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AmsterdamMuseum</string>
+		</dict>
+	</array>
+</dict>
+</plist>
