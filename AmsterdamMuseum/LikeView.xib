@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LikeView" customModule="AmsterdamMuseum" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3qa-LJ-Kfl">
+                    <rect key="frame" x="10" y="10" width="40" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="QTx-hM-vTc"/>
+                        <constraint firstAttribute="height" constant="40" id="RZR-uR-kcp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan van der Poll likes this" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pm0-o0-DS6">
+                    <rect key="frame" x="58" y="10" width="532" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nxG-H3-sUp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Pm0-o0-DS6" firstAttribute="leading" secondItem="3qa-LJ-Kfl" secondAttribute="trailing" constant="8" id="8c0-hS-7vo"/>
+                <constraint firstItem="Pm0-o0-DS6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Erg-GA-Qw3"/>
+                <constraint firstAttribute="trailing" secondItem="Pm0-o0-DS6" secondAttribute="trailing" constant="10" id="Fge-lz-XVq"/>
+                <constraint firstItem="3qa-LJ-Kfl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ThN-QP-YaH"/>
+                <constraint firstItem="3qa-LJ-Kfl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="XIy-44-6Tz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

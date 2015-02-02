@@ -46,25 +46,19 @@ class NewsViewController : UIViewController {
 	}
 	
 	func addCardView() {
-		var actionable = true
-
 		var cardView = CardView.loadFromNibNamed("CardView") as CardView
-		var cardHeight:CGFloat = 0
-		
-		if actionable {
-			cardHeight = cardView.actionButton.frame.origin.y + cardView.actionButton.frame.size.height + yPadding
-		} else {
-			cardHeight = cardView.actionButton.frame.origin.y - yPadding
-			cardView.actionButton.hidden = true
-		}
 		
 		cardView.frame = CGRectMake(
 			xSpacer,
 			(self.scrollView.contentSize.height - self.scrollView.frame.size.height) + ySpacer,
 			scrollView.frame.size.width - (xSpacer * 2),
-			cardHeight)
+			cardView.frame.size.height)
 
 		self.scrollView.addSubview(cardView)
+		
+		cardView.addImageViews()
+		cardView.addActionView()
+		cardView.addLikeView()
 		
 		adjustContentSize(cardView)
 		moveShieldView()
@@ -90,6 +84,7 @@ class NewsViewController : UIViewController {
 		moveShieldView()
 	}
 	
+
 	func addProfileView() {
 		var profileView = UIView.loadFromNibNamed("ProfileView") as ProfileView
 		self.scrollView.addSubview(profileView)
@@ -116,7 +111,7 @@ class NewsViewController : UIViewController {
 			self.view.frame.origin.y,
 			self.view.frame.size.width - (xSpacer * 2),
 			self.view.frame.size.height);
-		self.scrollView.addSubview(self.shieldView);
+		self.scrollView.addSubview(self.shieldView)
 		
 		adjustContentSize(shieldView)
 	}
