@@ -21,6 +21,7 @@ class CardView: UIView {
 		var button = UIButton(frame: buttonFrame)
 		button.setTitle("Accept Invitation", forState: UIControlState.Normal)
 		button.setTitleColor(UIColor(white: 78.0/255.0, alpha: 1.0), forState: UIControlState.Normal)
+		button.titleLabel!.font = UIFont(name: "OpenSans-Light", size: 17)
 
 		addSubview(button)
 		
@@ -70,20 +71,22 @@ class CardView: UIView {
 	}
 	
 	func addLikeView() {
+		let likeHeight = CGFloat(60)
 		var x: CGFloat = frame.size.width / 3;
 		var likeView = UIView.loadFromNibNamed("LikeView") as LikeView
 		likeView.frame = CGRectMake(
 			x,
 			frame.size.height,
 			x * 2,
-			likeView.frame.size.height)
-		addSubview(likeView)
-		
+			likeHeight)
 		frame = CGRectMake(
 			frame.origin.x,
 			frame.origin.y,
 			frame.size.width,
-			frame.size.height + likeView.frame.size.height)
+			frame.size.height + likeHeight)
+		addSubview(likeView)
+		
+		
 	}
 	
 }

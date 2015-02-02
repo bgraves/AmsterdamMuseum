@@ -27,12 +27,19 @@ class NewsViewController : UIViewController {
 	@IBOutlet var scrollView: UIScrollView!
 	@IBOutlet var shieldView: ShieldView!
 	
-	override func viewDidAppear(animated: Bool) {
+	@IBOutlet var avatarView: UIImageView!
+	@IBOutlet var nameLabel: UILabel!
+	
+	override func viewDidLoad() {
+		avatarView.image = Avatar.getAvatar()
+		nameLabel.text = NSUserDefaults.standardUserDefaults().stringForKey("name")!.uppercaseString
+	}
+	
+	override func viewDidLayoutSubviews() {
 		addShieldView()
 		addProfileView()
 		addCardViews()
 		addEventView()
-		
 	}
 	
 	func addCardViews() {
@@ -60,9 +67,22 @@ class NewsViewController : UIViewController {
 		cardView.addActionView()
 		cardView.addLikeView()
 		
+		addDropShadow(cardView)
+		
 		adjustContentSize(cardView)
 		moveShieldView()
 		
+	}
+	
+	func addDropShadow(view: UIView) {
+		var layer = view.layer
+		layer.shadowColor = UIColor.darkGrayColor().CGColor
+		layer.shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: 1.0).CGPath
+		layer.shadowOffset = CGSize(width: 0.0, height: 5.0)
+		layer.shadowOpacity = 0.5
+		layer.shadowRadius = 5
+		layer.masksToBounds = true
+		view.clipsToBounds = false
 	}
 	
 	func addEventView() {
@@ -79,6 +99,8 @@ class NewsViewController : UIViewController {
 			shieldView.frame.origin.y + ySpacer,
 			scrollView.frame.size.width - (xSpacer * 2),
 			eventView.frame.size.height)
+		
+		addDropShadow(eventView)
 		
 		adjustContentSize(eventView)
 		moveShieldView()

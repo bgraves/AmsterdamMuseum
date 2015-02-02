@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3104AC421A7F787600D9B3C2 /* LikeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3104AC411A7F787600D9B3C2 /* LikeView.xib */; };
 		3104AC441A7F79C900D9B3C2 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104AC431A7F79C900D9B3C2 /* LikeView.swift */; };
+		3104AC461A7F971500D9B3C2 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3104AC451A7F971500D9B3C2 /* OpenSans-Light.ttf */; };
+		3104AC481A7FB17D00D9B3C2 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104AC471A7FB17D00D9B3C2 /* Avatar.swift */; };
 		3134A0CB1A76760D002F548D /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3134A0CA1A76760D002F548D /* CardView.xib */; };
 		3134A0CF1A767A6B002F548D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134A0CE1A767A6B002F548D /* NewsViewController.swift */; };
 		3134A0D11A767AA4002F548D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134A0D01A767AA4002F548D /* CardView.swift */; };
@@ -45,6 +47,8 @@
 /* Begin PBXFileReference section */
 		3104AC411A7F787600D9B3C2 /* LikeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LikeView.xib; sourceTree = "<group>"; };
 		3104AC431A7F79C900D9B3C2 /* LikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
+		3104AC451A7F971500D9B3C2 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		3104AC471A7FB17D00D9B3C2 /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		3134A0CA1A76760D002F548D /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		3134A0CE1A767A6B002F548D /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		3134A0D01A767AA4002F548D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 		31FF61311A71361E00B238F5 /* AmsterdamMuseum */ = {
 			isa = PBXGroup;
 			children = (
+				3104AC451A7F971500D9B3C2 /* OpenSans-Light.ttf */,
 				31FF61341A71361E00B238F5 /* AppDelegate.swift */,
 				31F93B901A7A52A5001E0B7C /* CardHeaderView.swift */,
 				31F93B8E1A7A5292001E0B7C /* CardHeaderView.xib */,
@@ -134,6 +139,7 @@
 				31F93B8A1A79167E001E0B7C /* UserView.xib */,
 				3104AC411A7F787600D9B3C2 /* LikeView.xib */,
 				3104AC431A7F79C900D9B3C2 /* LikeView.swift */,
+				3104AC471A7FB17D00D9B3C2 /* Avatar.swift */,
 			);
 			path = AmsterdamMuseum;
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 				31F93B8F1A7A5292001E0B7C /* CardHeaderView.xib in Resources */,
 				31FF613A1A71361E00B238F5 /* Main.storyboard in Resources */,
 				31FF613F1A71361E00B238F5 /* LaunchScreen.xib in Resources */,
+				3104AC461A7F971500D9B3C2 /* OpenSans-Light.ttf in Resources */,
 				31F93B811A78FF30001E0B7C /* ShieldView.xib in Resources */,
 				3141F3871A7BBDF500CBB90B /* ProfileView.xib in Resources */,
 				31F93B8B1A79167E001E0B7C /* UserView.xib in Resources */,
@@ -277,6 +284,7 @@
 				31FF61371A71361E00B238F5 /* LoginViewController.swift in Sources */,
 				31F93B891A791659001E0B7C /* UserView.swift in Sources */,
 				31FF61351A71361E00B238F5 /* AppDelegate.swift in Sources */,
+				3104AC481A7FB17D00D9B3C2 /* Avatar.swift in Sources */,
 				3134A0D11A767AA4002F548D /* CardView.swift in Sources */,
 				31F93B831A790074001E0B7C /* ShieldView.swift in Sources */,
 				3134A0CF1A767A6B002F548D /* NewsViewController.swift in Sources */,
