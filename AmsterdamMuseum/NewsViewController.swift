@@ -42,6 +42,9 @@ class NewsViewController : UIViewController {
 		cardViews = []
 		zones = []
 		
+		avatarView.layer.masksToBounds = true
+		avatarView.layer.cornerRadius = avatarView.frame.size.height / 2
+		
 		avatarView.image = Avatar.getAvatar()
 		nameLabel.text = NSUserDefaults.standardUserDefaults().stringForKey("name")!.uppercaseString
 	}

@@ -27,6 +27,8 @@
 		31F46AA01A91F63E009C545A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F46A9F1A91F63E009C545A /* LoginView.swift */; };
 		31F46AA21A91F89F009C545A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F46AA11A91F89F009C545A /* SplashView.swift */; };
 		31F46AA41A920DC7009C545A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F46AA31A920DC7009C545A /* SettingsViewController.swift */; };
+		31F46AA61A921548009C545A /* SettingsProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F46AA51A921548009C545A /* SettingsProfileView.xib */; };
+		31F46AA81A9230C5009C545A /* SponsorsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F46AA71A9230C5009C545A /* SponsorsView.xib */; };
 		31F93B811A78FF30001E0B7C /* ShieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F93B801A78FF30001E0B7C /* ShieldView.xib */; };
 		31F93B831A790074001E0B7C /* ShieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F93B821A790074001E0B7C /* ShieldView.swift */; };
 		31F93B891A791659001E0B7C /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F93B881A791659001E0B7C /* UserView.swift */; };
@@ -73,6 +75,8 @@
 		31F46A9F1A91F63E009C545A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		31F46AA11A91F89F009C545A /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		31F46AA31A920DC7009C545A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		31F46AA51A921548009C545A /* SettingsProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsProfileView.xib; sourceTree = "<group>"; };
+		31F46AA71A9230C5009C545A /* SponsorsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SponsorsView.xib; sourceTree = "<group>"; };
 		31F93B801A78FF30001E0B7C /* ShieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShieldView.xib; sourceTree = "<group>"; };
 		31F93B821A790074001E0B7C /* ShieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShieldView.swift; sourceTree = "<group>"; };
 		31F93B881A791659001E0B7C /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				31F93B881A791659001E0B7C /* UserView.swift */,
 				3104AC451A7F971500D9B3C2 /* OpenSans-Light.ttf */,
 				31FF613B1A71361E00B238F5 /* Images.xcassets */,
+				31F46AA51A921548009C545A /* SettingsProfileView.xib */,
 				31F93B8E1A7A5292001E0B7C /* CardHeaderView.xib */,
 				31F93B8C1A791DD4001E0B7C /* EventView.xib */,
 				3104AC411A7F787600D9B3C2 /* LikeView.xib */,
@@ -164,6 +169,7 @@
 				31FF613D1A71361E00B238F5 /* LaunchScreen.xib */,
 				31FF61381A71361E00B238F5 /* Main.storyboard */,
 				31FF61321A71361E00B238F5 /* Supporting Files */,
+				31F46AA71A9230C5009C545A /* SponsorsView.xib */,
 			);
 			path = AmsterdamMuseum;
 			sourceTree = "<group>";
@@ -274,10 +280,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3104AC421A7F787600D9B3C2 /* LikeView.xib in Resources */,
+				31F46AA61A921548009C545A /* SettingsProfileView.xib in Resources */,
 				31F93B8D1A791DD4001E0B7C /* EventView.xib in Resources */,
 				31F46A9C1A91F06A009C545A /* LoginView.xib in Resources */,
 				31F46A9E1A91F250009C545A /* SplashView.xib in Resources */,
 				31AEB1F01A7B984800162DB0 /* PersonView.xib in Resources */,
+				31F46AA81A9230C5009C545A /* SponsorsView.xib in Resources */,
 				31F93B8F1A7A5292001E0B7C /* CardHeaderView.xib in Resources */,
 				31FF613A1A71361E00B238F5 /* Main.storyboard in Resources */,
 				31FF613F1A71361E00B238F5 /* LaunchScreen.xib in Resources */,

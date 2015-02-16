@@ -24,8 +24,8 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jan van der Poll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GT-Yo-via">
-                    <rect key="frame" x="220" y="181" width="160" height="36"/>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="220" y="179" width="160" height="36"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="160" id="PQA-Yc-Pde"/>
                         <constraint firstAttribute="height" constant="36" id="gb3-hp-FO0"/>
@@ -41,29 +41,20 @@
                         <constraint firstAttribute="width" constant="160" id="VND-iF-5Y9"/>
                     </constraints>
                 </imageView>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nGW-qh-yRU">
-                    <rect key="frame" x="8" y="243" width="584" height="1"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </view>
             </subviews>
-            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="nGW-qh-yRU" firstAttribute="top" secondItem="0GT-Yo-via" secondAttribute="bottom" constant="26" id="F8A-ud-ut0"/>
-                <constraint firstAttribute="trailing" secondItem="nGW-qh-yRU" secondAttribute="trailing" constant="8" id="Kxa-rK-Op1"/>
                 <constraint firstItem="uDP-Ld-FR1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="RlU-y8-W44"/>
-                <constraint firstAttribute="bottom" secondItem="nGW-qh-yRU" secondAttribute="bottom" constant="29" id="U69-bz-wPU"/>
                 <constraint firstAttribute="centerX" secondItem="uDP-Ld-FR1" secondAttribute="centerX" id="dYe-7f-8IG"/>
                 <constraint firstAttribute="centerX" secondItem="0GT-Yo-via" secondAttribute="centerX" id="eJZ-cw-2Ot"/>
                 <constraint firstItem="0GT-Yo-via" firstAttribute="top" secondItem="POD-zf-fI8" secondAttribute="bottom" id="p4J-6Y-Hjd"/>
                 <constraint firstAttribute="centerX" secondItem="POD-zf-fI8" secondAttribute="centerX" id="pJt-AL-8ck"/>
-                <constraint firstItem="nGW-qh-yRU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="r7h-xw-Jpc"/>
                 <constraint firstItem="POD-zf-fI8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="166" id="rob-UI-BdK"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="avatarView" destination="uDP-Ld-FR1" id="eAe-Rf-qXu"/>
-                <outlet property="keyValueViews" destination="nGW-qh-yRU" id="lKn-Ge-Bwb"/>
                 <outlet property="nameLabel" destination="0GT-Yo-via" id="F2D-xm-9w9"/>
             </connections>
             <point key="canvasLocation" x="320" y="226.5"/>

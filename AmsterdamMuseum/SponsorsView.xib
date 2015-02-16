@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="209"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="70I-4x-42y">
+                    <rect key="frame" x="20" y="56" width="97" height="97"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="97" id="84B-eR-WiF"/>
+                        <constraint firstAttribute="height" constant="97" id="fga-WL-q3q"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sponsors:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7f-32-yWH">
+                    <rect key="frame" x="199" y="27" width="202" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="JgA-55-2pF"/>
+                        <constraint firstAttribute="width" constant="202" id="uIm-nk-TZZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sho-XF-RVe">
+                    <rect key="frame" x="483" y="56" width="97" height="97"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="97" id="FZW-ta-3yJ"/>
+                        <constraint firstAttribute="height" constant="97" id="Xwv-2r-L5P"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="70I-4x-42y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="56" id="3JX-6u-npf"/>
+                <constraint firstAttribute="trailing" secondItem="sho-XF-RVe" secondAttribute="trailing" constant="20" id="4oc-EO-Box"/>
+                <constraint firstItem="sho-XF-RVe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="56" id="643-RJ-80P"/>
+                <constraint firstItem="O7f-32-yWH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="27" id="lQ8-eK-3ke"/>
+                <constraint firstItem="70I-4x-42y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="mWv-29-DVZ"/>
+                <constraint firstAttribute="centerX" secondItem="O7f-32-yWH" secondAttribute="centerX" id="odq-WO-vU6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="325" y="78.5"/>
+        </view>
+    </objects>
+</document>

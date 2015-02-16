@@ -13,7 +13,9 @@ class ProfileView : UIView {
 	
 	let labelHeight:CGFloat = 21.0
 	
+	@IBOutlet var avatarView: UIImageView!
 	@IBOutlet var keyValueViews: UIView!
+	@IBOutlet var nameLabel: UILabel!
 	
 	func addKeyValue(key: String, value: String) {
 		keyValueViews.backgroundColor = UIColor.whiteColor()

@@ -87,6 +87,9 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 	}
 	
 	func showAvatar(image: UIImage) {
+		loginView.selfieView.layer.masksToBounds = true
+		loginView.selfieView.layer.cornerRadius = loginView.selfieView.frame.size.height / 2
+		
 		loginView.selfieView.image = image
 		loginView.selfieView.hidden = false
 		loginView.takeSelfieView.hidden = true
