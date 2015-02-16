@@ -11,4 +11,7 @@ import UIKit
 
 class LikeView : UIView {
 	
+	@IBOutlet var avatarView: UIImageView!
+	@IBOutlet var titleLabel: UILabel!
+	
 }

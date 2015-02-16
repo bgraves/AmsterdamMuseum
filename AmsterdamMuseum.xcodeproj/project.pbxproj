@@ -11,7 +11,6 @@
 		3104AC441A7F79C900D9B3C2 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104AC431A7F79C900D9B3C2 /* LikeView.swift */; };
 		3104AC461A7F971500D9B3C2 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3104AC451A7F971500D9B3C2 /* OpenSans-Light.ttf */; };
 		3104AC481A7FB17D00D9B3C2 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104AC471A7FB17D00D9B3C2 /* Avatar.swift */; };
-		3134A0CB1A76760D002F548D /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3134A0CA1A76760D002F548D /* CardView.xib */; };
 		3134A0CF1A767A6B002F548D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134A0CE1A767A6B002F548D /* NewsViewController.swift */; };
 		3134A0D11A767AA4002F548D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134A0D01A767AA4002F548D /* CardView.swift */; };
 		3141F3871A7BBDF500CBB90B /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3141F3861A7BBDF500CBB90B /* ProfileView.xib */; };
@@ -19,6 +18,15 @@
 		31AEB1EC1A7B966800162DB0 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AEB1EB1A7B966800162DB0 /* EventView.swift */; };
 		31AEB1F01A7B984800162DB0 /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31AEB1EF1A7B984800162DB0 /* PersonView.xib */; };
 		31AEB1F21A7B99AE00162DB0 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AEB1F11A7B99AE00162DB0 /* PersonView.swift */; };
+		31F227BC1A8A12880076A509 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F227BB1A8A12880076A509 /* NewsFeed.swift */; };
+		31F227BE1A8A130E0076A509 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F227BD1A8A130E0076A509 /* Card.swift */; };
+		31F227C01A8A133E0076A509 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F227BF1A8A133E0076A509 /* Person.swift */; };
+		31F227C21A8A24940076A509 /* Trigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F227C11A8A24940076A509 /* Trigger.swift */; };
+		31F46A9C1A91F06A009C545A /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F46A9B1A91F06A009C545A /* LoginView.xib */; };
+		31F46A9E1A91F250009C545A /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F46A9D1A91F250009C545A /* SplashView.xib */; };
+		31F46AA01A91F63E009C545A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F46A9F1A91F63E009C545A /* LoginView.swift */; };
+		31F46AA21A91F89F009C545A /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F46AA11A91F89F009C545A /* SplashView.swift */; };
+		31F46AA41A920DC7009C545A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F46AA31A920DC7009C545A /* SettingsViewController.swift */; };
 		31F93B811A78FF30001E0B7C /* ShieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F93B801A78FF30001E0B7C /* ShieldView.xib */; };
 		31F93B831A790074001E0B7C /* ShieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F93B821A790074001E0B7C /* ShieldView.swift */; };
 		31F93B891A791659001E0B7C /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F93B881A791659001E0B7C /* UserView.swift */; };
@@ -49,7 +57,6 @@
 		3104AC431A7F79C900D9B3C2 /* LikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
 		3104AC451A7F971500D9B3C2 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		3104AC471A7FB17D00D9B3C2 /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
-		3134A0CA1A76760D002F548D /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		3134A0CE1A767A6B002F548D /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		3134A0D01A767AA4002F548D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3141F3861A7BBDF500CBB90B /* ProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
@@ -57,6 +64,15 @@
 		31AEB1EB1A7B966800162DB0 /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		31AEB1EF1A7B984800162DB0 /* PersonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		31AEB1F11A7B99AE00162DB0 /* PersonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		31F227BB1A8A12880076A509 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
+		31F227BD1A8A130E0076A509 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		31F227BF1A8A133E0076A509 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		31F227C11A8A24940076A509 /* Trigger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trigger.swift; sourceTree = "<group>"; };
+		31F46A9B1A91F06A009C545A /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		31F46A9D1A91F250009C545A /* SplashView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
+		31F46A9F1A91F63E009C545A /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		31F46AA11A91F89F009C545A /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		31F46AA31A920DC7009C545A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		31F93B801A78FF30001E0B7C /* ShieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShieldView.xib; sourceTree = "<group>"; };
 		31F93B821A790074001E0B7C /* ShieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShieldView.swift; sourceTree = "<group>"; };
 		31F93B881A791659001E0B7C /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
@@ -115,31 +131,39 @@
 		31FF61311A71361E00B238F5 /* AmsterdamMuseum */ = {
 			isa = PBXGroup;
 			children = (
-				3104AC451A7F971500D9B3C2 /* OpenSans-Light.ttf */,
 				31FF61341A71361E00B238F5 /* AppDelegate.swift */,
-				31F93B901A7A52A5001E0B7C /* CardHeaderView.swift */,
-				31F93B8E1A7A5292001E0B7C /* CardHeaderView.xib */,
-				3134A0D01A767AA4002F548D /* CardView.swift */,
-				3134A0CA1A76760D002F548D /* CardView.xib */,
-				31AEB1EB1A7B966800162DB0 /* EventView.swift */,
-				31F93B8C1A791DD4001E0B7C /* EventView.xib */,
-				31FF613B1A71361E00B238F5 /* Images.xcassets */,
-				31FF613D1A71361E00B238F5 /* LaunchScreen.xib */,
-				31FF61361A71361E00B238F5 /* LoginViewController.swift */,
-				31FF61381A71361E00B238F5 /* Main.storyboard */,
-				3134A0CE1A767A6B002F548D /* NewsViewController.swift */,
-				31AEB1F11A7B99AE00162DB0 /* PersonView.swift */,
-				31AEB1EF1A7B984800162DB0 /* PersonView.xib */,
-				3141F3881A7BC07700CBB90B /* ProfileView.swift */,
-				3141F3861A7BBDF500CBB90B /* ProfileView.xib */,
-				31F93B821A790074001E0B7C /* ShieldView.swift */,
-				31F93B801A78FF30001E0B7C /* ShieldView.xib */,
-				31FF61321A71361E00B238F5 /* Supporting Files */,
-				31F93B881A791659001E0B7C /* UserView.swift */,
-				31F93B8A1A79167E001E0B7C /* UserView.xib */,
-				3104AC411A7F787600D9B3C2 /* LikeView.xib */,
-				3104AC431A7F79C900D9B3C2 /* LikeView.swift */,
 				3104AC471A7FB17D00D9B3C2 /* Avatar.swift */,
+				31F227BD1A8A130E0076A509 /* Card.swift */,
+				31F93B901A7A52A5001E0B7C /* CardHeaderView.swift */,
+				3134A0D01A767AA4002F548D /* CardView.swift */,
+				31AEB1EB1A7B966800162DB0 /* EventView.swift */,
+				3104AC431A7F79C900D9B3C2 /* LikeView.swift */,
+				31F46A9F1A91F63E009C545A /* LoginView.swift */,
+				31FF61361A71361E00B238F5 /* LoginViewController.swift */,
+				31F227BB1A8A12880076A509 /* NewsFeed.swift */,
+				3134A0CE1A767A6B002F548D /* NewsViewController.swift */,
+				31F227BF1A8A133E0076A509 /* Person.swift */,
+				31AEB1F11A7B99AE00162DB0 /* PersonView.swift */,
+				3141F3881A7BC07700CBB90B /* ProfileView.swift */,
+				31F46AA31A920DC7009C545A /* SettingsViewController.swift */,
+				31F93B821A790074001E0B7C /* ShieldView.swift */,
+				31F46AA11A91F89F009C545A /* SplashView.swift */,
+				31F227C11A8A24940076A509 /* Trigger.swift */,
+				31F93B881A791659001E0B7C /* UserView.swift */,
+				3104AC451A7F971500D9B3C2 /* OpenSans-Light.ttf */,
+				31FF613B1A71361E00B238F5 /* Images.xcassets */,
+				31F93B8E1A7A5292001E0B7C /* CardHeaderView.xib */,
+				31F93B8C1A791DD4001E0B7C /* EventView.xib */,
+				3104AC411A7F787600D9B3C2 /* LikeView.xib */,
+				31F46A9B1A91F06A009C545A /* LoginView.xib */,
+				31AEB1EF1A7B984800162DB0 /* PersonView.xib */,
+				3141F3861A7BBDF500CBB90B /* ProfileView.xib */,
+				31F93B801A78FF30001E0B7C /* ShieldView.xib */,
+				31F46A9D1A91F250009C545A /* SplashView.xib */,
+				31F93B8A1A79167E001E0B7C /* UserView.xib */,
+				31FF613D1A71361E00B238F5 /* LaunchScreen.xib */,
+				31FF61381A71361E00B238F5 /* Main.storyboard */,
+				31FF61321A71361E00B238F5 /* Supporting Files */,
 			);
 			path = AmsterdamMuseum;
 			sourceTree = "<group>";
@@ -251,6 +275,8 @@
 			files = (
 				3104AC421A7F787600D9B3C2 /* LikeView.xib in Resources */,
 				31F93B8D1A791DD4001E0B7C /* EventView.xib in Resources */,
+				31F46A9C1A91F06A009C545A /* LoginView.xib in Resources */,
+				31F46A9E1A91F250009C545A /* SplashView.xib in Resources */,
 				31AEB1F01A7B984800162DB0 /* PersonView.xib in Resources */,
 				31F93B8F1A7A5292001E0B7C /* CardHeaderView.xib in Resources */,
 				31FF613A1A71361E00B238F5 /* Main.storyboard in Resources */,
@@ -259,7 +285,6 @@
 				31F93B811A78FF30001E0B7C /* ShieldView.xib in Resources */,
 				3141F3871A7BBDF500CBB90B /* ProfileView.xib in Resources */,
 				31F93B8B1A79167E001E0B7C /* UserView.xib in Resources */,
-				3134A0CB1A76760D002F548D /* CardView.xib in Resources */,
 				31FF613C1A71361E00B238F5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,18 +303,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F227C01A8A133E0076A509 /* Person.swift in Sources */,
+				31F227BC1A8A12880076A509 /* NewsFeed.swift in Sources */,
 				31AEB1F21A7B99AE00162DB0 /* PersonView.swift in Sources */,
 				31F93B911A7A52A5001E0B7C /* CardHeaderView.swift in Sources */,
 				3141F3891A7BC07700CBB90B /* ProfileView.swift in Sources */,
+				31F46AA41A920DC7009C545A /* SettingsViewController.swift in Sources */,
 				31FF61371A71361E00B238F5 /* LoginViewController.swift in Sources */,
 				31F93B891A791659001E0B7C /* UserView.swift in Sources */,
 				31FF61351A71361E00B238F5 /* AppDelegate.swift in Sources */,
 				3104AC481A7FB17D00D9B3C2 /* Avatar.swift in Sources */,
 				3134A0D11A767AA4002F548D /* CardView.swift in Sources */,
+				31F46AA01A91F63E009C545A /* LoginView.swift in Sources */,
+				31F227BE1A8A130E0076A509 /* Card.swift in Sources */,
 				31F93B831A790074001E0B7C /* ShieldView.swift in Sources */,
+				31F227C21A8A24940076A509 /* Trigger.swift in Sources */,
 				3134A0CF1A767A6B002F548D /* NewsViewController.swift in Sources */,
 				3104AC441A7F79C900D9B3C2 /* LikeView.swift in Sources */,
 				31AEB1EC1A7B966800162DB0 /* EventView.swift in Sources */,
+				31F46AA21A91F89F009C545A /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

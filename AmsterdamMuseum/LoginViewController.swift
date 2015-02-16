@@ -8,45 +8,51 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 	
-	@IBOutlet var loginViewConstraint: NSLayoutConstraint!
-	@IBOutlet var loginForm: UIView!
-	@IBOutlet var loginView: UIView!
-	@IBOutlet var startView: UIView!
-	@IBOutlet var nameField: UITextField!
-	@IBOutlet var emailField: UITextField!
-	@IBOutlet var validEmail: UIView!
-	@IBOutlet var validName: UIView!
+	@IBOutlet var scrollView: UIScrollView!
 	
-	@IBOutlet var selfieView: UIImageView!
-	@IBOutlet var takeSelfieView: UIView!
-	@IBOutlet var changeSelfieView: UIButton!
+	var loginView: LoginView!
+	var splashView: SplashView!
 	
-
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
 		// Do any additional setup after loading the view, typically from a nib.
 		let email = NSUserDefaults.standardUserDefaults().stringForKey("email")
 		let name = NSUserDefaults.standardUserDefaults().stringForKey("name")
-
 		
-		emailField.text = email
-		nameField.text = name
+		splashView = SplashView.loadFromNibNamed("SplashView", bundle: nil, owner: self) as SplashView
+		scrollView.addSubview(splashView)
+		
+		splashView.frame = CGRectMake(
+			splashView.frame.origin.x,
+			0,
+			splashView.frame.size.width,
+			splashView.frame.size.height)
+		
+		loginView = LoginView.loadFromNibNamed("LoginView", bundle: nil, owner: self) as LoginView
+		scrollView.addSubview(loginView)
+		
+		loginView.frame = CGRectMake(
+			loginView.frame.origin.x,
+			view.frame.size.height,
+			loginView.frame.size.width,
+			loginView.frame.size.height)
+		
+		scrollView.contentSize = CGSizeMake(view.frame.size.width,
+			view.frame.size.height * 2)
+
+		loginView.emailField.text = email
+		loginView.nameField.text = name
 		
 		// Validate fields - JBG
-		textChanged(emailField)
-		textChanged(nameField)
+		textChanged(loginView.emailField)
+		textChanged(loginView.nameField)
 		
-		var image = Avatar.getAvatar()
-		if image != nil {
-			showAvatar(image!)
+		if let image = Avatar.getAvatar() {
+			showAvatar(image)
 		}
-		
-		self.loginViewConstraint.constant = self.view.frame.size.height - self.startView.frame.size.height
-		UIView.animateWithDuration(0.5, animations: { () in
-			self.view.layoutIfNeeded()
-		})
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -54,25 +60,18 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		// Dispose of any resources that can be recreated.
 	}
 	
-	@IBAction func start() {
-		self.loginViewConstraint.constant = -self.startView.frame.size.height
-		UIView.animateWithDuration(0.5, animations: { () in
-			self.view.layoutIfNeeded()
-		})
-	}
-	
 	@IBAction func textChanged(sender: AnyObject) {
-		if sender as NSObject == emailField {
-			validEmail.hidden = !validEmail(emailField.text)
+		if sender as NSObject == loginView.emailField {
+			loginView.validEmail.hidden = !validEmail(loginView.emailField.text)
 		} else {
-			validName.hidden = !validName(nameField.text)
+			loginView.validName.hidden = !validName(loginView.nameField.text)
 		}
 	}
 	
-	@IBAction func go() {
-		if validName(nameField.text) && validEmail(emailField.text) {
-			NSUserDefaults.standardUserDefaults().setObject(emailField.text, forKey: "email")
-			NSUserDefaults.standardUserDefaults().setObject(nameField.text, forKey: "name")
+	@IBAction func start() {
+		if validName(loginView.nameField.text) && validEmail(loginView.emailField.text) {
+			NSUserDefaults.standardUserDefaults().setObject(loginView.emailField.text, forKey: "email")
+			NSUserDefaults.standardUserDefaults().setObject(loginView.nameField.text, forKey: "name")
 			self.loginView.hidden = true
 			self.performSegueWithIdentifier("toNews", sender: self)
 		}
@@ -88,10 +87,10 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 	}
 	
 	func showAvatar(image: UIImage) {
-		self.selfieView.image = image
-		self.selfieView.hidden = false
-		self.takeSelfieView.hidden = true
-		self.changeSelfieView.hidden = false
+		loginView.selfieView.image = image
+		loginView.selfieView.hidden = false
+		loginView.takeSelfieView.hidden = true
+		loginView.changeSelfieView.hidden = false
 	}
 	
 	func validEmail(emailStr:String) -> Bool {
@@ -119,6 +118,16 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 	
 	func imagePickerControllerDidCancel(picker: UIImagePickerController!) {
 		self.dismissViewControllerAnimated(true, completion: nil)
+	}
+	
+	// UITextFieldDelegate - JBG
+	func textFieldShouldReturn(textField: UITextField) -> Bool {
+		if textField == loginView.nameField {
+			loginView.emailField.becomeFirstResponder()
+		} else {
+			loginView.emailField.resignFirstResponder()
+		}
+		return true
 	}
 }
 

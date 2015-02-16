@@ -11,19 +11,8 @@ import UIKit
 
 class UserView : UIView {
 	
-	var nibName = "UserView"
-	
-	required init(coder aDecoder: NSCoder) {
-		super.init(coder: aDecoder)
-
-		var view: UIView = UINib(
-			nibName: nibName,
-			bundle: nil
-			).instantiateWithOwner(self, options: nil)[0] as UIView
-		view.frame = bounds
-		view.autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight
-
-		addSubview(view)
-	}
+	@IBOutlet var avatarView: UIImageView!
+	@IBOutlet var titleLabel: UILabel!
+	@IBOutlet var subtitleLabel: UILabel!
 	
 }

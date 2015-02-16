@@ -11,7 +11,11 @@ import UIKit
 
 class CardView: UIView {
 	
-	func addActionView() {
+	var card: Card!
+	
+	var actionButton: UIButton?
+	
+	func addActionView(target: AnyObject?, action: Selector) {
 		var buttonFrame = CGRectMake(
 			0,
 			frame.size.height,
@@ -19,9 +23,17 @@ class CardView: UIView {
 			45)
 		
 		var button = UIButton(frame: buttonFrame)
-		button.setTitle("Accept Invitation", forState: UIControlState.Normal)
+		
 		button.setTitleColor(UIColor(white: 78.0/255.0, alpha: 1.0), forState: UIControlState.Normal)
 		button.titleLabel!.font = UIFont(name: "OpenSans-Light", size: 17)
+		
+		self.actionButton = button
+		
+		switch action {
+			default:
+				button.setTitle("Accept Invitation", forState: UIControlState.Normal)
+				button.addTarget(target, action: action, forControlEvents:.TouchUpInside)
+		}
 
 		addSubview(button)
 		
@@ -30,6 +42,22 @@ class CardView: UIView {
 			frame.origin.y,
 			frame.size.width,
 			frame.size.height + button.frame.size.height)
+	}
+	
+	func addHeaderView() {
+		var headerView = UIView.loadFromNibNamed("CardHeaderView") as CardHeaderView
+		headerView.dateLabel.text = card?.date
+		headerView.frame = CGRectMake(
+			0,
+			0,
+			frame.size.width,
+			headerView.frame.size.height)
+		frame = CGRectMake(
+			frame.origin.x,
+			frame.origin.y,
+			frame.size.width,
+			frame.size.height + headerView.frame.size.height)
+		addSubview(headerView)
 	}
 	
 	func addImageViews() {
@@ -50,27 +78,40 @@ class CardView: UIView {
 			frame.size.width,
 			frame.size.height + scrollView.frame.size.height)
 		
-		// TODO : Handle single images - JBG
-		for i in 0...2 {
-			var imageFrame = CGRectMake(
-				CGFloat(i) * scrollView.frame.size.width - 10,
-				0,
-				scrollView.frame.size.width,
+		// Add images - JBG
+		if let images = card?.images {
+			var padding: CGFloat = (images.count > 0 ? 10.0 : 0.0)
+			for (i, urlStr) in enumerate(images) {
+				var imageFrame = CGRectMake(
+					CGFloat(i) * scrollView.frame.size.width - padding,
+					0,
+					scrollView.frame.size.width,
+					scrollView.frame.size.height)
+				var imageView = UIImageView(frame: imageFrame)
+				// Load the image - JBG
+				if let data = NSData(contentsOfURL: NSURL(string: urlStr)!) {
+					imageView.image = UIImage(data: data)
+				}
+				
+				scrollView.addSubview(imageView)
+			}
+			scrollView.contentSize = CGSizeMake(
+				CGFloat(images.count) * scrollView.frame.size.width - padding,
 				scrollView.frame.size.height)
-			var imageView = UIImageView(frame: imageFrame)
-			scrollView.addSubview(imageView)
-			
-			var randomNumber : CGFloat = CGFloat(rand()) % (255 - 1)
-			imageView.backgroundColor = UIColor(white: randomNumber/255, alpha: 1.0)
-			
 		}
-		
-		scrollView.contentSize = CGSizeMake(
-			3 * scrollView.frame.size.width - 10,
-			scrollView.frame.size.height)
 	}
 	
-	func addLikeView() {
+	func addLikeViews(friends: Dictionary<String, Person>) {
+		if let likes = card?.likes {
+			for personId in likes {
+				if let person = friends[personId] {
+					addLikeView(person)
+				}
+			}
+		}
+	}
+	
+	private func addLikeView(person: Person) {
 		let likeHeight = CGFloat(60)
 		var x: CGFloat = frame.size.width / 3;
 		var likeView = UIView.loadFromNibNamed("LikeView") as LikeView
@@ -84,9 +125,44 @@ class CardView: UIView {
 			frame.origin.y,
 			frame.size.width,
 			frame.size.height + likeHeight)
+		
+		// Load the image - JBG
+		if let data = NSData(contentsOfURL: NSURL(string: person.avatarUrl)!) {
+			likeView.avatarView.image = UIImage(data: data)
+		}
+		
+		likeView.titleLabel.text = person.name + "likes this"
 		addSubview(likeView)
+	}
+	
+	func addUserView() {
+		var userView = UIView.loadFromNibNamed("UserView") as UserView
+		userView.frame = CGRectMake(
+			0,
+			frame.size.height,
+			frame.size.width,
+			userView.frame.size.height)
 		
+		userView.titleLabel.text = card?.title
+		userView.subtitleLabel.text = card?.subtitle
+
+		if let urlStr = card?.avatarUrl {
+			if let data = NSData(contentsOfURL: NSURL(string: urlStr)!) {
+				userView.avatarView.image = UIImage(data: data)
+			}
+		}
 		
+		frame = CGRectMake(
+			frame.origin.x,
+			frame.origin.y,
+			frame.size.width,
+			frame.size.height + userView.frame.size.height)
+		
+		addSubview(userView)
+	}
+	
+	func updateActionButton(title: String, target: AnyObject?, action: Selector) {
+		actionButton?.setTitle(title, forState: UIControlState.Normal)
 	}
 	
 }
