@@ -15,6 +15,18 @@ class Person {
 	var avatarUrl: String!
 	var info: [(String, String)]!
 	
+	var job: String? {
+		get {
+			var job: String? = nil
+			for (label, value) in info {
+				if label == "Job" {
+					job = value
+				}
+			}
+			return job
+		}
+	}
+	
 	init() {
 		info = []
 	}
@@ -24,11 +36,12 @@ class Person {
 		
 		id = dict["id"] as String
 		name = dict["name"] as String
-		avatarUrl = dict["avatar"] as String
+		avatarUrl = (dict["avatar"] as String).pathComponents.last
 		
-		let infoDicts = dict["info"] as NSArray
-		for infoDict in infoDicts {
-			info.append((infoDict["label"] as String, infoDict["text"] as String))
+		if let infoDicts = dict["info"] as? NSArray {
+			for infoDict in infoDicts {
+				info.append((infoDict["label"] as String, infoDict["text"] as String))
+			}
 		}
 	}
 }

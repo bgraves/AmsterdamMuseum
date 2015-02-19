@@ -15,7 +15,7 @@ class CardView: UIView {
 	
 	var actionButton: UIButton?
 	
-	func addActionView(target: AnyObject?, action: Selector) {
+	func addActionView(target: AnyObject?, action: Selector, title: String) {
 		var buttonFrame = CGRectMake(
 			0,
 			frame.size.height,
@@ -31,7 +31,7 @@ class CardView: UIView {
 		
 		switch action {
 			default:
-				button.setTitle("Accept Invitation", forState: UIControlState.Normal)
+				button.setTitle(title, forState: UIControlState.Normal)
 				button.addTarget(target, action: action, forControlEvents:.TouchUpInside)
 		}
 
@@ -61,6 +61,9 @@ class CardView: UIView {
 	}
 	
 	func addImageViews() {
+		// Just return if there are no images - JBG
+		if card.images.count == 0 { return }
+		
 		var scrollFrame = CGRectMake(
 			0,
 			frame.size.height,
@@ -80,7 +83,7 @@ class CardView: UIView {
 		
 		// Add images - JBG
 		if let images = card?.images {
-			var padding: CGFloat = (images.count > 0 ? 10.0 : 0.0)
+			var padding: CGFloat = (images.count > 1 ? 10.0 : 0.0)
 			for (i, urlStr) in enumerate(images) {
 				var imageFrame = CGRectMake(
 					CGFloat(i) * scrollView.frame.size.width - padding,
@@ -88,9 +91,10 @@ class CardView: UIView {
 					scrollView.frame.size.width,
 					scrollView.frame.size.height)
 				var imageView = UIImageView(frame: imageFrame)
+				
 				// Load the image - JBG
-				if let data = NSData(contentsOfURL: NSURL(string: urlStr)!) {
-					imageView.image = UIImage(data: data)
+				if let imageStr = urlStr.pathComponents.last {
+					imageView.image = UIImage(named: imageStr)
 				}
 				
 				scrollView.addSubview(imageView)
@@ -143,13 +147,14 @@ class CardView: UIView {
 			frame.size.width,
 			userView.frame.size.height)
 		
-		userView.titleLabel.text = card?.title
+		userView.titleLabel.text = card?.title.uppercaseString
 		userView.subtitleLabel.text = card?.subtitle
+		
+		userView.avatarView.layer.masksToBounds = true
+		userView.avatarView.layer.cornerRadius = userView.avatarView.frame.size.height / 2
 
-		if let urlStr = card?.avatarUrl {
-			if let data = NSData(contentsOfURL: NSURL(string: urlStr)!) {
-				userView.avatarView.image = UIImage(data: data)
-			}
+		if let imageStr = card?.avatarUrl {
+			userView.avatarView.image = UIImage(named: imageStr)
 		}
 		
 		frame = CGRectMake(
@@ -160,9 +165,4 @@ class CardView: UIView {
 		
 		addSubview(userView)
 	}
-	
-	func updateActionButton(title: String, target: AnyObject?, action: Selector) {
-		actionButton?.setTitle(title, forState: UIControlState.Normal)
-	}
-	
 }

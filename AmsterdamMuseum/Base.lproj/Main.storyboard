@@ -146,6 +146,7 @@
                         <outlet property="nameLabel" destination="R6E-uq-KaY" id="TDn-17-P0L"/>
                         <outlet property="scrollView" destination="zH9-li-qmU" id="SJw-jU-cB1"/>
                         <segue destination="oX3-GB-SYP" kind="show" identifier="toSettings" id="Yf3-lH-Ahn"/>
+                        <segue destination="vs6-2T-J3M" kind="show" identifier="toUserFeed" id="Wbe-Ti-yyq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y5f-7W-qnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,16 +167,16 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="puF-Nb-0MM" id="XpY-EE-ON8">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q4X-GV-Xeq">
+                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q4X-GV-Xeq">
                                             <rect key="frame" x="8" y="8" width="76" height="76"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdL-VS-73J">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdL-VS-73J">
                                             <rect key="frame" x="92" y="8" width="467" height="21"/>
                                             <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sublabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olO-CL-ARn">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sublabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olO-CL-ARn">
                                             <rect key="frame" x="92" y="37" width="467" height="47"/>
                                             <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="15"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -244,13 +245,51 @@
                             <outlet property="delegate" destination="oX3-GB-SYP" id="ca2-mV-IZ5"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="vs6-2T-J3M" kind="show" identifier="toUserFeed" id="9nd-CR-1yj"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6aJ-7v-BXz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2753" y="308"/>
+            <point key="canvasLocation" x="2947" y="308"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="JNj-a9-WnK">
+            <objects>
+                <viewController id="vs6-2T-J3M" customClass="NewsViewController" customModule="AmsterdamMuseum" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LuM-k3-f56"/>
+                        <viewControllerLayoutGuide type="bottom" id="1qi-u9-Twp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VtP-fL-5uj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRr-cG-k5C">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aRr-cG-k5C" secondAttribute="trailing" id="9Fv-UH-ERq"/>
+                            <constraint firstItem="aRr-cG-k5C" firstAttribute="leading" secondItem="VtP-fL-5uj" secondAttribute="leading" id="UFL-78-Sm6"/>
+                            <constraint firstItem="1qi-u9-Twp" firstAttribute="top" secondItem="aRr-cG-k5C" secondAttribute="bottom" id="bYi-Yf-yiO"/>
+                            <constraint firstItem="aRr-cG-k5C" firstAttribute="top" secondItem="VtP-fL-5uj" secondAttribute="top" id="hiW-NC-VWT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="aRr-cG-k5C" id="so2-Wc-6TU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yco-Yj-2pT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2753" y="1053"/>
         </scene>
     </scenes>
     <resources>
         <image name="Pencil" width="96" height="96"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="9nd-CR-1yj"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -10,13 +10,13 @@ import Foundation
 
 class Trigger {
 	
-	var time: Int?
+	var time: NSTimeInterval?
 	var zone: String?
 	var friend: String?
 	
 	convenience init(dict: NSDictionary) {
 		self.init()
-		time = dict["time"] as? Int
+		time = dict["time"] as? NSTimeInterval
 		zone = dict["zone"] as? String
 		friend = dict["friend"] as? String
 	}

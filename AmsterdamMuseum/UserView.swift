@@ -13,6 +13,6 @@ class UserView : UIView {
 	
 	@IBOutlet var avatarView: UIImageView!
 	@IBOutlet var titleLabel: UILabel!
-	@IBOutlet var subtitleLabel: UILabel!
+	@IBOutlet var subtitleLabel: UITextView!
 	
 }

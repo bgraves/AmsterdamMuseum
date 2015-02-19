@@ -23,12 +23,12 @@
                         <constraint firstAttribute="width" constant="160" id="97F-rJ-wFt"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Jan van der Poll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GT-Yo-via">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan van der Poll" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GT-Yo-via">
                     <rect key="frame" x="220" y="179" width="160" height="36"/>
                     <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="160" id="PQA-Yc-Pde"/>
-                        <constraint firstAttribute="height" constant="36" id="gb3-hp-FO0"/>
+                        <constraint firstAttribute="width" constant="160" id="8h5-sb-SfI"/>
+                        <constraint firstAttribute="height" constant="36" id="Lil-gJ-aFr"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -46,8 +46,8 @@
             <constraints>
                 <constraint firstItem="uDP-Ld-FR1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="RlU-y8-W44"/>
                 <constraint firstAttribute="centerX" secondItem="uDP-Ld-FR1" secondAttribute="centerX" id="dYe-7f-8IG"/>
-                <constraint firstAttribute="centerX" secondItem="0GT-Yo-via" secondAttribute="centerX" id="eJZ-cw-2Ot"/>
-                <constraint firstItem="0GT-Yo-via" firstAttribute="top" secondItem="POD-zf-fI8" secondAttribute="bottom" id="p4J-6Y-Hjd"/>
+                <constraint firstItem="0GT-Yo-via" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="179" id="egI-lI-Kzo"/>
+                <constraint firstAttribute="centerX" secondItem="0GT-Yo-via" secondAttribute="centerX" id="jHy-DM-jbt"/>
                 <constraint firstAttribute="centerX" secondItem="POD-zf-fI8" secondAttribute="centerX" id="pJt-AL-8ck"/>
                 <constraint firstItem="POD-zf-fI8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="166" id="rob-UI-BdK"/>
             </constraints>

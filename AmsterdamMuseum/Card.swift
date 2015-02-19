@@ -18,7 +18,7 @@ class Card {
 	var layout: CardLayout!
 	var title: String!
 	var subtitle: String?
-	var date: String!
+	var date: String?
 	var avatarUrl: String?
 	var images: [String]
 	var likes: [String]!
@@ -43,8 +43,8 @@ class Card {
 		
 		title = dict["title"] as String
 		subtitle = dict["subtitle"] as? String
-		date = dict["date"] as String
-		avatarUrl = dict["avatar"] as? String
+		date = dict["date"] as? String
+		avatarUrl = (dict["avatar"] as? String)?.pathComponents.last
 		
 		if let images = dict["images"] as? NSArray {
 			for urlStr in images {
@@ -61,22 +61,21 @@ class Card {
 		}
 	}
 	
-	func show(friends: Dictionary<String, Person>, zones: [String], time: Int) -> Bool {
+	func show(friends: Dictionary<String, Person>, zones: [String], time: NSTimeInterval) -> Bool {
 		var show = true
 		if let trigger = self.trigger {
-//			if let t = trigger.time {
-//				show = show && time > t
-//			}
-//			
-//			if let friend = trigger.friend {
-//				show = show && friends[friend] != nil
-//			}
-//			
-//			if let zone = trigger.zone {
-//				show = show && contains(zones, zone)
-//			}
+			if let t = trigger.time {
+				show = show && time > t
+			}
+			
+			if let friend = trigger.friend {
+				show = show && friends[friend] != nil
+			}
+			
+			if let zone = trigger.zone {
+				show = show && contains(zones, zone)
+			}
 		}
-		
 		return show
 	}
 }

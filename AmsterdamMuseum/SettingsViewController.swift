@@ -11,9 +11,12 @@ import UIKit
 
 class SettingsViewController : UITableViewController {
 	
+	// Handle User specific timelines - JBG
+	var viewFriend: Person?
+	
 	override func viewDidLoad() {
 		addHeaderView()
-		addFooterView()
+//		addFooterView()
 		self.tableView.rowHeight = 97
 	}
 	
@@ -56,7 +59,7 @@ class SettingsViewController : UITableViewController {
 	override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		switch section {
 		case 0:
-			return 3
+			return (UIApplication.sharedApplication().delegate as AppDelegate).friends.count
 		default:
 			return 1
 		}
@@ -66,15 +69,37 @@ class SettingsViewController : UITableViewController {
 		switch indexPath.section {
 		case 0:
 			let cell = tableView.dequeueReusableCellWithIdentifier("FriendCell", forIndexPath: indexPath) as UITableViewCell
+			let friends = (UIApplication.sharedApplication().delegate as AppDelegate).friends.values.array
+			let friend: Person = friends[indexPath.row]
+			(cell.viewWithTag(1) as UIImageView).image = UIImage(named: friend.avatarUrl)
+			(cell.viewWithTag(2) as UILabel).text = friend.name.uppercaseString
+			(cell.viewWithTag(3) as UILabel).text = friend.job
 			return cell
 		default:
 			let cell = tableView.dequeueReusableCellWithIdentifier("SettingsCell", forIndexPath: indexPath) as UITableViewCell
 			(cell.viewWithTag(1) as UIImageView).image = Avatar.getAvatar()
 			(cell.viewWithTag(2) as UILabel).text = NSUserDefaults.standardUserDefaults().stringForKey("name")?.uppercaseString
-			(cell.viewWithTag(3) as UILabel).text = NSUserDefaults.standardUserDefaults().stringForKey("email")?.uppercaseString
+			(cell.viewWithTag(3) as UILabel).text = NSUserDefaults.standardUserDefaults().stringForKey("email")?
 			return cell
 		}
 		
+	}
+	
+	override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+		if indexPath.section == 0 {
+			let friends = (UIApplication.sharedApplication().delegate as AppDelegate).friends.values.array
+			let friend: Person = friends[indexPath.row]
+			self.viewFriend = friend
+			self.performSegueWithIdentifier("toUserFeed", sender: self)
+		}
+	}
+	
+	// Handle friend news feeds - JBG
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		if segue.identifier == "toUserFeed" {
+			(segue.destinationViewController as NewsViewController).user = viewFriend
+		}
 	}
 	
 }

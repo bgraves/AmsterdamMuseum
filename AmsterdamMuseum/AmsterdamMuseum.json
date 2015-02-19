@@ -1,0 +1,502 @@
+{
+  "people": [
+    {
+      "id": "johannesspilberg",
+      "name": "Johannes Spilberg",
+      "avatar": "images/johannesspilberg.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Painter"
+        },
+        {
+          "label": "Born",
+          "text": "1619 in Dusseldorf"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Relationship",
+          "text": "Married to Marrite Gerrits"
+        },
+        {
+          "label": "Children",
+          "text": "Adriana"
+        }
+      ]
+    },
+    {
+      "id": "janvandepoll",
+      "name": "Jan van de Poll",
+      "avatar": "images/janvandepoll.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Colonel of the Civic Guard"
+        },
+        {
+          "label": "Born",
+          "text": "1597 in Amsterdam"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Relationship",
+          "text": "Married to Duyfje van Gerwen"
+        },
+        {
+          "label": "Children",
+          "text": "Harmen Hendrik, Rebecca, Joan"
+        }
+      ]
+    },
+    {
+      "id": "gijsbertvandepoll",
+      "name": "Gijsbert van de Poll",
+      "avatar": "images/gijsbertvandepoll.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Captain of the Civic Guard"
+        },
+        {
+          "label": "Born",
+          "text": "findOut"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Relationship",
+          "text": "Married to findOut"
+        },
+        {
+          "label": "Children",
+          "text": "findOut"
+        }
+      ]
+    },
+    {
+      "id": "eilardbernhards",
+      "name": "Eilard Bernhards",
+      "avatar": "images/eilardbernhards.png"
+    },
+    {
+      "id": "harmenvandepoll",
+      "name": "Harmen van de Poll",
+      "avatar": "images/harmenvandepoll.png"
+    },
+    {
+      "id": "govertflinck",
+      "name": "Govert Flinck",
+      "avatar": "images/govertflinck.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Painter"
+        },
+        {
+          "label": "Born",
+          "text": "1615 in Kleef"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Relationship",
+          "text": "Married to Ingitta Thoveling"
+        },
+        {
+          "label": "Children",
+          "text": "Nicolaas Antoni"
+        }
+      ]
+    },
+    {
+      "id": "rembrandt",
+      "name": "Rembrandt van Rijn",
+      "avatar": "images/rembrandtvanrijn.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Painter"
+        },
+        {
+          "label": "Born",
+          "text": "1606 in Leiden"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Relationship",
+          "text": "Married to Saskia van Uylenburgh"
+        },
+        {
+          "label": "Children",
+          "text": "Titus, Cornelia"
+        }
+      ]
+    },
+    {
+      "id": "ferdinandbol",
+      "name": "Ferdinand Bol",
+      "avatar": "images/ferdinandbol.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Painter"
+        },
+        {
+          "label": "Born",
+          "text": "1616 in Dordrecht"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Relationship",
+          "text": "Married to Anna van Erckel"
+        },
+        {
+          "label": "Children",
+          "text": "Cornelia, Elbert, Balthasar"
+        }
+      ]
+    },
+    {
+      "id": "vdhelst",
+      "name": "Bartholomeus van der Helst",
+      "avatar": "images/batholomeusvanderhelst.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Painter, regent"
+        },
+        {
+          "label": "Born",
+          "text": "1613 in Haarlem"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Relationship",
+          "text": "Married to Anna du Pire"
+        },
+        {
+          "label": "Children",
+          "text": "Susanna, Lodwijk"
+        }
+      ]
+    }
+  ],
+
+
+"cards": [
+  {
+    "layout": "default",
+    "title": "Johannes Spilberg",
+    "subtitle": "I’d like to connect with you, please add me to your network",
+    "date": "365 years ago",
+    "avatar": "images/johannesspilberg.png",
+    "images": [ "johannesspilbergimage.png" ],
+    "friend-request": "johannesspilberg",
+    "triggers": {
+      "time": 10,
+      "zone": "A"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Johannes Spilberg > WEEZER",
+    "subtitle": "Thanks for adding me to your network and welcome to #thegoldenage!",
+    "date": "just now",
+    "avatar": "images/johannesspilberg.png",
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "johannesspilberg"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Johannes Spilberg",
+    "subtitle": "Spilberg tagged himself in a painting",
+    "date": "just now",
+    "avatar": "images/johannesspilberg.png",
+    "images": [ "johannesspilbergtag" ],
+    "likes": [ "janvandepoll" ],
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "johannesspilberg"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Jan van de Poll",
+    "subtitle": "I’d like to connect with you, please add me to your network",
+    "date": "just now",
+    "avatar": "images/janvandepoll.png",
+    "images": [ "janvandepollimage" ],
+    "friend-request": "janvandepoll",
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "johannesspilberg"
+    }
+  },
+
+  {
+    "layout": "default",
+    "title": "Johannes Spilberg",
+    "subtitle": "I see you met Jan van de Poll. I made this painting in his honour; he has just been promoted to colonel.",
+    "date": "just now",
+    "avatar": "johannesspilberg.png",
+    "friend-request": "",
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "janvandepoll"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Gijsbert van de Poll",
+    "subtitle": "I’d like to connect with you, please add me to your network",
+    "date": "just now",
+    "avatar": "gijsbertvandepoll.png",
+    "images": [ "gijsbertvandepollimage" ],
+    "friend-request": "gijsbertvandepoll",
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "janvandepoll"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Johannes Spilberg",
+    "subtitle": "Gijsbrecht is a networker just like his brother. Their father is Amsterdam city counsellor Harmen van de Poll. It’s not WHAT you know, it’s WHO you know!",
+    "date": "just now",
+    "avatar": "johannesspilberg.png",
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "gijsbrechtvandepoll"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Harmen van de Poll > Jan van de Poll",
+    "subtitle": "Dad what is Saint Sebastian doing in our painting? He’s a #Catholic and we’re #Calvinists!",
+    "date": "just now",
+    "avatar": "images/harmenvandepoll.png",
+    "images": [ "saintsebastian.png", "saintsebatian2.png", "saintsebastian3.png" ],
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "janvandepoll"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Jan van de Poll > Harmen van de Poll",
+    "subtitle": "Son, didn’t I teach you anything? Amsterdam used to be a Catholic city and Sebastian has been the patron saint of the archers for over a century!",
+    "date": "just now",
+    "avatar": "janvandepoll.png",
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "janvandepoll"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Johannes Spilberg",
+    "subtitle": "The Dutch are so pragmatic when it comes to #tolerance… And opportunistic: they can’t afford to alienate the large Catholic part of the population ;^)",
+    "date": "just now",
+    "avatar": "johannesspilberg.png",
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "johannesspilberg"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Gijsbert van de Poll > Johannes Spilberg",
+    "subtitle": "I really like the 16th century helmet you gave Eilard and how it represents a long tradition of us together, as #citizens, ensuring the safety of our city!",
+    "date": "just now",
+    "avatar": "gijsbertvandepoll.png",
+    "images": [ "eilardbernhardsimage.png" ],
+    "likes": [ "janvandepoll, johannesspilberg, eilardbernhards" ],
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "gijsbertvandepoll"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Johannes Spilberg",
+    "subtitle": "The Piece of Münster was signed in 1648, ending the Eighty Years’ War between Spain and the Netherlands. This tradition will soon be over, in painting as well.",
+    "date": "just now",
+    "avatar": "johannesspilberg.png",
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "johannesspilberg"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Johannes Spilberg",
+    "subtitle": "What are you still doing here? GO! Explore the Golden Age. This - here - is the end.",
+    "date": "just now",
+    "avatar": "johannesspilberg.png",
+    "likes": [ "janvandepoll, gijsbertvandepoll, harmenvandepoll, eilardbernhards, johannesspilberg" ],
+    "triggers": {
+      "time": 10,
+      "zone": "A",
+      "friend": "johannesspilberg"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Rembrandt van Rijn",
+    "subtitle": "-checked into Studio Lastman. Excited! Starting my lessons at the studio of leading painter #pieterlastman",
+    "date": "1625",
+    "avatar": "images/rembrandtvanrijn.png",
+    "triggers": {
+      "time": 10,
+      "zone": "B"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Rembrandt van Rijn",
+    "subtitle": "Super excited! Moving to #Amsterdam to run the atelier founded by art dealer #Hendrick_van_Uylenburgh",
+    "date": "1631",
+    "avatar": "images/rembrandtvanrijn.png",
+    "images": [ "rembrandtvanrijnmoved.png" ],
+    "triggers": {
+      "time": 10,
+      "zone": "B"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck",
+    "subtitle": "-checked into Studio Uylenburg. Hi @Rembrandt I have arrived safely, will report for work at 06.00 sharp tomorrow! Looking forward to being your student",
+    "date": "1633",
+    "avatar": "images/govertflinck.png",
+    "triggers": {
+      "time": 10,
+      "zone": "B"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Marouane Chamakh",
+    "subtitle": "-checked into De Dam. People and products from all over the world! #metropolis Let’s make some #money",
+    "date": "1635",
+    "avatar": "images/marouanechamakh.png",
+    "triggers": {
+      "time": 10,
+      "zone": "B"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Ferdinand Bol",
+    "subtitle": "-checked into Rembrandt's Studio.",
+    "date": "1635",
+    "avatar": "images/ferdinandbol.png",
+    "triggers": {
+      "time": 10,
+      "zone": "B"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Ferdinand Bol > Govert Flinck",
+    "subtitle": "I start tomorrow, how is Rembrandt as a teacher? I hear he is rather stubborn.",
+    "date": "1635",
+    "avatar": "images/ferdinandbol.png",
+    "triggers": {
+      "time": 10,
+      "zone": "B"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck > Ferdinand Bol",
+    "subtitle": "He is not an easy person, but he is a great teacher if you want to study composition, darkness and expressions! See you tomorrow.",
+    "date": "1635",
+    "avatar": "images/govertflinck.png",
+    "triggers": {
+      "time": 10,
+      "zone": "B"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Bartholomeus van der Helst",
+    "subtitle": "-checked into Amsterdam City Centre. This city is a magnet for artists! Painters and paintings everywhere #competition",
+    "date": "1636",
+    "avatar": "images/bartholomeusvanderhelst.png",
+    "triggers": {
+      "time": 10,
+      "zone": "B"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "José Ramón Alexanco ",
+    "subtitle": "-checked into De Dam. Incredible! The water in the middle of the city! #godcreatedtheworldbutthedutchcreatedholland",
+    "date": "1648",
+    "avatar": "images/joseramonalexanco.png",
+    "triggers": {
+      "time": 10,
+      "zone": "B"
+    }
+  }
+
+],
+
+	"zones": {
+		"A": {
+			"beacons": [{
+						"uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+						"major": "58028",
+						"minor": "44583"
+						}]
+		},
+		"B": {
+			"beacons": [{
+						"uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+						"major": "63190",
+						"minor": "38646"
+						}]
+		},
+		"C": {
+			"beacons": [{
+						"uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+						"major": "32918",
+						"minor": "26741"
+						}]
+		}
+	}
+
+}

@@ -44,9 +44,7 @@ class ProfileView : UIView {
 		valueLabel.text = value
 		valueLabel.font = UIFont(name: "OpenSans-Light", size: 17)
 		keyValueViews.addSubview(valueLabel)
-		
 
-		
 		self.frame = CGRectMake(
 			self.frame.origin.x,
 			self.frame.origin.y,
