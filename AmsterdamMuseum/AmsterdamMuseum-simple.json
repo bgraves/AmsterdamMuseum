@@ -1,0 +1,244 @@
+{
+  "people": [
+    {
+      "id": "johannesspilberg",
+      "name": "Johannes Spilberg",
+      "avatar": "images/johannesspilberg.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Painter"
+        },
+        {
+          "label": "Born",
+          "text": "1619, Düsseldorf"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Married",
+          "text": "Marrite Gerrits"
+        },
+        {
+          "label": "Children",
+          "text": "Adriana"
+        }
+      ]
+    },
+    {
+      "id": "janvandepoll",
+      "name": "Jan van de Poll",
+      "avatar": "images/janvandepoll.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Colonel of the Civic Guard"
+        },
+        {
+          "label": "Born",
+          "text": "1597, Amsterdam"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Married",
+          "text": "Duyfje van Gerwen"
+        },
+        {
+          "label": "Children",
+          "text": "Harmen Hendrik, Rebecca, Joan"
+        },
+        {
+          "label": "",
+          "text": "Rebecca, Joan"
+        }
+      ]
+    },
+    {
+      "id": "gijsbertvandepoll",
+      "name": "Gijsbert van de Poll",
+      "avatar": "images/gijsbertvandepoll.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Captain of the Civic Guard"
+        },
+        {
+          "label": "Born",
+          "text": "findOut"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        }
+      ]
+    },
+    {
+      "id": "eilardbernhards",
+      "name": "Eilard Bernhards",
+      "avatar": "images/eilardbernhards.png"
+    },
+    {
+      "id": "harmenvandepoll",
+      "name": "Harmen van de Poll",
+      "avatar": "images/harmenvandepoll.png"
+    },
+    {
+      "id": "govertflinck",
+      "name": "Govert Flinck",
+      "avatar": "images/govertflinck.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Painter"
+        },
+        {
+          "label": "Born",
+          "text": "1615, Kleef"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Married",
+          "text": "Ingitta Thoveling"
+        },
+        {
+          "label": "Children",
+          "text": "Nicolaas Antoni"
+        }
+      ]
+    },
+    {
+      "id": "rembrandt",
+      "name": "Rembrandt van Rijn",
+      "avatar": "images/rembrandtvanrijn.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Painter"
+        },
+        {
+          "label": "Born",
+          "text": "1606, Leiden"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Married",
+          "text": "Saskia van Uylenburgh"
+        },
+        {
+          "label": "",
+          "text": "(1720-1767)"
+        },
+        {
+          "label": "Children",
+          "text": "Titus, Cornelia"
+        }
+      ]
+    },
+    {
+      "id": "ferdinandbol",
+      "name": "Ferdinand Bol",
+      "avatar": "images/ferdinandbol.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Painter"
+        },
+        {
+          "label": "Born",
+          "text": "1616, Dordrecht"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Married",
+          "text": "Anna van Erckel"
+        },
+        {
+          "label": "Children",
+          "text": "Cornelia, Elbert"
+        },
+        {
+          "label": "",
+          "text": "Balthasar"
+        }
+      ]
+    },
+    {
+      "id": "vdhelst",
+      "name": "Bartholomeus van der Helst",
+      "avatar": "images/bartholomeusvanderhelst.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Painter, regent"
+        },
+        {
+          "label": "Born",
+          "text": "1613, Haarlem"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Married",
+          "text": "Anna du Pire"
+        },
+        {
+          "label": "Children",
+          "text": "Susanna, Lodwijk"
+        }
+      ]
+    }
+  ],
+
+
+"cards": [
+		  {
+    "layout": "default",
+    "title": "Johannes Spilberg",
+    "subtitle": "Gijsbert is a networker just like his brother. Their father is Amsterdam city counsellor Harmen van de Poll. #whoYourFriendsAre!",
+    "date": "just now",
+    "avatar": "johannesspilberg.png"
+		  }
+],
+
+
+	"zones": {
+		"A": {
+			"beacons": [{
+						"uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+						"major": "58028",
+						"minor": "44583"
+						}]
+		},
+		"B": {
+			"beacons": [{
+						"uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+						"major": "16261",
+						"minor": "58844"
+						}]
+		},
+		"C": {
+			"beacons": [{
+						"uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
+						"major": "27770",
+						"minor": "28113"
+						}]
+		}
+	}
+
+}

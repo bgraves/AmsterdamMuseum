@@ -13,17 +13,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BeaconTrackerDelegate {
 
 	var window: UIWindow?
 	
+	// Manange cache & zip - JBG
+	let cacheUtils = CacheUtils()
+	
 	// Monitor for beacons - JBG
 	var beaconTracker: BeaconTracker = BeaconTracker()
 	
 	// State stuff - JBG
+	var currentZone: BeaconZone?
 	var friends: Dictionary<String, Person> = Dictionary()
-	var startTime = NSDate()
-	var zones: [String] = []
-
+	var zones: Dictionary<String, BeaconZone> = Dictionary()
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+//		var cacheInitialized = NSUserDefaults.standardUserDefaults().boolForKey("cacheInitialized")
+//		if !cacheInitialized {
+			cacheUtils.initializeCache(["png", "json"])
+			NSUserDefaults.standardUserDefaults().setObject(true, forKey: "cacheInitialized")
+//		}
+		
 		// Override point for customization after application launch.
+		beaconTracker.delegate = self
 		return true
 	}
 
@@ -51,15 +60,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BeaconTrackerDelegate {
 	
 	// BeaconTrackerDelegate - JBG
 	
-	func inZone(zoneName: String) -> Void {
-		
-		println("ZONE: \(zoneName)")
-		
-		if !contains(zones, zoneName) {
-			zones.append(zoneName)
+	func inZone(zone: BeaconZone?) -> Void {
+		if let zoneName = zone?.name {
+			if let currentZoneName = currentZone?.name {
+				if zoneName != currentZoneName {
+					println("Exit \(currentZoneName), Enter \(zoneName)")
+					if var time = currentZone?.times.last {
+						time.endTime = NSDate()
+					}
+					
+					var presence = BeaconZonePresence()
+					presence.startTime = NSDate()
+					zone?.times.append(presence)
+					currentZone = zone
+				}
+			} else {
+				var presence = BeaconZonePresence()
+				presence.startTime = NSDate()
+				zone?.times.append(presence)
+				currentZone = zone
+			}
 		}
 	}
-
-
 }
 

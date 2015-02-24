@@ -102,4 +102,11 @@ class SettingsViewController : UITableViewController {
 		}
 	}
 	
+	// Actions - JBG
+	@IBAction func logout(sender: UIButton) {
+		self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+	}
+	
+	
+	
 }

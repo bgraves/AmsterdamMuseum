@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AmsterdamMuseum/BeaconTracker.swift"
-            timestampString = "446051792.332489"
+            filePath = "AmsterdamMuseum/Trigger.swift"
+            timestampString = "446471707.948846"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "locationManager(_:didRangeBeacons:inRegion:)"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init(dict:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

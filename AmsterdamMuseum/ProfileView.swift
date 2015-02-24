@@ -33,7 +33,7 @@ class ProfileView : UIView {
 			labelHeight))
 		keyLabel.text = key
 		keyLabel.textAlignment = .Right
-		keyLabel.font = UIFont(name: "OpenSans-Light", size: 17)
+		keyLabel.font = UIFont(name: "OpenSans-Light", size: 14)
 		keyValueViews.addSubview(keyLabel)
 		
 		var valueLabel = UILabel(frame: CGRectMake(
@@ -42,7 +42,7 @@ class ProfileView : UIView {
 			((keyValueViews.frame.size.width / 3) * 2) - (xSpacer * 2),
 			labelHeight))
 		valueLabel.text = value
-		valueLabel.font = UIFont(name: "OpenSans-Light", size: 17)
+		valueLabel.font = UIFont(name: "OpenSans-Light", size: 14)
 		keyValueViews.addSubview(valueLabel)
 
 		self.frame = CGRectMake(

@@ -22,6 +22,7 @@ class Card {
 	var avatarUrl: String?
 	var images: [String]
 	var likes: [String]!
+	var persons: [String]!
 	
 	var friendRequest: String?
 	
@@ -30,6 +31,7 @@ class Card {
 	init() {
 		images = []
 		likes = []
+		persons = []
 	}
 	
 	convenience init(dict: NSDictionary) {
@@ -52,6 +54,12 @@ class Card {
 			}
 		}
 		
+		if let likes = dict["likes"] as? NSArray {
+			for like in likes {
+				self.likes.append(like as String)
+			}
+		}
+		
 		if let triggerDict = dict["triggers"] as? NSDictionary {
 			trigger = Trigger(dict: triggerDict)
 		}
@@ -59,9 +67,15 @@ class Card {
 		if let name = dict["friend-request"] as? String {
 			self.friendRequest = name
 		}
+		
+		if let persons = dict["persons"] as? NSArray {
+			for person in persons {
+				self.persons.append(person as String)
+			}
+		}
 	}
 	
-	func show(friends: Dictionary<String, Person>, zones: [String], time: NSTimeInterval) -> Bool {
+	func show(friends: Dictionary<String, Person>, zone: String?, time: NSTimeInterval) -> Bool {
 		var show = true
 		if let trigger = self.trigger {
 			if let t = trigger.time {
@@ -70,10 +84,18 @@ class Card {
 			
 			if let friend = trigger.friend {
 				show = show && friends[friend] != nil
+			} else if friends.count == 1 && trigger.friend == nil {
+				show = false
 			}
 			
-			if let zone = trigger.zone {
-				show = show && contains(zones, zone)
+			if zone != nil {
+				if let tz = trigger.zone {
+					show = show && zone == tz
+				}
+			}
+			
+			if show && trigger.friend != nil {
+				println("\(time), \(friends[trigger.friend!]), \(zone) triggered \(trigger.time), \(trigger.friend), \(trigger.zone)")
 			}
 		}
 		return show

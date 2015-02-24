@@ -60,6 +60,14 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		// Dispose of any resources that can be recreated.
 	}
 	
+	override func viewDidAppear(animated: Bool) {
+		self.view.hidden = false
+	}
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		self.view.hidden = true
+	}
+	
 	@IBAction func textChanged(sender: AnyObject) {
 		if sender as NSObject == loginView.emailField {
 			loginView.validEmail.hidden = !validEmail(loginView.emailField.text)
@@ -72,7 +80,6 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		if validName(loginView.nameField.text) && validEmail(loginView.emailField.text) {
 			NSUserDefaults.standardUserDefaults().setObject(loginView.emailField.text, forKey: "email")
 			NSUserDefaults.standardUserDefaults().setObject(loginView.nameField.text, forKey: "name")
-			self.loginView.hidden = true
 			self.performSegueWithIdentifier("toNews", sender: self)
 		}
 	}
@@ -122,7 +129,7 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 	func imagePickerControllerDidCancel(picker: UIImagePickerController!) {
 		self.dismissViewControllerAnimated(true, completion: nil)
 	}
-	
+
 	// UITextFieldDelegate - JBG
 	func textFieldShouldReturn(textField: UITextField) -> Bool {
 		if textField == loginView.nameField {

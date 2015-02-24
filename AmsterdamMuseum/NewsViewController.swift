@@ -103,8 +103,8 @@ class NewsViewController : UIViewController {
 		
 		cardView.addHeaderView()
 		cardView.addUserView()
-		cardView.addLikeViews(friends)
 		cardView.addImageViews()
+		cardView.addLikeViews(newsFeed.people)
 		
 		if user == nil {
 			if let friendRequest = card.friendRequest {
@@ -137,8 +137,15 @@ class NewsViewController : UIViewController {
 		var eventView = UIView.loadFromNibNamed("EventView") as EventView
 		self.scrollView.addSubview(eventView)
 		
-		for i in 1...3 {
+		for personId in card.persons {
 			var personView = PersonView.loadFromNibNamed("PersonView") as PersonView
+			if let person: Person = newsFeed.people[personId] {
+				personView.avatarView.image = ImageUtils.getImage(person.avatarUrl)
+				personView.avatarView.layer.masksToBounds = true
+				personView.avatarView.layer.cornerRadius = personView.avatarView.frame.size.height / 2
+				personView.nameLabel.text = person.name
+				personView.subLabel.text = person.job
+			}
 			eventView.addPersonView(personView)
 		}
 
@@ -238,22 +245,27 @@ class NewsViewController : UIViewController {
 	}
 	
 	func evaluateCards() {
-		println("evaluateCards")
 		dispatch_async(dispatch_get_main_queue(), { [unowned self] in
-			let startTime = (UIApplication.sharedApplication().delegate as AppDelegate).startTime
-			let zones = (UIApplication.sharedApplication().delegate as AppDelegate).zones
+			let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+			let zones = appDelegate.zones
+			var friends = appDelegate.friends
+			var zone = appDelegate.currentZone
 			
-			var friends = (UIApplication.sharedApplication().delegate as AppDelegate).friends
+			var time: NSTimeInterval = 0
+			
+			if let z = zone {
+				time = z.currentTime
+			}
 			
 			// If we are trying view a user timeline, just show his cards - JBG
 			if let user = self.user {
 				friends = [user.id: user]
 			}
 			
-			let time = NSDate().timeIntervalSinceDate(startTime)
+			println("evaluateCards, Zone: \(zone?.name), Time: \(time)")
 			for card: Card in self.newsFeed.cards {
-				if self.displayedCards.containsObject(card) ||
-					!card.show(friends, zones: zones, time: time) {
+				var show = card.show(friends, zone: zone?.name, time: time)
+				if self.displayedCards.containsObject(card) || !show {
 					continue
 				}
 				

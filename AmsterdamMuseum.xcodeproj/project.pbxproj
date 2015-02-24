@@ -15,7 +15,6 @@
 		3134A0D11A767AA4002F548D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134A0D01A767AA4002F548D /* CardView.swift */; };
 		3141F3871A7BBDF500CBB90B /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3141F3861A7BBDF500CBB90B /* ProfileView.xib */; };
 		3141F3891A7BC07700CBB90B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3141F3881A7BC07700CBB90B /* ProfileView.swift */; };
-		317484E31A95EBC8007ACE22 /* AmsterdamMuseum.json in Resources */ = {isa = PBXBuildFile; fileRef = 317484E11A95EBC8007ACE22 /* AmsterdamMuseum.json */; };
 		317484FD1A95EBF1007ACE22 /* bartholomeusvanderhelst.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484E51A95EBF1007ACE22 /* bartholomeusvanderhelst.png */; };
 		317484FE1A95EBF1007ACE22 /* eilardbernhards.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484E61A95EBF1007ACE22 /* eilardbernhards.png */; };
 		317484FF1A95EBF1007ACE22 /* eilardbernhardsimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484E71A95EBF1007ACE22 /* eilardbernhardsimage.png */; };
@@ -44,6 +43,16 @@
 		31AEB1F21A7B99AE00162DB0 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AEB1F11A7B99AE00162DB0 /* PersonView.swift */; };
 		31AF390A1A9615C200DA58DB /* BeaconTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AF39091A9615C200DA58DB /* BeaconTracker.swift */; };
 		31AF390C1A96165200DA58DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AF390B1A96165200DA58DB /* CoreLocation.framework */; };
+		31EA5EDB1A9B795D007DDF25 /* AmsterdamMuseum.json in Resources */ = {isa = PBXBuildFile; fileRef = 31EA5EDA1A9B795D007DDF25 /* AmsterdamMuseum.json */; };
+		31EA5EEB1A9C8771007DDF25 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EE11A9C8771007DDF25 /* ioapi.c */; };
+		31EA5EEC1A9C8771007DDF25 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EE31A9C8771007DDF25 /* mztools.c */; };
+		31EA5EED1A9C8771007DDF25 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EE51A9C8771007DDF25 /* unzip.c */; };
+		31EA5EEE1A9C8771007DDF25 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EE71A9C8771007DDF25 /* zip.c */; };
+		31EA5EEF1A9C8771007DDF25 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EEA1A9C8771007DDF25 /* SSZipArchive.m */; };
+		31EA5EF21A9C87BF007DDF25 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EA5EF11A9C87BF007DDF25 /* libz.dylib */; };
+		31EA5EF41A9C8855007DDF25 /* CacheUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EF31A9C8855007DDF25 /* CacheUtils.swift */; };
+		31EA5EF61A9C8C2B007DDF25 /* AmsterdamMuseum-simple.json in Resources */ = {isa = PBXBuildFile; fileRef = 31EA5EF51A9C8C2B007DDF25 /* AmsterdamMuseum-simple.json */; };
+		31EA5EF81A9C8CFB007DDF25 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EF71A9C8CFB007DDF25 /* ImageUtils.swift */; };
 		31F227BC1A8A12880076A509 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F227BB1A8A12880076A509 /* NewsFeed.swift */; };
 		31F227BE1A8A130E0076A509 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F227BD1A8A130E0076A509 /* Card.swift */; };
 		31F227C01A8A133E0076A509 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F227BF1A8A133E0076A509 /* Person.swift */; };
@@ -92,7 +101,6 @@
 		317484DD1A95E73E007ACE22 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		317484DE1A95E73E007ACE22 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		317484DF1A95E73E007ACE22 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
-		317484E11A95EBC8007ACE22 /* AmsterdamMuseum.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AmsterdamMuseum.json; sourceTree = "<group>"; };
 		317484E51A95EBF1007ACE22 /* bartholomeusvanderhelst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bartholomeusvanderhelst.png; sourceTree = "<group>"; };
 		317484E61A95EBF1007ACE22 /* eilardbernhards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eilardbernhards.png; sourceTree = "<group>"; };
 		317484E71A95EBF1007ACE22 /* eilardbernhardsimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eilardbernhardsimage.png; sourceTree = "<group>"; };
@@ -121,6 +129,23 @@
 		31AEB1F11A7B99AE00162DB0 /* PersonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		31AF39091A9615C200DA58DB /* BeaconTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTracker.swift; sourceTree = "<group>"; };
 		31AF390B1A96165200DA58DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		31EA5EDA1A9B795D007DDF25 /* AmsterdamMuseum.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AmsterdamMuseum.json; sourceTree = "<group>"; };
+		31EA5EE01A9C8771007DDF25 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		31EA5EE11A9C8771007DDF25 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		31EA5EE21A9C8771007DDF25 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		31EA5EE31A9C8771007DDF25 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		31EA5EE41A9C8771007DDF25 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		31EA5EE51A9C8771007DDF25 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		31EA5EE61A9C8771007DDF25 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		31EA5EE71A9C8771007DDF25 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		31EA5EE81A9C8771007DDF25 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		31EA5EE91A9C8771007DDF25 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		31EA5EEA1A9C8771007DDF25 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		31EA5EF01A9C877F007DDF25 /* AmsterdamMuseum-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmsterdamMuseum-Bridging-Header.h"; sourceTree = "<group>"; };
+		31EA5EF11A9C87BF007DDF25 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		31EA5EF31A9C8855007DDF25 /* CacheUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheUtils.swift; sourceTree = "<group>"; };
+		31EA5EF51A9C8C2B007DDF25 /* AmsterdamMuseum-simple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "AmsterdamMuseum-simple.json"; sourceTree = "<group>"; };
+		31EA5EF71A9C8CFB007DDF25 /* ImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 		31F227BB1A8A12880076A509 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 		31F227BD1A8A130E0076A509 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		31F227BF1A8A133E0076A509 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -156,6 +181,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31EA5EF21A9C87BF007DDF25 /* libz.dylib in Frameworks */,
 				31AF390C1A96165200DA58DB /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,13 +226,43 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		31EA5EDE1A9C8771007DDF25 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				31EA5EDF1A9C8771007DDF25 /* minizip */,
+				31EA5EE91A9C8771007DDF25 /* SSZipArchive.h */,
+				31EA5EEA1A9C8771007DDF25 /* SSZipArchive.m */,
+			);
+			name = SSZipArchive;
+			path = AmsterdamMuseum/SSZipArchive;
+			sourceTree = "<group>";
+		};
+		31EA5EDF1A9C8771007DDF25 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				31EA5EE01A9C8771007DDF25 /* crypt.h */,
+				31EA5EE11A9C8771007DDF25 /* ioapi.c */,
+				31EA5EE21A9C8771007DDF25 /* ioapi.h */,
+				31EA5EE31A9C8771007DDF25 /* mztools.c */,
+				31EA5EE41A9C8771007DDF25 /* mztools.h */,
+				31EA5EE51A9C8771007DDF25 /* unzip.c */,
+				31EA5EE61A9C8771007DDF25 /* unzip.h */,
+				31EA5EE71A9C8771007DDF25 /* zip.c */,
+				31EA5EE81A9C8771007DDF25 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
 		31FF61261A71361E00B238F5 = {
 			isa = PBXGroup;
 			children = (
+				31EA5EF11A9C87BF007DDF25 /* libz.dylib */,
 				31AF390B1A96165200DA58DB /* CoreLocation.framework */,
+				31EA5EF01A9C877F007DDF25 /* AmsterdamMuseum-Bridging-Header.h */,
 				31FF61311A71361E00B238F5 /* AmsterdamMuseum */,
 				31FF61471A71361E00B238F5 /* AmsterdamMuseumTests */,
 				31FF61301A71361E00B238F5 /* Products */,
+				31EA5EDE1A9C8771007DDF25 /* SSZipArchive */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,14 +278,17 @@
 		31FF61311A71361E00B238F5 /* AmsterdamMuseum */ = {
 			isa = PBXGroup;
 			children = (
-				317484E11A95EBC8007ACE22 /* AmsterdamMuseum.json */,
+				31EA5EF51A9C8C2B007DDF25 /* AmsterdamMuseum-simple.json */,
+				31EA5EDA1A9B795D007DDF25 /* AmsterdamMuseum.json */,
 				31FF61341A71361E00B238F5 /* AppDelegate.swift */,
 				3104AC471A7FB17D00D9B3C2 /* Avatar.swift */,
 				31AF39091A9615C200DA58DB /* BeaconTracker.swift */,
+				31EA5EF31A9C8855007DDF25 /* CacheUtils.swift */,
 				31F227BD1A8A130E0076A509 /* Card.swift */,
 				31F93B901A7A52A5001E0B7C /* CardHeaderView.swift */,
 				3134A0D01A767AA4002F548D /* CardView.swift */,
 				31AEB1EB1A7B966800162DB0 /* EventView.swift */,
+				31EA5EF71A9C8CFB007DDF25 /* ImageUtils.swift */,
 				3104AC431A7F79C900D9B3C2 /* LikeView.swift */,
 				31F46A9F1A91F63E009C545A /* LoginView.swift */,
 				31FF61361A71361E00B238F5 /* LoginViewController.swift */,
@@ -383,6 +442,7 @@
 				317485051A95EBF1007ACE22 /* harmenvandepoll.png in Resources */,
 				317485001A95EBF1007ACE22 /* ferdinandbol.png in Resources */,
 				31F93B8D1A791DD4001E0B7C /* EventView.xib in Resources */,
+				31EA5EDB1A9B795D007DDF25 /* AmsterdamMuseum.json in Resources */,
 				31F46A9C1A91F06A009C545A /* LoginView.xib in Resources */,
 				317484FE1A95EBF1007ACE22 /* eilardbernhards.png in Resources */,
 				317485101A95EBF1007ACE22 /* rembrandtvanrijnmoved.png in Resources */,
@@ -399,7 +459,6 @@
 				317485061A95EBF1007ACE22 /* harmenvandepollimage.png in Resources */,
 				31FF613A1A71361E00B238F5 /* Main.storyboard in Resources */,
 				31FF613F1A71361E00B238F5 /* LaunchScreen.xib in Resources */,
-				317484E31A95EBC8007ACE22 /* AmsterdamMuseum.json in Resources */,
 				3174850B1A95EBF1007ACE22 /* johannesspilbergtag.png in Resources */,
 				3174850F1A95EBF1007ACE22 /* rembrandtvanrijnimage.png in Resources */,
 				317485111A95EBF1007ACE22 /* saintsebastian.png in Resources */,
@@ -413,6 +472,7 @@
 				3174850A1A95EBF1007ACE22 /* johannesspilbergimage.png in Resources */,
 				317484FD1A95EBF1007ACE22 /* bartholomeusvanderhelst.png in Resources */,
 				31F93B8B1A79167E001E0B7C /* UserView.xib in Resources */,
+				31EA5EF61A9C8C2B007DDF25 /* AmsterdamMuseum-simple.json in Resources */,
 				31FF613C1A71361E00B238F5 /* Images.xcassets in Resources */,
 				3174850C1A95EBF1007ACE22 /* joseramonalexanco.png in Resources */,
 				3174850D1A95EBF1007ACE22 /* marouanechamakh.png in Resources */,
@@ -434,13 +494,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				31F227C01A8A133E0076A509 /* Person.swift in Sources */,
+				31EA5EEF1A9C8771007DDF25 /* SSZipArchive.m in Sources */,
 				31F227BC1A8A12880076A509 /* NewsFeed.swift in Sources */,
 				31AF390A1A9615C200DA58DB /* BeaconTracker.swift in Sources */,
 				31AEB1F21A7B99AE00162DB0 /* PersonView.swift in Sources */,
 				31F93B911A7A52A5001E0B7C /* CardHeaderView.swift in Sources */,
 				3141F3891A7BC07700CBB90B /* ProfileView.swift in Sources */,
+				31EA5EEB1A9C8771007DDF25 /* ioapi.c in Sources */,
 				31F46AA41A920DC7009C545A /* SettingsViewController.swift in Sources */,
 				31FF61371A71361E00B238F5 /* LoginViewController.swift in Sources */,
+				31EA5EEE1A9C8771007DDF25 /* zip.c in Sources */,
+				31EA5EF81A9C8CFB007DDF25 /* ImageUtils.swift in Sources */,
 				31F93B891A791659001E0B7C /* UserView.swift in Sources */,
 				31FF61351A71361E00B238F5 /* AppDelegate.swift in Sources */,
 				3104AC481A7FB17D00D9B3C2 /* Avatar.swift in Sources */,
@@ -448,10 +512,13 @@
 				31F46AA01A91F63E009C545A /* LoginView.swift in Sources */,
 				31F227BE1A8A130E0076A509 /* Card.swift in Sources */,
 				31F93B831A790074001E0B7C /* ShieldView.swift in Sources */,
+				31EA5EEC1A9C8771007DDF25 /* mztools.c in Sources */,
 				31F227C21A8A24940076A509 /* Trigger.swift in Sources */,
 				3134A0CF1A767A6B002F548D /* NewsViewController.swift in Sources */,
 				3104AC441A7F79C900D9B3C2 /* LikeView.swift in Sources */,
 				31AEB1EC1A7B966800162DB0 /* EventView.swift in Sources */,
+				31EA5EED1A9C8771007DDF25 /* unzip.c in Sources */,
+				31EA5EF41A9C8855007DDF25 /* CacheUtils.swift in Sources */,
 				31F46AA21A91F89F009C545A /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,8 +645,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AmsterdamMuseum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AmsterdamMuseum-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -588,8 +657,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AmsterdamMuseum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AmsterdamMuseum-Bridging-Header.h";
 			};
 			name = Release;
 		};

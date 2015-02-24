@@ -11,6 +11,8 @@ import UIKit
 
 class PersonView: UIView {
 	
+	@IBOutlet var avatarView: UIImageView!
 	@IBOutlet var nameLabel: UILabel!
+	@IBOutlet var subLabel: UILabel!
 	
 }

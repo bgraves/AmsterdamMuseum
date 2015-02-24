@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -207,7 +208,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sublabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXH-dd-CxN">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sublabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXH-dd-CxN">
                                             <rect key="frame" x="92" y="37" width="462" height="47"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="47" id="Ys2-fP-eLe"/>
@@ -216,25 +217,31 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pencil" translatesAutoresizingMaskIntoConstraints="NO" id="0x3-vR-jo1">
-                                            <rect key="frame" x="562" y="33" width="30" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R34-ft-76n">
+                                            <rect key="frame" x="562" y="31" width="30" height="30"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="30" id="PxY-DA-eL1"/>
-                                                <constraint firstAttribute="width" constant="30" id="b7U-qE-ueV"/>
+                                                <constraint firstAttribute="width" constant="30" id="5SW-E8-9xu"/>
+                                                <constraint firstAttribute="height" constant="30" id="Pmy-u2-bhh"/>
                                             </constraints>
-                                        </imageView>
+                                            <state key="normal" image="Pencil">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="logout:" destination="oX3-GB-SYP" eventType="touchUpInside" id="oIt-Wf-0X9"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="UWR-Qc-9UN" firstAttribute="top" secondItem="C9n-iV-i7i" secondAttribute="topMargin" id="4nC-MY-eT8"/>
-                                        <constraint firstItem="0x3-vR-jo1" firstAttribute="trailing" secondItem="C9n-iV-i7i" secondAttribute="trailingMargin" id="5JZ-Qb-bQJ"/>
                                         <constraint firstItem="aXH-dd-CxN" firstAttribute="top" secondItem="UWR-Qc-9UN" secondAttribute="bottom" constant="8" id="He5-26-Vug"/>
-                                        <constraint firstItem="0x3-vR-jo1" firstAttribute="top" secondItem="C9n-iV-i7i" secondAttribute="topMargin" constant="25" id="SzO-7u-B8L"/>
+                                        <constraint firstAttribute="trailing" secondItem="R34-ft-76n" secondAttribute="trailing" constant="8" id="ULk-yy-r8B"/>
                                         <constraint firstItem="nM0-G8-MZt" firstAttribute="top" secondItem="C9n-iV-i7i" secondAttribute="topMargin" id="WxZ-23-Gi2"/>
+                                        <constraint firstItem="R34-ft-76n" firstAttribute="top" secondItem="C9n-iV-i7i" secondAttribute="top" constant="31" id="em4-BF-iHE"/>
                                         <constraint firstItem="aXH-dd-CxN" firstAttribute="leading" secondItem="nM0-G8-MZt" secondAttribute="trailing" constant="8" id="gHf-Rc-xbP"/>
                                         <constraint firstItem="UWR-Qc-9UN" firstAttribute="leading" secondItem="nM0-G8-MZt" secondAttribute="trailing" constant="8" id="h5X-Mb-6yY"/>
                                         <constraint firstItem="nM0-G8-MZt" firstAttribute="leading" secondItem="C9n-iV-i7i" secondAttribute="leadingMargin" id="ifY-dc-qk3"/>
-                                        <constraint firstItem="0x3-vR-jo1" firstAttribute="leading" secondItem="aXH-dd-CxN" secondAttribute="trailing" constant="8" id="tNu-Da-Iws"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="UWR-Qc-9UN" secondAttribute="trailing" constant="38" id="ut3-gi-E1Q"/>
+                                        <constraint firstAttribute="bottom" secondItem="R34-ft-76n" secondAttribute="bottom" constant="35.5" id="xDw-If-8i2"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -53,51 +54,29 @@
                         <constraint firstAttribute="bottom" secondItem="XaX-Py-Utf" secondAttribute="bottom" constant="48" id="oMS-CN-Zsl"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNI-Gn-CKz">
-                    <rect key="frame" x="150" y="113" width="300" height="374"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network with the Golden Age!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3b-Dq-BDi">
-                            <rect key="frame" x="0.0" y="166" width="300" height="208"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="208" id="bDm-fv-AXe"/>
-                                <constraint firstAttribute="width" constant="300" id="nJR-g5-fDK"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="48"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhiteShield" translatesAutoresizingMaskIntoConstraints="NO" id="H8w-aD-rCf">
-                            <rect key="frame" x="83" y="0.0" width="135" height="158"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="158" id="GVI-2Z-Wug"/>
-                                <constraint firstAttribute="width" constant="135" id="PGa-4e-wOh"/>
-                            </constraints>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network with the Golden Age!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3b-Dq-BDi">
+                    <rect key="frame" x="150" y="196" width="300" height="208"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="A3b-Dq-BDi" secondAttribute="bottom" id="0r1-dK-ayj"/>
-                        <constraint firstAttribute="width" constant="300" id="b97-6V-RZn"/>
-                        <constraint firstAttribute="height" constant="374" id="bBN-5L-HRW"/>
-                        <constraint firstItem="H8w-aD-rCf" firstAttribute="top" secondItem="PNI-Gn-CKz" secondAttribute="top" id="ba9-QD-OVl"/>
-                        <constraint firstAttribute="centerX" secondItem="A3b-Dq-BDi" secondAttribute="centerX" id="fLq-Xw-3Cn"/>
-                        <constraint firstAttribute="centerX" secondItem="H8w-aD-rCf" secondAttribute="centerX" id="itl-cF-ugr"/>
+                        <constraint firstAttribute="height" constant="208" id="MVY-wi-tEd"/>
+                        <constraint firstAttribute="width" constant="300" id="bIo-zM-E2f"/>
                     </constraints>
-                </view>
+                    <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="48"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="centerX" secondItem="A3b-Dq-BDi" secondAttribute="centerX" id="0Pj-Vm-Hnm"/>
                 <constraint firstItem="2uT-4e-m87" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6UG-in-eqZ"/>
-                <constraint firstAttribute="centerY" secondItem="PNI-Gn-CKz" secondAttribute="centerY" id="LXK-yR-8Md"/>
-                <constraint firstAttribute="centerX" secondItem="PNI-Gn-CKz" secondAttribute="centerX" id="aRA-Uh-erJ"/>
                 <constraint firstAttribute="bottom" secondItem="2uT-4e-m87" secondAttribute="bottom" id="dad-a9-Kd4"/>
                 <constraint firstAttribute="trailing" secondItem="2uT-4e-m87" secondAttribute="trailing" id="pxA-Qp-gKS"/>
+                <constraint firstAttribute="centerY" secondItem="A3b-Dq-BDi" secondAttribute="centerY" id="sgm-K9-g70"/>
             </constraints>
         </view>
     </objects>
     <resources>
         <image name="Shield" width="240" height="17"/>
         <image name="Splash" width="187" height="333"/>
-        <image name="WhiteShield" width="240" height="269"/>
     </resources>
 </document>

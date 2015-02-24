@@ -11,15 +11,15 @@
         },
         {
           "label": "Born",
-          "text": "1619 in Dusseldorf"
+          "text": "1619, Düsseldorf"
         },
         {
           "label": "Lives",
           "text": "Amsterdam"
         },
         {
-          "label": "Relationship",
-          "text": "Married to Marrite Gerrits"
+          "label": "Married",
+          "text": "Marrite Gerrits"
         },
         {
           "label": "Children",
@@ -38,19 +38,23 @@
         },
         {
           "label": "Born",
-          "text": "1597 in Amsterdam"
+          "text": "1597, Amsterdam"
         },
         {
           "label": "Lives",
           "text": "Amsterdam"
         },
         {
-          "label": "Relationship",
-          "text": "Married to Duyfje van Gerwen"
+          "label": "Married",
+          "text": "Duyfje van Gerwen"
         },
         {
           "label": "Children",
           "text": "Harmen Hendrik, Rebecca, Joan"
+        },
+        {
+          "label": "",
+          "text": "Rebecca, Joan"
         }
       ]
     },
@@ -70,14 +74,6 @@
         {
           "label": "Lives",
           "text": "Amsterdam"
-        },
-        {
-          "label": "Relationship",
-          "text": "Married to findOut"
-        },
-        {
-          "label": "Children",
-          "text": "findOut"
         }
       ]
     },
@@ -102,15 +98,15 @@
         },
         {
           "label": "Born",
-          "text": "1615 in Kleef"
+          "text": "1615, Kleef"
         },
         {
           "label": "Lives",
           "text": "Amsterdam"
         },
         {
-          "label": "Relationship",
-          "text": "Married to Ingitta Thoveling"
+          "label": "Married",
+          "text": "Ingitta Thoveling"
         },
         {
           "label": "Children",
@@ -129,15 +125,19 @@
         },
         {
           "label": "Born",
-          "text": "1606 in Leiden"
+          "text": "1606, Leiden"
         },
         {
           "label": "Lives",
           "text": "Amsterdam"
         },
         {
-          "label": "Relationship",
-          "text": "Married to Saskia van Uylenburgh"
+          "label": "Married",
+          "text": "Saskia van Uylenburgh"
+        },
+        {
+          "label": "",
+          "text": "(1720-1767)"
         },
         {
           "label": "Children",
@@ -156,26 +156,30 @@
         },
         {
           "label": "Born",
-          "text": "1616 in Dordrecht"
+          "text": "1616, Dordrecht"
         },
         {
           "label": "Lives",
           "text": "Amsterdam"
         },
         {
-          "label": "Relationship",
-          "text": "Married to Anna van Erckel"
+          "label": "Married",
+          "text": "Anna van Erckel"
         },
         {
           "label": "Children",
-          "text": "Cornelia, Elbert, Balthasar"
+          "text": "Cornelia, Elbert"
+        },
+        {
+          "label": "",
+          "text": "Balthasar"
         }
       ]
     },
     {
       "id": "vdhelst",
       "name": "Bartholomeus van der Helst",
-      "avatar": "images/batholomeusvanderhelst.png",
+      "avatar": "images/bartholomeusvanderhelst.png",
       "info": [
         {
           "label": "Job",
@@ -183,15 +187,15 @@
         },
         {
           "label": "Born",
-          "text": "1613 in Haarlem"
+          "text": "1613, Haarlem"
         },
         {
           "label": "Lives",
           "text": "Amsterdam"
         },
         {
-          "label": "Relationship",
-          "text": "Married to Anna du Pire"
+          "label": "Married",
+          "text": "Anna du Pire"
         },
         {
           "label": "Children",
@@ -207,18 +211,19 @@
     "layout": "default",
     "title": "Johannes Spilberg",
     "subtitle": "I’d like to connect with you, please add me to your network",
-    "date": "365 years ago",
+    "date": "just now",
     "avatar": "images/johannesspilberg.png",
     "images": [ "johannesspilbergimage.png" ],
     "friend-request": "johannesspilberg",
     "triggers": {
-      "time": 10,
-      "zone": "A"
+      "time": 5,
+      "zone": "A",
+      "friend": ""
     }
   },
   {
     "layout": "default",
-    "title": "Johannes Spilberg > WEEZER",
+    "title": "Johannes Spilberg",
     "subtitle": "Thanks for adding me to your network and welcome to #thegoldenage!",
     "date": "just now",
     "avatar": "images/johannesspilberg.png",
@@ -231,13 +236,13 @@
   {
     "layout": "default",
     "title": "Johannes Spilberg",
-    "subtitle": "Spilberg tagged himself in a painting",
+    "subtitle": "Spilberg tagged himself. My client J vd Poll allowed me to create a #selfie in this painting #honour.",
     "date": "just now",
     "avatar": "images/johannesspilberg.png",
-    "images": [ "johannesspilbergtag" ],
+    "images": [ "johannesspilbergtag.png" ],
     "likes": [ "janvandepoll" ],
     "triggers": {
-      "time": 10,
+      "time": 15,
       "zone": "A",
       "friend": "johannesspilberg"
     }
@@ -248,10 +253,10 @@
     "subtitle": "I’d like to connect with you, please add me to your network",
     "date": "just now",
     "avatar": "images/janvandepoll.png",
-    "images": [ "janvandepollimage" ],
+    "images": [ "janvandepollimage.png" ],
     "friend-request": "janvandepoll",
     "triggers": {
-      "time": 10,
+      "time": 20,
       "zone": "A",
       "friend": "johannesspilberg"
     }
@@ -263,9 +268,8 @@
     "subtitle": "I see you met Jan van de Poll. I made this painting in his honour; he has just been promoted to colonel.",
     "date": "just now",
     "avatar": "johannesspilberg.png",
-    "friend-request": "",
     "triggers": {
-      "time": 10,
+      "time": 25,
       "zone": "A",
       "friend": "janvandepoll"
     }
@@ -276,10 +280,10 @@
     "subtitle": "I’d like to connect with you, please add me to your network",
     "date": "just now",
     "avatar": "gijsbertvandepoll.png",
-    "images": [ "gijsbertvandepollimage" ],
+    "images": [ "gijsbertvandepollimage.png" ],
     "friend-request": "gijsbertvandepoll",
     "triggers": {
-      "time": 10,
+      "time": 30,
       "zone": "A",
       "friend": "janvandepoll"
     }
@@ -287,13 +291,13 @@
   {
     "layout": "default",
     "title": "Johannes Spilberg",
-    "subtitle": "Gijsbrecht is a networker just like his brother. Their father is Amsterdam city counsellor Harmen van de Poll. It’s not WHAT you know, it’s WHO you know!",
+    "subtitle": "Gijsbert is a networker just like his brother. Their father is Amsterdam city counsellor Harmen van de Poll. #whoYourFriendsAre!",
     "date": "just now",
     "avatar": "johannesspilberg.png",
     "triggers": {
-      "time": 10,
+      "time": 35,
       "zone": "A",
-      "friend": "gijsbrechtvandepoll"
+      "friend": "gijsbertvandepoll"
     }
   },
   {
@@ -302,9 +306,9 @@
     "subtitle": "Dad what is Saint Sebastian doing in our painting? He’s a #Catholic and we’re #Calvinists!",
     "date": "just now",
     "avatar": "images/harmenvandepoll.png",
-    "images": [ "saintsebastian.png", "saintsebatian2.png", "saintsebastian3.png" ],
+    "images": [ "saintsebastian.png", "saintsebastian2.png", "saintsebastian3.png" ],
     "triggers": {
-      "time": 10,
+      "time": 40,
       "zone": "A",
       "friend": "janvandepoll"
     }
@@ -312,11 +316,11 @@
   {
     "layout": "default",
     "title": "Jan van de Poll > Harmen van de Poll",
-    "subtitle": "Son, didn’t I teach you anything? Amsterdam used to be a Catholic city and Sebastian has been the patron saint of the archers for over a century!",
+    "subtitle": "Amsterdam used to be a Catholic city and #StSebastian has been the patron saint of us archers for over a century!",
     "date": "just now",
     "avatar": "janvandepoll.png",
     "triggers": {
-      "time": 10,
+      "time": 45,
       "zone": "A",
       "friend": "janvandepoll"
     }
@@ -324,11 +328,11 @@
   {
     "layout": "default",
     "title": "Johannes Spilberg",
-    "subtitle": "The Dutch are so pragmatic when it comes to #tolerance… And opportunistic: they can’t afford to alienate the large Catholic part of the population ;^)",
+    "subtitle": "The Dutch are so pragmatic and opportunistic when it comes to #tolerance…",
     "date": "just now",
     "avatar": "johannesspilberg.png",
     "triggers": {
-      "time": 10,
+      "time": 50,
       "zone": "A",
       "friend": "johannesspilberg"
     }
@@ -336,13 +340,13 @@
   {
     "layout": "default",
     "title": "Gijsbert van de Poll > Johannes Spilberg",
-    "subtitle": "I really like the 16th century helmet you gave Eilard and how it represents a long tradition of us together, as #citizens, ensuring the safety of our city!",
+    "subtitle": "I like the 16th century helmet on Eilard! Long tradition of #citizens ensuring the safety of their city #nonGov!",
     "date": "just now",
     "avatar": "gijsbertvandepoll.png",
     "images": [ "eilardbernhardsimage.png" ],
-    "likes": [ "janvandepoll, johannesspilberg, eilardbernhards" ],
+    "likes": [ "janvandepoll", "johannesspilberg", "eilardbernhards" ],
     "triggers": {
-      "time": 10,
+      "time": 55,
       "zone": "A",
       "friend": "gijsbertvandepoll"
     }
@@ -350,11 +354,11 @@
   {
     "layout": "default",
     "title": "Johannes Spilberg",
-    "subtitle": "The Piece of Münster was signed in 1648, ending the Eighty Years’ War between Spain and the Netherlands. This tradition will soon be over, in painting as well.",
+    "subtitle": "The Piece of Münster was signed in 1648, ending the Eighty Years’ War between Spain and the Dutch #redundant #civicGuard",
     "date": "just now",
     "avatar": "johannesspilberg.png",
     "triggers": {
-      "time": 10,
+      "time": 60,
       "zone": "A",
       "friend": "johannesspilberg"
     }
@@ -362,12 +366,12 @@
   {
     "layout": "default",
     "title": "Johannes Spilberg",
-    "subtitle": "What are you still doing here? GO! Explore the Golden Age. This - here - is the end.",
+    "subtitle": "What are you still doing here? GO! Explore #theGoldenAge! #timeTravel",
     "date": "just now",
     "avatar": "johannesspilberg.png",
-    "likes": [ "janvandepoll, gijsbertvandepoll, harmenvandepoll, eilardbernhards, johannesspilberg" ],
+    "likes": [ "janvandepoll", "gijsbertvandepoll", "harmenvandepoll", "eilardbernhards", "johannesspilberg" ],
     "triggers": {
-      "time": 10,
+      "time": 65,
       "zone": "A",
       "friend": "johannesspilberg"
     }
@@ -375,12 +379,13 @@
   {
     "layout": "default",
     "title": "Rembrandt van Rijn",
-    "subtitle": "-checked into Studio Lastman. Excited! Starting my lessons at the studio of leading painter #pieterlastman",
+    "subtitle": "-at Studio Lastman- Excited! Starting my lessons at the studio of leading painter #pieterlastman",
     "date": "1625",
     "avatar": "images/rembrandtvanrijn.png",
     "triggers": {
-      "time": 10,
-      "zone": "B"
+      "time": 5,
+      "zone": "B",
+      "friend": ""
     }
   },
   {
@@ -392,40 +397,44 @@
     "images": [ "rembrandtvanrijnmoved.png" ],
     "triggers": {
       "time": 10,
-      "zone": "B"
+      "zone": "B",
+      "friend": ""
     }
   },
   {
     "layout": "default",
     "title": "Govert Flinck",
-    "subtitle": "-checked into Studio Uylenburg. Hi @Rembrandt I have arrived safely, will report for work at 06.00 sharp tomorrow! Looking forward to being your student",
+    "subtitle": "-at Studio Uylenburg- @Rembrandt I arrived in AMS. Looking forward to being your student. #golden #opportunity",
     "date": "1633",
     "avatar": "images/govertflinck.png",
     "triggers": {
-      "time": 10,
-      "zone": "B"
+      "time": 15,
+      "zone": "B",
+      "friend": ""
     }
   },
   {
     "layout": "default",
     "title": "Marouane Chamakh",
-    "subtitle": "-checked into De Dam. People and products from all over the world! #metropolis Let’s make some #money",
+    "subtitle": "-at De Dam- People and products from all over the world! #metropolis Let’s make some #money",
     "date": "1635",
     "avatar": "images/marouanechamakh.png",
     "triggers": {
-      "time": 10,
-      "zone": "B"
+      "time": 20,
+      "zone": "B",
+      "friend": ""
     }
   },
   {
     "layout": "default",
     "title": "Ferdinand Bol",
-    "subtitle": "-checked into Rembrandt's Studio.",
+    "subtitle": "-at Rembrandt's Studio-",
     "date": "1635",
     "avatar": "images/ferdinandbol.png",
     "triggers": {
-      "time": 10,
-      "zone": "B"
+      "time": 25,
+      "zone": "B",
+      "friend": ""
     }
   },
   {
@@ -435,45 +444,50 @@
     "date": "1635",
     "avatar": "images/ferdinandbol.png",
     "triggers": {
-      "time": 10,
-      "zone": "B"
+      "time": 30,
+      "zone": "B",
+      "friend": ""
     }
   },
   {
     "layout": "default",
     "title": "Govert Flinck > Ferdinand Bol",
-    "subtitle": "He is not an easy person, but he is a great teacher if you want to study composition, darkness and expressions! See you tomorrow.",
+    "subtitle": "He doesn’t compromise, but he is a great teacher #composition, #light, #darkness, #contrast, #movement, #emotion",
     "date": "1635",
     "avatar": "images/govertflinck.png",
     "triggers": {
-      "time": 10,
-      "zone": "B"
+      "time": 35,
+      "zone": "B",
+      "friend": ""
     }
   },
   {
     "layout": "default",
     "title": "Bartholomeus van der Helst",
-    "subtitle": "-checked into Amsterdam City Centre. This city is a magnet for artists! Painters and paintings everywhere #competition",
+    "subtitle": "-at Amsterdam City Centre- This city is a magnet for artists! Painters and paintings everywhere! #competition",
     "date": "1636",
     "avatar": "images/bartholomeusvanderhelst.png",
     "triggers": {
-      "time": 10,
-      "zone": "B"
+      "time": 40,
+      "zone": "B",
+      "friend": ""
     }
   },
   {
     "layout": "default",
-    "title": "José Ramón Alexanco ",
-    "subtitle": "-checked into De Dam. Incredible! The water in the middle of the city! #godcreatedtheworldbutthedutchcreatedholland",
+    "title": "José Ramón Alexanco",
+    "subtitle": "-at De Dam- #LOCO! ¿Water management in the middle of the city? #godcreatedtheworld #thedutchcreatedholland",
     "date": "1648",
     "avatar": "images/joseramonalexanco.png",
     "triggers": {
-      "time": 10,
-      "zone": "B"
+      "time": 45,
+      "zone": "B",
+      "friend": ""
     }
   }
 
 ],
+
 
 	"zones": {
 		"A": {
@@ -486,17 +500,16 @@
 		"B": {
 			"beacons": [{
 						"uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
-						"major": "63190",
-						"minor": "38646"
+						"major": "16261",
+						"minor": "58844"
 						}]
 		},
 		"C": {
 			"beacons": [{
 						"uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
-						"major": "32918",
-						"minor": "26741"
+						"major": "27770",
+						"minor": "28113"
 						}]
 		}
 	}
-
 }

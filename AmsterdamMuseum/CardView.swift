@@ -94,7 +94,7 @@ class CardView: UIView {
 				
 				// Load the image - JBG
 				if let imageStr = urlStr.pathComponents.last {
-					imageView.image = UIImage(named: imageStr)
+					imageView.image = ImageUtils.getImage(imageStr)
 				}
 				
 				scrollView.addSubview(imageView)
@@ -106,6 +106,27 @@ class CardView: UIView {
 	}
 	
 	func addLikeViews(friends: Dictionary<String, Person>) {
+		if card?.likes.count > 0 {
+			var label = UILabel()
+			label.text = "Likes:"
+			label.font = UIFont(name: "OpenSans-Light", size: 17)
+			
+			var x: CGFloat = frame.size.width / 3;
+			label.frame = CGRectMake(
+				x,
+				frame.size.height,
+				x*2,
+				25.0)
+			
+			frame = CGRectMake(
+				frame.origin.x,
+				frame.origin.y,
+				frame.size.width,
+				frame.size.height + label.frame.size.height)
+			
+			addSubview(label)
+		}
+		
 		if let likes = card?.likes {
 			for personId in likes {
 				if let person = friends[personId] {
@@ -116,7 +137,7 @@ class CardView: UIView {
 	}
 	
 	private func addLikeView(person: Person) {
-		let likeHeight = CGFloat(60)
+		let likeHeight = CGFloat(45)
 		var x: CGFloat = frame.size.width / 3;
 		var likeView = UIView.loadFromNibNamed("LikeView") as LikeView
 		likeView.frame = CGRectMake(
@@ -131,11 +152,11 @@ class CardView: UIView {
 			frame.size.height + likeHeight)
 		
 		// Load the image - JBG
-		if let data = NSData(contentsOfURL: NSURL(string: person.avatarUrl)!) {
-			likeView.avatarView.image = UIImage(data: data)
-		}
+		likeView.avatarView.image = ImageUtils.getImage(person.avatarUrl)
+		likeView.avatarView.layer.masksToBounds = true
+		likeView.avatarView.layer.cornerRadius = likeView.avatarView.frame.size.height / 2
 		
-		likeView.titleLabel.text = person.name + "likes this"
+		likeView.titleLabel.text = person.name
 		addSubview(likeView)
 	}
 	
@@ -154,7 +175,7 @@ class CardView: UIView {
 		userView.avatarView.layer.cornerRadius = userView.avatarView.frame.size.height / 2
 
 		if let imageStr = card?.avatarUrl {
-			userView.avatarView.image = UIImage(named: imageStr)
+			userView.avatarView.image = ImageUtils.getImage(imageStr)
 		}
 		
 		frame = CGRectMake(

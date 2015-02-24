@@ -23,12 +23,32 @@ class Beacon {
 	
 }
 
+class BeaconZonePresence : NSObject {
+	var startTime: NSDate!
+	var endTime: NSDate?
+}
+
 class BeaconZone {
 	
 	var beacons = [Beacon]()
 	var name: String!
 	
-	
+	var times = [BeaconZonePresence]()
+
+	var currentTime: NSTimeInterval {
+		get {
+			var time: NSTimeInterval = 0
+			for var i = 0; i < times.count; i++ {
+				if let endTime = times[i].endTime {
+					time += endTime.timeIntervalSinceDate(times[i].startTime)
+				} else {
+					time += NSDate().timeIntervalSinceDate(times[i].startTime)
+				}
+			}
+			return time
+		}
+	}
+
 	// For tracking - JBG
 	var rangedBeacons = [Beacon]()
 	var proximityScore = 0
@@ -46,11 +66,17 @@ class BeaconZone {
 	
 	func evaluate(clBeacon: CLBeacon) {
 		for beacon in beacons {
-			if clBeacon.major.stringValue == beacon.major &&
-				clBeacon.minor.stringValue == beacon.minor &&
-				clBeacon.proximityUUID.UUIDString == beacon.uuid {
+			if clBeacon.minor.stringValue == beacon.minor &&
+				clBeacon.proximityUUID.UUIDString == beacon.uuid &&
+				clBeacon.proximity != .Unknown {
 					rangedBeacons.append(beacon)
-					proximityScore += clBeacon.proximity.rawValue
+					
+					if clBeacon.proximity == .Unknown {
+						proximityScore += Int.max
+					} else  {
+						proximityScore += clBeacon.proximity.rawValue
+					}
+					
 					accuracyScore += clBeacon.accuracy
 			}
 		}
@@ -68,7 +94,7 @@ class BeaconZone {
 }
 
 protocol BeaconTrackerDelegate {
-	func inZone(zoneName: String) -> Void
+	func inZone(zone: BeaconZone?) -> Void
 }
 
 class BeaconTracker : NSObject, CLLocationManagerDelegate {
@@ -83,7 +109,9 @@ class BeaconTracker : NSObject, CLLocationManagerDelegate {
 		super.init()
 		locationManager = CLLocationManager()
 		locationManager.delegate = self
-		locationManager.requestAlwaysAuthorization()
+		if locationManager.respondsToSelector("requestAlwaysAuthorization") {
+			locationManager.requestAlwaysAuthorization()
+		}
 	}
 	
 	func start(zones: [BeaconZone]) {
@@ -131,7 +159,7 @@ class BeaconTracker : NSObject, CLLocationManagerDelegate {
 		
 		if validZones.count == 1 {
 			var zone = validZones[0]
-			delegate?.inZone(zone.name)
+			delegate?.inZone(zone)
 		} else if validZones.count > 1 {
 			var winningZone: BeaconZone? = nil
 			for zone in validZones {
@@ -147,7 +175,7 @@ class BeaconTracker : NSObject, CLLocationManagerDelegate {
 					}
 				}
 			}
-			delegate?.inZone(winningZone!.name)
+			delegate?.inZone(winningZone?)
 		}
 	}
 	
