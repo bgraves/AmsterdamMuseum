@@ -23,7 +23,7 @@ class NewsFeed {
 	func load(completionHandler:(NSError?) -> Void) {
 		var paths = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true)
 		if let dirPath = paths[0] as? String {
-			let filePath = dirPath.stringByAppendingPathComponent("AmsterdamMuseum-simple.json")
+			let filePath = dirPath.stringByAppendingPathComponent("AmsterdamMuseum.json")
 			let fileURL = NSURL(fileURLWithPath: filePath)
 			if let data = NSData(contentsOfURL: fileURL!) {
 				var error: NSError?

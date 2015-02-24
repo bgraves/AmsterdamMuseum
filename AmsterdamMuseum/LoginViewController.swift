@@ -23,6 +23,7 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		let name = NSUserDefaults.standardUserDefaults().stringForKey("name")
 		
 		splashView = SplashView.loadFromNibNamed("SplashView", bundle: nil, owner: self) as SplashView
+		splashView.button.addTarget(self, action: "scrollToLogin:", forControlEvents:.TouchUpInside)
 		scrollView.addSubview(splashView)
 		
 		splashView.frame = CGRectMake(
@@ -138,6 +139,15 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 			loginView.emailField.resignFirstResponder()
 		}
 		return true
+	}
+	
+	// Actions - JBG
+	@IBAction func scrollToLogin(sender: UIButton) {
+		var frame = CGRectMake(0,
+			splashView.frame.size.height,
+			splashView.frame.size.width,
+			loginView.frame.size.height)
+		scrollView.scrollRectToVisible(frame, animated: true)
 	}
 }
 

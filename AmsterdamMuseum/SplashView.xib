@@ -19,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="eTB-MO-iy6">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="eTB-MO-iy6">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uT-4e-m87">
@@ -31,27 +31,27 @@
                                 <constraint firstAttribute="height" constant="17" id="QTB-p7-BGp"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dM6-bi-CUH">
-                            <rect key="frame" x="0.0" y="16" width="600" height="49"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wk2-QO-jNs">
+                            <rect key="frame" x="0.0" y="17" width="600" height="48"/>
                             <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="49" id="yDv-lS-5l6"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
-                            <color key="textColor" red="0.52941176469999995" green="0.53333333329999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                            <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="15"/>
+                            <state key="normal" title="Tap to start">
+                                <color key="titleColor" red="0.52941176469999995" green="0.53333333329999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="height" constant="65" id="38T-pX-R6T"/>
-                        <constraint firstAttribute="bottom" secondItem="dM6-bi-CUH" secondAttribute="bottom" id="FOa-Nz-Lex"/>
                         <constraint firstItem="XaX-Py-Utf" firstAttribute="leading" secondItem="2uT-4e-m87" secondAttribute="leading" id="RRG-sK-Uxk"/>
-                        <constraint firstItem="dM6-bi-CUH" firstAttribute="leading" secondItem="2uT-4e-m87" secondAttribute="leading" id="iyA-RB-nlN"/>
-                        <constraint firstAttribute="trailing" secondItem="dM6-bi-CUH" secondAttribute="trailing" id="mbH-4Q-xB1"/>
+                        <constraint firstAttribute="trailing" secondItem="Wk2-QO-jNs" secondAttribute="trailing" id="WJz-4Y-pFB"/>
+                        <constraint firstItem="Wk2-QO-jNs" firstAttribute="leading" secondItem="2uT-4e-m87" secondAttribute="leading" id="akn-l1-ENh"/>
+                        <constraint firstAttribute="bottom" secondItem="Wk2-QO-jNs" secondAttribute="bottom" id="i4L-MH-jCI"/>
                         <constraint firstAttribute="trailing" secondItem="XaX-Py-Utf" secondAttribute="trailing" id="nU2-3k-akA"/>
                         <constraint firstAttribute="bottom" secondItem="XaX-Py-Utf" secondAttribute="bottom" constant="48" id="oMS-CN-Zsl"/>
+                        <constraint firstItem="Wk2-QO-jNs" firstAttribute="top" secondItem="XaX-Py-Utf" secondAttribute="bottom" id="qpA-DL-jzS"/>
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network with the Golden Age!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3b-Dq-BDi">
@@ -69,10 +69,17 @@
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="A3b-Dq-BDi" secondAttribute="centerX" id="0Pj-Vm-Hnm"/>
                 <constraint firstItem="2uT-4e-m87" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6UG-in-eqZ"/>
+                <constraint firstAttribute="trailing" secondItem="eTB-MO-iy6" secondAttribute="trailing" id="7I2-aq-nyh"/>
+                <constraint firstItem="eTB-MO-iy6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9sd-Uf-IQE"/>
                 <constraint firstAttribute="bottom" secondItem="2uT-4e-m87" secondAttribute="bottom" id="dad-a9-Kd4"/>
+                <constraint firstAttribute="bottom" secondItem="eTB-MO-iy6" secondAttribute="bottom" id="oC4-dZ-c7n"/>
                 <constraint firstAttribute="trailing" secondItem="2uT-4e-m87" secondAttribute="trailing" id="pxA-Qp-gKS"/>
                 <constraint firstAttribute="centerY" secondItem="A3b-Dq-BDi" secondAttribute="centerY" id="sgm-K9-g70"/>
+                <constraint firstItem="eTB-MO-iy6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yAC-ze-Smh"/>
             </constraints>
+            <connections>
+                <outlet property="button" destination="Wk2-QO-jNs" id="I3Q-CO-70Y"/>
+            </connections>
         </view>
     </objects>
     <resources>

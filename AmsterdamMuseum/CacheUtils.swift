@@ -10,8 +10,8 @@ import Foundation
 
 class CacheUtils : NSObject, NSFileManagerDelegate {
 	
-	var zipFilename = "whynot.zip"
-	var requestURLStr = "http://hearushere.nl/"
+	var zipFilename = "amsterdammuseum.zip"
+	var requestURLStr = "http://37.139.22.242/"
 	
 	private func copyURLsToCache(fileURLS: [NSURL]) {
 		let fileManager = NSFileManager()

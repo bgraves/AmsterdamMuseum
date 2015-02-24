@@ -51,7 +51,6 @@
 		31EA5EEF1A9C8771007DDF25 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EEA1A9C8771007DDF25 /* SSZipArchive.m */; };
 		31EA5EF21A9C87BF007DDF25 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EA5EF11A9C87BF007DDF25 /* libz.dylib */; };
 		31EA5EF41A9C8855007DDF25 /* CacheUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EF31A9C8855007DDF25 /* CacheUtils.swift */; };
-		31EA5EF61A9C8C2B007DDF25 /* AmsterdamMuseum-simple.json in Resources */ = {isa = PBXBuildFile; fileRef = 31EA5EF51A9C8C2B007DDF25 /* AmsterdamMuseum-simple.json */; };
 		31EA5EF81A9C8CFB007DDF25 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EF71A9C8CFB007DDF25 /* ImageUtils.swift */; };
 		31F227BC1A8A12880076A509 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F227BB1A8A12880076A509 /* NewsFeed.swift */; };
 		31F227BE1A8A130E0076A509 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F227BD1A8A130E0076A509 /* Card.swift */; };
@@ -75,7 +74,6 @@
 		31FF61371A71361E00B238F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FF61361A71361E00B238F5 /* LoginViewController.swift */; };
 		31FF613A1A71361E00B238F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31FF61381A71361E00B238F5 /* Main.storyboard */; };
 		31FF613C1A71361E00B238F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31FF613B1A71361E00B238F5 /* Images.xcassets */; };
-		31FF613F1A71361E00B238F5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31FF613D1A71361E00B238F5 /* LaunchScreen.xib */; };
 		31FF614B1A71361E00B238F5 /* AmsterdamMuseumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31FF614A1A71361E00B238F5 /* AmsterdamMuseumTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -144,7 +142,6 @@
 		31EA5EF01A9C877F007DDF25 /* AmsterdamMuseum-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmsterdamMuseum-Bridging-Header.h"; sourceTree = "<group>"; };
 		31EA5EF11A9C87BF007DDF25 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		31EA5EF31A9C8855007DDF25 /* CacheUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheUtils.swift; sourceTree = "<group>"; };
-		31EA5EF51A9C8C2B007DDF25 /* AmsterdamMuseum-simple.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "AmsterdamMuseum-simple.json"; sourceTree = "<group>"; };
 		31EA5EF71A9C8CFB007DDF25 /* ImageUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 		31F227BB1A8A12880076A509 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 		31F227BD1A8A130E0076A509 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -170,7 +167,6 @@
 		31FF61361A71361E00B238F5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		31FF61391A71361E00B238F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31FF613B1A71361E00B238F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		31FF613E1A71361E00B238F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		31FF61441A71361E00B238F5 /* AmsterdamMuseumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmsterdamMuseumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		31FF61491A71361E00B238F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31FF614A1A71361E00B238F5 /* AmsterdamMuseumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmsterdamMuseumTests.swift; sourceTree = "<group>"; };
@@ -278,7 +274,6 @@
 		31FF61311A71361E00B238F5 /* AmsterdamMuseum */ = {
 			isa = PBXGroup;
 			children = (
-				31EA5EF51A9C8C2B007DDF25 /* AmsterdamMuseum-simple.json */,
 				31EA5EDA1A9B795D007DDF25 /* AmsterdamMuseum.json */,
 				31FF61341A71361E00B238F5 /* AppDelegate.swift */,
 				3104AC471A7FB17D00D9B3C2 /* Avatar.swift */,
@@ -319,7 +314,6 @@
 				31F46AA71A9230C5009C545A /* SponsorsView.xib */,
 				31F93B8A1A79167E001E0B7C /* UserView.xib */,
 				317484E41A95EBF1007ACE22 /* images */,
-				31FF613D1A71361E00B238F5 /* LaunchScreen.xib */,
 				31FF61381A71361E00B238F5 /* Main.storyboard */,
 				31FF61321A71361E00B238F5 /* Supporting Files */,
 			);
@@ -400,6 +394,7 @@
 				TargetAttributes = {
 					31FF612E1A71361E00B238F5 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 5MY66TA232;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -458,7 +453,6 @@
 				317485041A95EBF1007ACE22 /* govertflinckimage.png in Resources */,
 				317485061A95EBF1007ACE22 /* harmenvandepollimage.png in Resources */,
 				31FF613A1A71361E00B238F5 /* Main.storyboard in Resources */,
-				31FF613F1A71361E00B238F5 /* LaunchScreen.xib in Resources */,
 				3174850B1A95EBF1007ACE22 /* johannesspilbergtag.png in Resources */,
 				3174850F1A95EBF1007ACE22 /* rembrandtvanrijnimage.png in Resources */,
 				317485111A95EBF1007ACE22 /* saintsebastian.png in Resources */,
@@ -472,7 +466,6 @@
 				3174850A1A95EBF1007ACE22 /* johannesspilbergimage.png in Resources */,
 				317484FD1A95EBF1007ACE22 /* bartholomeusvanderhelst.png in Resources */,
 				31F93B8B1A79167E001E0B7C /* UserView.xib in Resources */,
-				31EA5EF61A9C8C2B007DDF25 /* AmsterdamMuseum-simple.json in Resources */,
 				31FF613C1A71361E00B238F5 /* Images.xcassets in Resources */,
 				3174850C1A95EBF1007ACE22 /* joseramonalexanco.png in Resources */,
 				3174850D1A95EBF1007ACE22 /* marouanechamakh.png in Resources */,
@@ -548,14 +541,6 @@
 				31FF61391A71361E00B238F5 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		31FF613D1A71361E00B238F5 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31FF613E1A71361E00B238F5 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -644,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = AmsterdamMuseum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -656,6 +642,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = AmsterdamMuseum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

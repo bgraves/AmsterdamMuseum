@@ -11,6 +11,12 @@ import UIKit
 
 class ImageUtils {
 	class func getImage(imageStr: String) -> UIImage? {
+		
+		// If imageStr is user.png then return user's avatar - JBG
+		if imageStr == "user.png" {
+			return Avatar.getAvatar()
+		}
+		
 		var paths = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true)
 		if let dirPath = paths[0] as? String {
 			let filePath = dirPath.stringByAppendingPathComponent(imageStr)

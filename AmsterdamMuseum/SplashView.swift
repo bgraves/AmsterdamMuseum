@@ -10,5 +10,5 @@ import Foundation
 import UIKit
 
 class SplashView : UIView {
-	
+	@IBOutlet var button: UIButton!
 }

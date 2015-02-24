@@ -77,9 +77,6 @@ class SettingsViewController : UITableViewController {
 			return cell
 		default:
 			let cell = tableView.dequeueReusableCellWithIdentifier("SettingsCell", forIndexPath: indexPath) as UITableViewCell
-			(cell.viewWithTag(1) as UIImageView).image = Avatar.getAvatar()
-			(cell.viewWithTag(2) as UILabel).text = NSUserDefaults.standardUserDefaults().stringForKey("name")?.uppercaseString
-			(cell.viewWithTag(3) as UILabel).text = NSUserDefaults.standardUserDefaults().stringForKey("email")?
 			return cell
 		}
 		
@@ -91,6 +88,8 @@ class SettingsViewController : UITableViewController {
 			let friend: Person = friends[indexPath.row]
 			self.viewFriend = friend
 			self.performSegueWithIdentifier("toUserFeed", sender: self)
+		} else {
+			self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
 		}
 	}
 	
@@ -101,12 +100,4 @@ class SettingsViewController : UITableViewController {
 			(segue.destinationViewController as NewsViewController).user = viewFriend
 		}
 	}
-	
-	// Actions - JBG
-	@IBAction func logout(sender: UIButton) {
-		self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
-	}
-	
-	
-	
 }

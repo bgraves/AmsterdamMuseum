@@ -25,14 +25,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BeaconTrackerDelegate {
 	var zones: Dictionary<String, BeaconZone> = Dictionary()
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-//		var cacheInitialized = NSUserDefaults.standardUserDefaults().boolForKey("cacheInitialized")
-//		if !cacheInitialized {
+		var cacheInitialized = NSUserDefaults.standardUserDefaults().boolForKey("cacheInitialized")
+		if !cacheInitialized {
 			cacheUtils.initializeCache(["png", "json"])
 			NSUserDefaults.standardUserDefaults().setObject(true, forKey: "cacheInitialized")
-//		}
-		
+		}
+	
 		// Override point for customization after application launch.
 		beaconTracker.delegate = self
+		
+		cacheUtils.downloadZip({ (success: Bool) in
+			println("Updated cache: \(success)")
+		})
+		
 		return true
 	}
 

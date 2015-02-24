@@ -10,8 +10,9 @@
             <string>OpenSans-Light</string>
             <string>OpenSans-Light</string>
             <string>OpenSans-Light</string>
-            <string>OpenSans-Light</string>
-            <string>OpenSans-Light</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Semibold.ttf">
+            <string>OpenSans-Semibold</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -192,56 +193,20 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4nN-Nn-1mc" id="C9n-iV-i7i">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nM0-G8-MZt">
-                                            <rect key="frame" x="8" y="8" width="76" height="76"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhu-Fm-JFZ">
+                                            <rect key="frame" x="8" y="37" width="584" height="21"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="76" id="UXf-d3-Mzh"/>
-                                                <constraint firstAttribute="height" constant="76" id="od2-jK-oao"/>
+                                                <constraint firstAttribute="height" constant="21" id="0Pi-Gf-tt1"/>
                                             </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWR-Qc-9UN">
-                                            <rect key="frame" x="92" y="8" width="462" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="Q6A-8s-m35"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sublabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXH-dd-CxN">
-                                            <rect key="frame" x="92" y="37" width="462" height="47"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="47" id="Ys2-fP-eLe"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R34-ft-76n">
-                                            <rect key="frame" x="562" y="31" width="30" height="30"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="30" id="5SW-E8-9xu"/>
-                                                <constraint firstAttribute="height" constant="30" id="Pmy-u2-bhh"/>
-                                            </constraints>
-                                            <state key="normal" image="Pencil">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="logout:" destination="oX3-GB-SYP" eventType="touchUpInside" id="oIt-Wf-0X9"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="UWR-Qc-9UN" firstAttribute="top" secondItem="C9n-iV-i7i" secondAttribute="topMargin" id="4nC-MY-eT8"/>
-                                        <constraint firstItem="aXH-dd-CxN" firstAttribute="top" secondItem="UWR-Qc-9UN" secondAttribute="bottom" constant="8" id="He5-26-Vug"/>
-                                        <constraint firstAttribute="trailing" secondItem="R34-ft-76n" secondAttribute="trailing" constant="8" id="ULk-yy-r8B"/>
-                                        <constraint firstItem="nM0-G8-MZt" firstAttribute="top" secondItem="C9n-iV-i7i" secondAttribute="topMargin" id="WxZ-23-Gi2"/>
-                                        <constraint firstItem="R34-ft-76n" firstAttribute="top" secondItem="C9n-iV-i7i" secondAttribute="top" constant="31" id="em4-BF-iHE"/>
-                                        <constraint firstItem="aXH-dd-CxN" firstAttribute="leading" secondItem="nM0-G8-MZt" secondAttribute="trailing" constant="8" id="gHf-Rc-xbP"/>
-                                        <constraint firstItem="UWR-Qc-9UN" firstAttribute="leading" secondItem="nM0-G8-MZt" secondAttribute="trailing" constant="8" id="h5X-Mb-6yY"/>
-                                        <constraint firstItem="nM0-G8-MZt" firstAttribute="leading" secondItem="C9n-iV-i7i" secondAttribute="leadingMargin" id="ifY-dc-qk3"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="UWR-Qc-9UN" secondAttribute="trailing" constant="38" id="ut3-gi-E1Q"/>
-                                        <constraint firstAttribute="bottom" secondItem="R34-ft-76n" secondAttribute="bottom" constant="35.5" id="xDw-If-8i2"/>
+                                        <constraint firstItem="dhu-Fm-JFZ" firstAttribute="trailing" secondItem="C9n-iV-i7i" secondAttribute="trailingMargin" id="A2R-cF-elM"/>
+                                        <constraint firstItem="dhu-Fm-JFZ" firstAttribute="leading" secondItem="C9n-iV-i7i" secondAttribute="leadingMargin" id="Uph-0z-em9"/>
+                                        <constraint firstAttribute="centerY" secondItem="dhu-Fm-JFZ" secondAttribute="centerY" id="ZRU-p8-IbZ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -293,9 +258,6 @@
             <point key="canvasLocation" x="2753" y="1053"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Pencil" width="96" height="96"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="9nd-CR-1yj"/>
     </inferredMetricsTieBreakers>
