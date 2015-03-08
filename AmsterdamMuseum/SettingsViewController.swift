@@ -35,8 +35,17 @@ class SettingsViewController : UITableViewController {
 		profileView.avatarView.layer.masksToBounds = true
 		profileView.avatarView.layer.cornerRadius = profileView.avatarView.frame.size.height / 2
 		
-		profileView.avatarView.image = Avatar.getAvatar()
-		profileView.nameLabel.text = NSUserDefaults.standardUserDefaults().stringForKey("name")!.uppercaseString
+		if let image = Avatar.getAvatar() {
+			profileView.avatarView.image = image
+		} else {
+			profileView.avatarView.image = UIImage(named: "DefaultAvatar")
+		}
+		
+		if let name = NSUserDefaults.standardUserDefaults().stringForKey("name") {
+			profileView.nameLabel.text = name.uppercaseString
+		} else {
+			profileView.nameLabel.text = "Anonymous"
+		}
 		
 		self.tableView.tableHeaderView = profileView
 	}

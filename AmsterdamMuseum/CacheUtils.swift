@@ -27,6 +27,17 @@ class CacheUtils : NSObject, NSFileManagerDelegate {
 		}
 	}
 	
+	func clearCache() {
+		var paths = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true)
+		if let dirPath = paths[0] as? String {
+			var error: NSError?
+			let fileStrs = NSFileManager.defaultManager().contentsOfDirectoryAtPath(dirPath, error: &error) as [String]
+			for fileStr in fileStrs {
+				NSFileManager.defaultManager().removeItemAtPath(fileStr, error: &error)
+			}
+		}
+	}
+	
 	func initializeCache(fileTypes: [String]) {
 		for fileType in fileTypes  {
 			let fileURLS = NSBundle.mainBundle().URLsForResourcesWithExtension(fileType, subdirectory: nil) as [NSURL]
@@ -45,12 +56,16 @@ class CacheUtils : NSObject, NSFileManagerDelegate {
 				var success = false
 				if error == nil {
 					var filename = self.zipFilename
+					
 					// Write data to file - JBG
 					var paths = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true)
 					if let dirPath = paths[0] as? String {
 						let filePath = dirPath.stringByAppendingPathComponent(filename)
+						self.clearCache()
 						if data.writeToFile(filePath, atomically: true) {
-							success = SSZipArchive.unzipFileAtPath(filePath, toDestination: dirPath)
+							var error: NSError?
+							success = SSZipArchive.unzipFileAtPath(filePath, toDestination: dirPath, overwrite: true, password: nil, error: &error)
+							success = success && error == nil
 						}
 					}
 				}

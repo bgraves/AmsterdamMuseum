@@ -30,6 +30,8 @@ class NewsViewController : UIViewController {
 	@IBOutlet var avatarView: UIImageView?
 	@IBOutlet var nameLabel: UILabel?
 	
+	var refreshControl: UIRefreshControl!
+	
 	var cardViews: [UIView]!
 	var displayedCards: NSMutableArray!
 	var newsFeed: NewsFeed!
@@ -46,39 +48,34 @@ class NewsViewController : UIViewController {
 		
 		cardViews = []
 		displayedCards = NSMutableArray()
+		refreshControl = UIRefreshControl()
+		refreshControl.addTarget(self, action: "reload", forControlEvents: .ValueChanged)
+		
+		scrollView.addSubview(refreshControl)
 		
 		if let avatarView = self.avatarView {
 			avatarView.layer.masksToBounds = true
 			avatarView.layer.cornerRadius = avatarView.frame.size.height / 2
-			avatarView.image = Avatar.getAvatar()
+			if let image = Avatar.getAvatar() {
+				avatarView.image = image
+			} else {
+				avatarView.image = UIImage(named: "DefaultAvatar")
+			}
 		}
 		
 		if let nameLabel = self.nameLabel {
-			nameLabel.text = NSUserDefaults.standardUserDefaults().stringForKey("name")!.uppercaseString
+			if let name = NSUserDefaults.standardUserDefaults().stringForKey("name") {
+				nameLabel.text = name.uppercaseString
+			} else {
+				nameLabel.text = "Anonymous"
+			}
 		}
 	}
 	
 	override func viewDidAppear(animated: Bool) {
 		if self.cardViews.count == 0 {
-			// Reset the feed - JBG
-			reset()
-			
-			// Reload - JBG
-			addShieldView()
-			newsFeed = NewsFeed()
-			newsFeed.load({ (error: NSError?) in
-				if error != nil {
-					self.shieldView.setMessage("ERROR LOADING NEWS FEED :(")
-				} else {
-					if let user = self.user {
-						self.addProfileView(user)
-					}
-					self.evaluateCards()
-				}
-				
-				// Start tracking the beacons - JBG
-				(UIApplication.sharedApplication().delegate as AppDelegate).beaconTracker.start(self.newsFeed.zones)
-			})
+			// Refresh the feed - JBG
+			refresh()
 		} else {
 			self.evaluateCards()
 		}
@@ -136,6 +133,8 @@ class NewsViewController : UIViewController {
 	func addEventView(card: Card, position: CGFloat) {
 		var eventView = UIView.loadFromNibNamed("EventView") as EventView
 		self.scrollView.addSubview(eventView)
+		
+		eventView.titleLabel.text = card.title.uppercaseString
 		
 		for personId in card.persons {
 			var personView = PersonView.loadFromNibNamed("PersonView") as PersonView
@@ -298,6 +297,34 @@ class NewsViewController : UIViewController {
 		}
 	}
 	
+	func refresh() {
+		reset()
+		reload()
+	}
+	
+	func reload() {
+		// Reload - JBG
+		addShieldView()
+		newsFeed = NewsFeed()
+		newsFeed.load({ (error: NSError?) in
+			if error != nil {
+				self.shieldView.setMessage("ERROR LOADING NEWS FEED :(")
+			} else {
+				if let user = self.user {
+					self.addProfileView(user)
+				}
+				self.evaluateCards()
+			}
+			
+			// Start tracking the beacons - JBG
+			(UIApplication.sharedApplication().delegate as AppDelegate).beaconTracker.start(self.newsFeed.zones)
+			
+			let version = "Version: " + (self.newsFeed.version ?? "")
+			self.refreshControl.attributedTitle = NSAttributedString(string: version)
+			self.refreshControl.endRefreshing()
+		})
+	}
+	
 	func reset() {
 		displayedCards.removeAllObjects()
 		for view in cardViews {
@@ -306,5 +333,7 @@ class NewsViewController : UIViewController {
 		self.scrollView.frame = view.frame
 		self.scrollView.contentSize = self.scrollView.frame.size
 	}
+	
+
 	
 }

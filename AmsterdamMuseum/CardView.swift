@@ -96,7 +96,7 @@ class CardView: UIView {
 				if let imageStr = urlStr.pathComponents.last {
 					imageView.image = ImageUtils.getImage(imageStr)
 				}
-				
+				imageView.contentMode = UIViewContentMode.ScaleAspectFit
 				scrollView.addSubview(imageView)
 			}
 			scrollView.contentSize = CGSizeMake(
@@ -109,7 +109,7 @@ class CardView: UIView {
 		if card?.likes.count > 0 {
 			var label = UILabel()
 			label.text = "Likes:"
-			label.font = UIFont(name: "OpenSans-Light", size: 17)
+			label.font = UIFont(name: "OpenSans-Light", size: 15)
 			
 			var x: CGFloat = frame.size.width / 3;
 			label.frame = CGRectMake(

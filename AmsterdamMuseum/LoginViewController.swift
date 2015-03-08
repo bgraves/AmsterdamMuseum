@@ -81,14 +81,20 @@ class LoginViewController: UIViewController, UIImagePickerControllerDelegate, UI
 		if validName(loginView.nameField.text) && validEmail(loginView.emailField.text) {
 			NSUserDefaults.standardUserDefaults().setObject(loginView.emailField.text, forKey: "email")
 			NSUserDefaults.standardUserDefaults().setObject(loginView.nameField.text, forKey: "name")
-			self.performSegueWithIdentifier("toNews", sender: self)
 		}
+		self.performSegueWithIdentifier("toNews", sender: self)
 	}
 	
 	@IBAction func takeSelfie() {
 		var imagePicker = UIImagePickerController()
-		imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
-		imagePicker.cameraDevice = UIImagePickerControllerCameraDevice.Front
+		
+		if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+			imagePicker.sourceType = UIImagePickerControllerSourceType.Camera
+			imagePicker.cameraDevice = UIImagePickerControllerCameraDevice.Front
+		} else {
+			imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+		}
+		
 		imagePicker.modalPresentationStyle = UIModalPresentationStyle.CurrentContext
 		imagePicker.delegate = self
 		self.presentViewController(imagePicker, animated: true, completion: nil)

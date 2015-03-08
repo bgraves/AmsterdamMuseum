@@ -120,12 +120,14 @@ class BeaconTracker : NSObject, CLLocationManagerDelegate {
 		for zone in zones {
 			for beacon in zone.beacons {
 				if !contains(regionUUIDStrs, beacon.uuid) {
-					let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: beacon.uuid)!, identifier: zone.name + "." + beacon.uuid)
-					if !locationManager.rangedRegions.containsObject(region) {
-						locationManager.startMonitoringForRegion(region)
+					if let uuid = NSUUID(UUIDString: beacon.uuid) {
+						let region = CLBeaconRegion(proximityUUID: uuid, identifier: zone.name + "." + beacon.uuid)
+						if !locationManager.rangedRegions.containsObject(region) {
+							locationManager.startMonitoringForRegion(region)
+						}
+						locationManager.startRangingBeaconsInRegion(region)
+						regionUUIDStrs.append(beacon.uuid)
 					}
-					locationManager.startRangingBeaconsInRegion(region)
-					regionUUIDStrs.append(beacon.uuid)
 				}
 			}
 		}

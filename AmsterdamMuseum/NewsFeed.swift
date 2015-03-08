@@ -14,6 +14,8 @@ class NewsFeed {
 	var people: Dictionary<String, Person>!
 	var zones: [BeaconZone]!
 	
+	var version: String?
+	
 	init() {
 		zones = []
 		cards = []
@@ -47,6 +49,8 @@ class NewsFeed {
 					let zone = BeaconZone(name: name as String, dict: zoneDict as NSDictionary)
 					self.zones.append(zone)
 				}
+				
+				version = dict["version"] as String?
 				
 				completionHandler(nil)
 			}

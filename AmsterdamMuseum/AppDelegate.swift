@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, BeaconTrackerDelegate {
@@ -25,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, BeaconTrackerDelegate {
 	var zones: Dictionary<String, BeaconZone> = Dictionary()
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+		Fabric.with([Crashlytics()])
+		
 		var cacheInitialized = NSUserDefaults.standardUserDefaults().boolForKey("cacheInitialized")
 		if !cacheInitialized {
 			cacheUtils.initializeCache(["png", "json"])

@@ -1,4 +1,5 @@
 {
+  "version": "19:34-08-03-2015",
   "people": [
     {
       "id": "johannesspilberg",
@@ -202,178 +203,309 @@
           "text": "Susanna, Lodwijk"
         }
       ]
+    },
+    {
+      "id": "fransbanninckcocq",
+      "name": "Frans Banninck Cocq",
+      "avatar": "images/fransbanninckcocq.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Mayor of Amsterdam"
+        },
+        {
+          "label": "Born",
+          "text": "1605, Amsterdam"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Married",
+          "text": "Maria Overlander van Purmerland, daughter of one of the founders of the Dutch East Trading Company"
+        }
+      ]
+    },
+    {
+      "id": "hendrickvanuylenburgh",
+      "name": "Hendrick van Uylenburgh",
+      "avatar": "images/hendrickvanuylenburgh.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Art dealer"
+        },
+        {
+          "label": "Born",
+          "text": "1587, Frisia"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        }
+      ]
+    },
+    {
+      "id": "joanhuydecoper",
+      "name": "Joan Huydecoper",
+      "avatar": "images/joanhuydecoper.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Mayor of Amsterdam, art lover"
+        },
+        {
+          "label": "Born",
+          "text": "1599, Amsterdam"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        }
+      ]
+    },
+    {
+      "id": "andriesdegraeff",
+      "name": "Andries de Graeff",
+      "avatar": "images/andriesdegraeff.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Mayor of Amsterdam, regent"
+        },
+        {
+          "label": "Born",
+          "text": "1611, Amsterdam"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Married",
+          "text": "Elisabeth Bicker van Swieten"
+        }
+      ]
+    },
+    {
+      "id": "jansix",
+      "name": "Jan Six",
+      "avatar": "images/jansix.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Regent, writer"
+        },
+        {
+          "label": "Born",
+          "text": "1618, Amsterdam"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Married",
+          "text": "Margaretha Tulp, daughter of Mayor and professor Nicolaas Tulp"
+        }
+      ]
+    },
+    {
+      "id": "janvos",
+      "name": "Jan Vos",
+      "avatar": "images/janvos.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Poet, regent, glazier"
+        },
+        {
+          "label": "Born",
+          "text": "1610, Amsterdam"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Married",
+          "text": "Grietje Gerrets "
+        },
+        {
+          "label": "Children",
+          "text": "Jan, Maria"
+        }
+      ]
+    },
+    {
+      "id": "joostvandenvondel",
+      "name": "Joost van den Vondel",
+      "avatar": "images/joostvandenvondel.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Poet, playwriter"
+        },
+        {
+          "label": "Born",
+          "text": "1587, Cologne"
+        },
+        {
+          "label": "Lives",
+          "text": "Amsterdam"
+        },
+        {
+          "label": "Married",
+          "text": "Mayke de Wolff"
+        },
+        {
+          "label": "Children",
+          "text": "Joost, Anna, Sara"
+        }
+      ]
+    },
+    {
+      "id": "fransoetgensvanwaveren",
+      "name": "Frans Oetgens van Waveren",
+      "avatar": "images/fransoetgensvanwaveren.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "lieutenant, son of Mayor Anthony Oetgens van Waveren"
+        }
+      ]
+    },
+    {
+      "id": "nicolaesoetgensvanwaveren",
+      "name": "Nicolaes Oetgens van Waveren",
+      "avatar": "images/nicolaesoetgensvanwaveren.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Standard-bearer, son of Mayor Anthony Oetgens van Waveren"
+        }
+      ]
+    },
+    {
+      "id": "alberttenbrink",
+      "name": "Albert Ten Brink",
+      "avatar": "images/alberttenbrink.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Innkeeper"
+        }
+      ]
+    },
+    {
+      "id": "pieterwaterpas",
+      "name": "Pieter Waterpas",
+      "avatar": "images/pieterwaterpas.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Carpenter"
+        }
+      ]
+    },
+    {
+      "id": "jeanappelman",
+      "name": "Jean Appelman",
+      "avatar": "images/jeanappelman.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Merchant"
+        }
+      ]
+    },
+    {
+      "id": "pietermeffert",
+      "name": "Pieter Meffert",
+      "avatar": "images/.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Playing cards-maker"
+        }
+      ]
+    },
+    {
+      "id": "jorisdewijze",
+      "name": "Joris de Wijze",
+      "avatar": "images/jorisdewijze.png",
+      "info": [
+        {
+          "label": "Job",
+          "text": "Nortary, playwriter, art collector"
+        }
+      ]
     }
   ],
 
 
 "cards": [
-  {
+
+    {
     "layout": "default",
-    "title": "Johannes Spilberg",
+    "title": "Frans Banninck Cocq",
     "subtitle": "I’d like to connect with you, please add me to your network",
-    "date": "just now",
-    "avatar": "images/johannesspilberg.png",
-    "images": [ "johannesspilbergimage.png" ],
-    "friend-request": "johannesspilberg",
-    "triggers": {
+    "date": "1650",
+    "avatar": "images/fransbanninckcocq.png",
+    "images": [ "fransbanninckcocqimage.png" ],
+    "friend-request": "fransbanninckcocq",
+      "triggers": {
       "time": 5,
-      "zone": "A",
-      "friend": ""
-    }
+      "zone": "A"    }
+
   },
-  {
+    {
     "layout": "default",
-    "title": "Johannes Spilberg",
-    "subtitle": "Thanks for adding me to your network and welcome to #thegoldenage!",
-    "date": "just now",
-    "avatar": "images/johannesspilberg.png",
+    "title": "Frans Banninck Cocq > You 1/3",
+    "subtitle": "There was no freer or better regulated city in the world than Amsterdam: a safe haven for science and religion #progress #tolerance",
+    "date": "1650",
+    "avatar": "images/fransbanninckcocq.png",
     "triggers": {
       "time": 10,
       "zone": "A",
-      "friend": "johannesspilberg"
+      "friend": "fransbanninckcocq"
     }
   },
-  {
+    {
     "layout": "default",
-    "title": "Johannes Spilberg",
-    "subtitle": "Spilberg tagged himself. My client J vd Poll allowed me to create a #selfie in this painting #honour.",
-    "date": "just now",
-    "avatar": "images/johannesspilberg.png",
-    "images": [ "johannesspilbergtag.png" ],
-    "likes": [ "janvandepoll" ],
-    "triggers": {
-      "time": 15,
-      "zone": "A",
-      "friend": "johannesspilberg"
-    }
-  },
-  {
-    "layout": "default",
-    "title": "Jan van de Poll",
-    "subtitle": "I’d like to connect with you, please add me to your network",
-    "date": "just now",
-    "avatar": "images/janvandepoll.png",
-    "images": [ "janvandepollimage.png" ],
-    "friend-request": "janvandepoll",
+    "title": "Frans Banninck Cocq > You 2/3",
+    "subtitle": "The civic elites became the patrons of the arts and made and maintained provisions for charitable purposes #bornPoor",
+    "date": "1650",
+    "avatar": "images/fransbanninckcocq.png",
     "triggers": {
       "time": 20,
       "zone": "A",
-      "friend": "johannesspilberg"
+      "friend": "fransbanninckcocq"
     }
   },
-
   {
     "layout": "default",
-    "title": "Johannes Spilberg",
-    "subtitle": "I see you met Jan van de Poll. I made this painting in his honour; he has just been promoted to colonel.",
-    "date": "just now",
-    "avatar": "johannesspilberg.png",
+    "title": "Frans Banninck Cocq> You 3/3",
+    "subtitle": "Our harbour was full of ships from all over the world bringing unprecedented wealth despite the #80years’war with Spain #heart020",
+    "date": "1650",
+    "avatar": "images/fransbanninckcocq.png",
+    "triggers": {
+      "time": 20,
+      "zone": "A",
+      "friend": "fransbanninckcocq"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Frans Banninck Cocq > You",
+    "subtitle": "Oh but don’t take my word for it, I am slightly biased #bornRich. Go see for yourself!",
+    "date": "1650",
+    "avatar": "images/fransbanninckcocq.png",
     "triggers": {
       "time": 25,
       "zone": "A",
-      "friend": "janvandepoll"
-    }
-  },
-  {
-    "layout": "default",
-    "title": "Gijsbert van de Poll",
-    "subtitle": "I’d like to connect with you, please add me to your network",
-    "date": "just now",
-    "avatar": "gijsbertvandepoll.png",
-    "images": [ "gijsbertvandepollimage.png" ],
-    "friend-request": "gijsbertvandepoll",
-    "triggers": {
-      "time": 30,
-      "zone": "A",
-      "friend": "janvandepoll"
-    }
-  },
-  {
-    "layout": "default",
-    "title": "Johannes Spilberg",
-    "subtitle": "Gijsbert is a networker just like his brother. Their father is Amsterdam city counsellor Harmen van de Poll. #whoYourFriendsAre!",
-    "date": "just now",
-    "avatar": "johannesspilberg.png",
-    "triggers": {
-      "time": 35,
-      "zone": "A",
-      "friend": "gijsbertvandepoll"
-    }
-  },
-  {
-    "layout": "default",
-    "title": "Harmen van de Poll > Jan van de Poll",
-    "subtitle": "Dad what is Saint Sebastian doing in our painting? He’s a #Catholic and we’re #Calvinists!",
-    "date": "just now",
-    "avatar": "images/harmenvandepoll.png",
-    "images": [ "saintsebastian.png", "saintsebastian2.png", "saintsebastian3.png" ],
-    "triggers": {
-      "time": 40,
-      "zone": "A",
-      "friend": "janvandepoll"
-    }
-  },
-  {
-    "layout": "default",
-    "title": "Jan van de Poll > Harmen van de Poll",
-    "subtitle": "Amsterdam used to be a Catholic city and #StSebastian has been the patron saint of us archers for over a century!",
-    "date": "just now",
-    "avatar": "janvandepoll.png",
-    "triggers": {
-      "time": 45,
-      "zone": "A",
-      "friend": "janvandepoll"
-    }
-  },
-  {
-    "layout": "default",
-    "title": "Johannes Spilberg",
-    "subtitle": "The Dutch are so pragmatic and opportunistic when it comes to #tolerance…",
-    "date": "just now",
-    "avatar": "johannesspilberg.png",
-    "triggers": {
-      "time": 50,
-      "zone": "A",
-      "friend": "johannesspilberg"
-    }
-  },
-  {
-    "layout": "default",
-    "title": "Gijsbert van de Poll > Johannes Spilberg",
-    "subtitle": "I like the 16th century helmet on Eilard! Long tradition of #citizens ensuring the safety of their city #nonGov!",
-    "date": "just now",
-    "avatar": "gijsbertvandepoll.png",
-    "images": [ "eilardbernhardsimage.png" ],
-    "likes": [ "janvandepoll", "johannesspilberg", "eilardbernhards" ],
-    "triggers": {
-      "time": 55,
-      "zone": "A",
-      "friend": "gijsbertvandepoll"
-    }
-  },
-  {
-    "layout": "default",
-    "title": "Johannes Spilberg",
-    "subtitle": "The Piece of Münster was signed in 1648, ending the Eighty Years’ War between Spain and the Dutch #redundant #civicGuard",
-    "date": "just now",
-    "avatar": "johannesspilberg.png",
-    "triggers": {
-      "time": 60,
-      "zone": "A",
-      "friend": "johannesspilberg"
-    }
-  },
-  {
-    "layout": "default",
-    "title": "Johannes Spilberg",
-    "subtitle": "What are you still doing here? GO! Explore #theGoldenAge! #timeTravel",
-    "date": "just now",
-    "avatar": "johannesspilberg.png",
-    "likes": [ "janvandepoll", "gijsbertvandepoll", "harmenvandepoll", "eilardbernhards", "johannesspilberg" ],
-    "triggers": {
-      "time": 65,
-      "zone": "A",
-      "friend": "johannesspilberg"
+      "friend": "fransbanninckcocq"
     }
   },
   {
@@ -383,8 +515,8 @@
     "date": "1625",
     "avatar": "images/rembrandtvanrijn.png",
     "triggers": {
-      "time": 5,
-      "zone": "B",
+      "time": 30,
+      "zone": "A",
       "friend": ""
     }
   },
@@ -396,8 +528,8 @@
     "avatar": "images/rembrandtvanrijn.png",
     "images": [ "rembrandtvanrijnmoved.png" ],
     "triggers": {
-      "time": 10,
-      "zone": "B",
+      "time": 35,
+      "zone": "A",
       "friend": ""
     }
   },
@@ -408,20 +540,8 @@
     "date": "1633",
     "avatar": "images/govertflinck.png",
     "triggers": {
-      "time": 15,
-      "zone": "B",
-      "friend": ""
-    }
-  },
-  {
-    "layout": "default",
-    "title": "Marouane Chamakh",
-    "subtitle": "-at De Dam- People and products from all over the world! #metropolis Let’s make some #money",
-    "date": "1635",
-    "avatar": "images/marouanechamakh.png",
-    "triggers": {
-      "time": 20,
-      "zone": "B",
+      "time": 40,
+      "zone": "A",
       "friend": ""
     }
   },
@@ -432,8 +552,8 @@
     "date": "1635",
     "avatar": "images/ferdinandbol.png",
     "triggers": {
-      "time": 25,
-      "zone": "B",
+      "time": 50,
+      "zone": "A",
       "friend": ""
     }
   },
@@ -444,8 +564,8 @@
     "date": "1635",
     "avatar": "images/ferdinandbol.png",
     "triggers": {
-      "time": 30,
-      "zone": "B",
+      "time": 60,
+      "zone": "A",
       "friend": ""
     }
   },
@@ -456,8 +576,8 @@
     "date": "1635",
     "avatar": "images/govertflinck.png",
     "triggers": {
-      "time": 35,
-      "zone": "B",
+      "time": 70,
+      "zone": "A",
       "friend": ""
     }
   },
@@ -468,47 +588,268 @@
     "date": "1636",
     "avatar": "images/bartholomeusvanderhelst.png",
     "triggers": {
-      "time": 40,
-      "zone": "B",
+      "time": 80,
+      "zone": "A",
       "friend": ""
     }
   },
   {
     "layout": "default",
-    "title": "José Ramón Alexanco",
-    "subtitle": "-at De Dam- #LOCO! ¿Water management in the middle of the city? #godcreatedtheworld #thedutchcreatedholland",
-    "date": "1648",
-    "avatar": "images/joseramonalexanco.png",
+    "title": "Govert Flinck",
+    "subtitle": "I’d like to connect with you, please add me to your network",
+    "date": "1636",
+    "avatar": "images/govertflinck.png",
+    "friend-request": "govertflinck",
+    "triggers": {
+      "time": 5,
+      "zone": "B",
+      "friend": ""
+
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck",
+    "subtitle": "Today I opened my own studio! Lets hope my influential friends will order some portraits, historical works or maybe genre paintings.",
+    "date": "1636",
+    "avatar": "images/govertflinck.png",
+    "likes": [ "hendrickvanuylenburg", "joanhuydecoper", "andriesdegraeff", "jansix" ],
+    "triggers": {
+      "time": 10,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck",
+    "subtitle": "Today I opened my own studio! Lets hope my influential friends will order some portraits, historical works or maybe genre paintings.",
+    "date": "1640",
+    "avatar": "images/govertflinck.png",
+    "triggers": {
+      "time": 15,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck",
+    "subtitle": "Art dealer Uylenburgh will send me some of his and Rembrandt’s customers. #hiring",
+    "date": "1640",
+    "avatar": "images/govertflinck.png",
+    "likes": [ "johannesspilberg" ],
+    "triggers": {
+      "time": 20,
+      "zone": "B",
+      "friend": "Govert Flinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Johannes Spilberg > Govert Flinck",
+    "subtitle": "I was on my way to Antwerp to study under #Rubens #RIP I could be your apprentice and help out with the workload?",
+    "date": "",
+    "avatar": "images/johannesspilberg.png",
+    "likes": [ "govertflinck" ],
+    "triggers": {
+      "time": 25,
+      "zone": "B",
+      "friend": "johannesspilberg"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Johannes Spilberg",
+    "subtitle": "-became Govert Flinck’s student",
+    "date": "± 1640",
+    "avatar": "images/johannesspilberg.png",
+    "triggers": {
+      "time": 30,
+      "zone": "B",
+      "friend": "johannesspilberg"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck",
+    "subtitle": "Just saw Rembrandt’s Night Watch! The light, shadow, the motion… This changes all the rules #military #portrait #baroque #masterpiece",
+    "date": "1642",
+    "avatar": "images/govertflinck.png",
+    "images": [ "images/nachtwacht1.png", "images/nachtwacht2.png", "images/nachtwacht3.png" ],
+    "likes": [ "fransbanninckcocq", "joanhuydecoper", "ferdinandbol", "bartholomeusvanderhelst" ],
+    "triggers": {
+      "time": 35,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck",
+    "subtitle": "-is now married to Ingitta Thoveling, daughter of the governor of the Dutch East India Company in Rotterdam",
+    "date": "1645",
+    "avatar": "images/govertflinck.png",
+    "likes": [ "joanhuydecoper", "janvos", "joostvandenvondel" ],
+    "triggers": {
+      "time": 40,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Joan Huydecoper > Govert Flinck",
+    "subtitle": "My dear friend Govert, I would like to commission you to make a painting of my company and me. A challenge: I want you to paint my house on it as well.",
+    "date": "1646",
+    "avatar": "images/joanhuydecoper.png",
+    "images": [ "images/huydecoperhuis.png" ],
     "triggers": {
       "time": 45,
       "zone": "B",
-      "friend": ""
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck > Joan Huydecoper ",
+    "subtitle": "I accept the challenge! I assume our friends the Oetgens van Waveren brothers will require a prominent place as well?",
+    "date": "1646",
+    "avatar": "images/govertflinck.png",
+    "likes": [ "franoetgensvanwaveren", "nicolaesoetgensvanwaveren", "joanhuydecoper" ],
+    "friend-request": "",
+    "triggers": {
+      "time": 50,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Joan Huydecoper > Govert Flinck",
+    "subtitle": "Also show the diversity of our company: we have carpenters, play-writers and innkeepers in our midst. Even some Catholics! #coexistence",
+    "date": "1647",
+    "avatar": "images/joanhuydecoper.png",
+    "likes": [ "alberttenbrink", "pieterwaterpas", "jeanappelman", "jorisdewijze", "pietermeffert" ],
+    "triggers": {
+      "time": 55,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck > Joan Huydecoper",
+    "subtitle": "The painting is almost done. It would be great advertisement for my business if I could paint a self-portrait in here #goldenselfie",
+    "date": "1647",
+    "avatar": "images/govertflinck.png",
+    "triggers": {
+      "time": 60,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Joan Huydecoper > Govert Flinck",
+    "subtitle": "The Piece of Münster was just signed, ending the #EightyYears’War between Spain and the Netherlands! Hurry up #civicGuard #redundant",
+    "date": "1648",
+    "avatar": "images/joanhuydecoper.png",
+    "likes": [ "johannesspilberg" ],
+    "triggers": {
+      "time": 65,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Jan Vos > Joan Huydecoper & Govert Flinck",
+    "subtitle": "You could add this poem I wrote about Mr. Joan Huydecoper marching ahead towards piece to the painting!",
+    "date": "1648",
+    "avatar": "images/janvos.png",
+    "images": [ "images/poem1.png" ],
+    "likes": [ "joanhuydecoper", "govertflinck" ],
+    "triggers": {
+      "time": 70,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck",
+    "subtitle": "-tagged himself in a painting.. Done!",
+    "date": "1648",
+    "avatar": "images/govertflinck.png",
+    "likes": [ "joanhuydecoper", "janvos", "joostvandenvondel" ],
+    "friend-request": "",
+    "triggers": {
+      "time": 75,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck > Ferdinand Bol",
+    "subtitle": "Rembrandt’s style is no longer in vogue. Our patrons prefer bright colours, fine details and shiny surfaces these days #customerIsKing",
+    "date": "1650",
+    "avatar": "images/govertflinck.png",
+    "likes": [ "ferdinandbol", "bartholomeusvanderhelst" ],
+    "triggers": {
+      "time": 80,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+  {
+    "layout": "default",
+    "title": "Govert Flinck",
+    "subtitle": "Shocked but not surprised #Rembrandt #bankrupt ",
+    "date": "1656",
+    "avatar": "images/govertflinck.png",
+    "triggers": {
+      "time": 85,
+      "zone": "B",
+      "friend": "govertflinck"
+    }
+  },
+   {
+    "layout": "default",
+    "title": "Frans Banninck Cocq",
+    "subtitle": "-tagged himself in The Night Watch",
+    "date": "365 years ago",
+    "avatar": "images/fransbanninckcocq.png",
+    "images": [ "fransbanninckcocqimagetag.png" ],
+    "triggers": {
+      "time": 5,
+      "zone": "C"
     }
   }
-
 ],
 
 
 	"zones": {
 		"A": {
 			"beacons": [{
-						"uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
-						"major": "58028",
-						"minor": "44583"
+						"uuid": "8492E75F-4FD6-469D-B132-043FE94921D8",
+						"major": "27770",
+						"minor": "28113"
 						}]
 		},
 		"B": {
 			"beacons": [{
 						"uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
-						"major": "16261",
-						"minor": "58844"
+						"major": "44080",
+						"minor": "21767"
 						}]
 		},
 		"C": {
 			"beacons": [{
 						"uuid": "B9407F30-F5F8-466E-AFF9-25556B57FE6D",
-						"major": "27770",
-						"minor": "28113"
+						"major": "17524",
+						"minor": "34447"
 						}]
 		}
 	}

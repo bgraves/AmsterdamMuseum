@@ -14,7 +14,11 @@ class ImageUtils {
 		
 		// If imageStr is user.png then return user's avatar - JBG
 		if imageStr == "user.png" {
-			return Avatar.getAvatar()
+			if let avatar = Avatar.getAvatar() {
+				return avatar
+			} else {
+				return UIImage(named: "DefaultAvatar")
+			}
 		}
 		
 		var paths = NSSearchPathForDirectoriesInDomains(.CachesDirectory, .UserDomainMask, true)

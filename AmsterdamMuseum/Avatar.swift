@@ -13,16 +13,16 @@ class Avatar {
 	
 	class func getAvatar() -> UIImage? {
 		let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString
-		var path = documentsPath.stringByAppendingPathComponent("avatar.png")
+		var path = documentsPath.stringByAppendingPathComponent("avatar.jpg")
 		var image = UIImage(contentsOfFile: path)
 		return image
 	}
 	
 	class func saveAvatar(image: UIImage) {
 		let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as NSString
-		var path = documentsPath.stringByAppendingPathComponent("avatar.png")
+		var path = documentsPath.stringByAppendingPathComponent("avatar.jpg")
 		
-		var data = UIImagePNGRepresentation(image)
+		var data = UIImageJPEGRepresentation(image, 1)
 		data.writeToFile(path, atomically: true)
 	}
 }

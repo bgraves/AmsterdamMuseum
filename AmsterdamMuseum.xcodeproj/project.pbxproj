@@ -11,39 +11,49 @@
 		3104AC441A7F79C900D9B3C2 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104AC431A7F79C900D9B3C2 /* LikeView.swift */; };
 		3104AC461A7F971500D9B3C2 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3104AC451A7F971500D9B3C2 /* OpenSans-Light.ttf */; };
 		3104AC481A7FB17D00D9B3C2 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104AC471A7FB17D00D9B3C2 /* Avatar.swift */; };
+		31155FE21AAB3A8E00DF5546 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31155FE01AAB3A8E00DF5546 /* Crashlytics.framework */; };
+		31155FE31AAB3A8E00DF5546 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31155FE11AAB3A8E00DF5546 /* Fabric.framework */; };
+		31155FEC1AACD9D100DF5546 /* AmsterdamMuseum.json in Resources */ = {isa = PBXBuildFile; fileRef = 31155FEB1AACD9D100DF5546 /* AmsterdamMuseum.json */; };
+		3115600D1AACDA1F00DF5546 /* alberttenbrink.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FEE1AACDA1F00DF5546 /* alberttenbrink.png */; };
+		3115600E1AACDA1F00DF5546 /* andriesdegraeff.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FEF1AACDA1F00DF5546 /* andriesdegraeff.png */; };
+		3115600F1AACDA1F00DF5546 /* bartholomeusvanderhelst.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FF01AACDA1F00DF5546 /* bartholomeusvanderhelst.png */; };
+		311560101AACDA1F00DF5546 /* ferdinandbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FF11AACDA1F00DF5546 /* ferdinandbol.png */; };
+		311560111AACDA1F00DF5546 /* fransbanninckcocq.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FF21AACDA1F00DF5546 /* fransbanninckcocq.png */; };
+		311560121AACDA1F00DF5546 /* fransbanninckcocqimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FF31AACDA1F00DF5546 /* fransbanninckcocqimage.png */; };
+		311560131AACDA1F00DF5546 /* fransbanninckcocqtag.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FF41AACDA1F00DF5546 /* fransbanninckcocqtag.png */; };
+		311560141AACDA1F00DF5546 /* fransoetgensvanwaveren.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FF51AACDA1F00DF5546 /* fransoetgensvanwaveren.png */; };
+		311560151AACDA1F00DF5546 /* govertflinck.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FF61AACDA1F00DF5546 /* govertflinck.png */; };
+		311560161AACDA1F00DF5546 /* govertflinckimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FF71AACDA1F00DF5546 /* govertflinckimage.png */; };
+		311560171AACDA1F00DF5546 /* govertflincktag.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FF81AACDA1F00DF5546 /* govertflincktag.png */; };
+		311560181AACDA1F00DF5546 /* hendrickvanuylenburgh.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FF91AACDA1F00DF5546 /* hendrickvanuylenburgh.png */; };
+		311560191AACDA1F00DF5546 /* huydecoperhuis.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FFA1AACDA1F00DF5546 /* huydecoperhuis.png */; };
+		3115601A1AACDA1F00DF5546 /* jansix.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FFB1AACDA1F00DF5546 /* jansix.png */; };
+		3115601B1AACDA1F00DF5546 /* janvos.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FFC1AACDA1F00DF5546 /* janvos.png */; };
+		3115601C1AACDA1F00DF5546 /* jeanappelman.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FFD1AACDA1F00DF5546 /* jeanappelman.png */; };
+		3115601D1AACDA1F00DF5546 /* joanhuydecoper.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FFE1AACDA1F00DF5546 /* joanhuydecoper.png */; };
+		3115601E1AACDA1F00DF5546 /* joanhuydecoperimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 31155FFF1AACDA1F00DF5546 /* joanhuydecoperimage.png */; };
+		3115601F1AACDA1F00DF5546 /* joostvandenvondel-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 311560001AACDA1F00DF5546 /* joostvandenvondel-2.png */; };
+		311560201AACDA1F00DF5546 /* joostvandenvondel.png in Resources */ = {isa = PBXBuildFile; fileRef = 311560011AACDA1F00DF5546 /* joostvandenvondel.png */; };
+		311560211AACDA1F00DF5546 /* jorisdewijze.png in Resources */ = {isa = PBXBuildFile; fileRef = 311560021AACDA1F00DF5546 /* jorisdewijze.png */; };
+		311560221AACDA1F00DF5546 /* nachtwacht1.png in Resources */ = {isa = PBXBuildFile; fileRef = 311560031AACDA1F00DF5546 /* nachtwacht1.png */; };
+		311560231AACDA1F00DF5546 /* nachtwacht2.png in Resources */ = {isa = PBXBuildFile; fileRef = 311560041AACDA1F00DF5546 /* nachtwacht2.png */; };
+		311560241AACDA1F00DF5546 /* nachtwacht3.png in Resources */ = {isa = PBXBuildFile; fileRef = 311560051AACDA1F00DF5546 /* nachtwacht3.png */; };
+		311560251AACDA1F00DF5546 /* nicolaesoetgensvanwaveren.png in Resources */ = {isa = PBXBuildFile; fileRef = 311560061AACDA1F00DF5546 /* nicolaesoetgensvanwaveren.png */; };
+		311560261AACDA1F00DF5546 /* pietermeffert.png in Resources */ = {isa = PBXBuildFile; fileRef = 311560071AACDA1F00DF5546 /* pietermeffert.png */; };
+		311560271AACDA1F00DF5546 /* pieterwaterpas.png in Resources */ = {isa = PBXBuildFile; fileRef = 311560081AACDA1F00DF5546 /* pieterwaterpas.png */; };
+		311560281AACDA1F00DF5546 /* poem1.png in Resources */ = {isa = PBXBuildFile; fileRef = 311560091AACDA1F00DF5546 /* poem1.png */; };
+		311560291AACDA1F00DF5546 /* rembrandtvanrijn.png in Resources */ = {isa = PBXBuildFile; fileRef = 3115600A1AACDA1F00DF5546 /* rembrandtvanrijn.png */; };
+		3115602A1AACDA1F00DF5546 /* rembrandtvanrijnimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3115600B1AACDA1F00DF5546 /* rembrandtvanrijnimage.png */; };
+		3115602B1AACDA1F00DF5546 /* rembrandtvanrijnmoved.png in Resources */ = {isa = PBXBuildFile; fileRef = 3115600C1AACDA1F00DF5546 /* rembrandtvanrijnmoved.png */; };
 		3134A0CF1A767A6B002F548D /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134A0CE1A767A6B002F548D /* NewsViewController.swift */; };
 		3134A0D11A767AA4002F548D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3134A0D01A767AA4002F548D /* CardView.swift */; };
 		3141F3871A7BBDF500CBB90B /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3141F3861A7BBDF500CBB90B /* ProfileView.xib */; };
 		3141F3891A7BC07700CBB90B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3141F3881A7BC07700CBB90B /* ProfileView.swift */; };
-		317484FD1A95EBF1007ACE22 /* bartholomeusvanderhelst.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484E51A95EBF1007ACE22 /* bartholomeusvanderhelst.png */; };
-		317484FE1A95EBF1007ACE22 /* eilardbernhards.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484E61A95EBF1007ACE22 /* eilardbernhards.png */; };
-		317484FF1A95EBF1007ACE22 /* eilardbernhardsimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484E71A95EBF1007ACE22 /* eilardbernhardsimage.png */; };
-		317485001A95EBF1007ACE22 /* ferdinandbol.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484E81A95EBF1007ACE22 /* ferdinandbol.png */; };
-		317485011A95EBF1007ACE22 /* gijsbertvandepoll.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484E91A95EBF1007ACE22 /* gijsbertvandepoll.png */; };
-		317485021A95EBF1007ACE22 /* gijsbertvandepollimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484EA1A95EBF1007ACE22 /* gijsbertvandepollimage.png */; };
-		317485031A95EBF1007ACE22 /* govertflinck.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484EB1A95EBF1007ACE22 /* govertflinck.png */; };
-		317485041A95EBF1007ACE22 /* govertflinckimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484EC1A95EBF1007ACE22 /* govertflinckimage.png */; };
-		317485051A95EBF1007ACE22 /* harmenvandepoll.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484ED1A95EBF1007ACE22 /* harmenvandepoll.png */; };
-		317485061A95EBF1007ACE22 /* harmenvandepollimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484EE1A95EBF1007ACE22 /* harmenvandepollimage.png */; };
-		317485071A95EBF1007ACE22 /* janvandepoll.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484EF1A95EBF1007ACE22 /* janvandepoll.png */; };
-		317485081A95EBF1007ACE22 /* janvandepollimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484F01A95EBF1007ACE22 /* janvandepollimage.png */; };
-		317485091A95EBF1007ACE22 /* johannesspilberg.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484F11A95EBF1007ACE22 /* johannesspilberg.png */; };
-		3174850A1A95EBF1007ACE22 /* johannesspilbergimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484F21A95EBF1007ACE22 /* johannesspilbergimage.png */; };
-		3174850B1A95EBF1007ACE22 /* johannesspilbergtag.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484F31A95EBF1007ACE22 /* johannesspilbergtag.png */; };
-		3174850C1A95EBF1007ACE22 /* joseramonalexanco.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484F41A95EBF1007ACE22 /* joseramonalexanco.png */; };
-		3174850D1A95EBF1007ACE22 /* marouanechamakh.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484F51A95EBF1007ACE22 /* marouanechamakh.png */; };
-		3174850E1A95EBF1007ACE22 /* rembrandtvanrijn.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484F61A95EBF1007ACE22 /* rembrandtvanrijn.png */; };
-		3174850F1A95EBF1007ACE22 /* rembrandtvanrijnimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484F71A95EBF1007ACE22 /* rembrandtvanrijnimage.png */; };
-		317485101A95EBF1007ACE22 /* rembrandtvanrijnmoved.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484F81A95EBF1007ACE22 /* rembrandtvanrijnmoved.png */; };
-		317485111A95EBF1007ACE22 /* saintsebastian.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484F91A95EBF1007ACE22 /* saintsebastian.png */; };
-		317485121A95EBF1007ACE22 /* saintsebastian2.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484FA1A95EBF1007ACE22 /* saintsebastian2.png */; };
-		317485131A95EBF1007ACE22 /* saintsebastian3.png in Resources */ = {isa = PBXBuildFile; fileRef = 317484FB1A95EBF1007ACE22 /* saintsebastian3.png */; };
 		31AEB1EC1A7B966800162DB0 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AEB1EB1A7B966800162DB0 /* EventView.swift */; };
 		31AEB1F01A7B984800162DB0 /* PersonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31AEB1EF1A7B984800162DB0 /* PersonView.xib */; };
 		31AEB1F21A7B99AE00162DB0 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AEB1F11A7B99AE00162DB0 /* PersonView.swift */; };
 		31AF390A1A9615C200DA58DB /* BeaconTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AF39091A9615C200DA58DB /* BeaconTracker.swift */; };
 		31AF390C1A96165200DA58DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AF390B1A96165200DA58DB /* CoreLocation.framework */; };
-		31EA5EDB1A9B795D007DDF25 /* AmsterdamMuseum.json in Resources */ = {isa = PBXBuildFile; fileRef = 31EA5EDA1A9B795D007DDF25 /* AmsterdamMuseum.json */; };
 		31EA5EEB1A9C8771007DDF25 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EE11A9C8771007DDF25 /* ioapi.c */; };
 		31EA5EEC1A9C8771007DDF25 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EE31A9C8771007DDF25 /* mztools.c */; };
 		31EA5EED1A9C8771007DDF25 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 31EA5EE51A9C8771007DDF25 /* unzip.c */; };
@@ -92,6 +102,40 @@
 		3104AC431A7F79C900D9B3C2 /* LikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
 		3104AC451A7F971500D9B3C2 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		3104AC471A7FB17D00D9B3C2 /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		31155FE01AAB3A8E00DF5546 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		31155FE11AAB3A8E00DF5546 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		31155FEB1AACD9D100DF5546 /* AmsterdamMuseum.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AmsterdamMuseum.json; sourceTree = "<group>"; };
+		31155FEE1AACDA1F00DF5546 /* alberttenbrink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alberttenbrink.png; sourceTree = "<group>"; };
+		31155FEF1AACDA1F00DF5546 /* andriesdegraeff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = andriesdegraeff.png; sourceTree = "<group>"; };
+		31155FF01AACDA1F00DF5546 /* bartholomeusvanderhelst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bartholomeusvanderhelst.png; sourceTree = "<group>"; };
+		31155FF11AACDA1F00DF5546 /* ferdinandbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ferdinandbol.png; sourceTree = "<group>"; };
+		31155FF21AACDA1F00DF5546 /* fransbanninckcocq.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fransbanninckcocq.png; sourceTree = "<group>"; };
+		31155FF31AACDA1F00DF5546 /* fransbanninckcocqimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fransbanninckcocqimage.png; sourceTree = "<group>"; };
+		31155FF41AACDA1F00DF5546 /* fransbanninckcocqtag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fransbanninckcocqtag.png; sourceTree = "<group>"; };
+		31155FF51AACDA1F00DF5546 /* fransoetgensvanwaveren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fransoetgensvanwaveren.png; sourceTree = "<group>"; };
+		31155FF61AACDA1F00DF5546 /* govertflinck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = govertflinck.png; sourceTree = "<group>"; };
+		31155FF71AACDA1F00DF5546 /* govertflinckimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = govertflinckimage.png; sourceTree = "<group>"; };
+		31155FF81AACDA1F00DF5546 /* govertflincktag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = govertflincktag.png; sourceTree = "<group>"; };
+		31155FF91AACDA1F00DF5546 /* hendrickvanuylenburgh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hendrickvanuylenburgh.png; sourceTree = "<group>"; };
+		31155FFA1AACDA1F00DF5546 /* huydecoperhuis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huydecoperhuis.png; sourceTree = "<group>"; };
+		31155FFB1AACDA1F00DF5546 /* jansix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jansix.png; sourceTree = "<group>"; };
+		31155FFC1AACDA1F00DF5546 /* janvos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = janvos.png; sourceTree = "<group>"; };
+		31155FFD1AACDA1F00DF5546 /* jeanappelman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeanappelman.png; sourceTree = "<group>"; };
+		31155FFE1AACDA1F00DF5546 /* joanhuydecoper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joanhuydecoper.png; sourceTree = "<group>"; };
+		31155FFF1AACDA1F00DF5546 /* joanhuydecoperimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joanhuydecoperimage.png; sourceTree = "<group>"; };
+		311560001AACDA1F00DF5546 /* joostvandenvondel-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "joostvandenvondel-2.png"; sourceTree = "<group>"; };
+		311560011AACDA1F00DF5546 /* joostvandenvondel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joostvandenvondel.png; sourceTree = "<group>"; };
+		311560021AACDA1F00DF5546 /* jorisdewijze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jorisdewijze.png; sourceTree = "<group>"; };
+		311560031AACDA1F00DF5546 /* nachtwacht1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nachtwacht1.png; sourceTree = "<group>"; };
+		311560041AACDA1F00DF5546 /* nachtwacht2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nachtwacht2.png; sourceTree = "<group>"; };
+		311560051AACDA1F00DF5546 /* nachtwacht3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nachtwacht3.png; sourceTree = "<group>"; };
+		311560061AACDA1F00DF5546 /* nicolaesoetgensvanwaveren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nicolaesoetgensvanwaveren.png; sourceTree = "<group>"; };
+		311560071AACDA1F00DF5546 /* pietermeffert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pietermeffert.png; sourceTree = "<group>"; };
+		311560081AACDA1F00DF5546 /* pieterwaterpas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pieterwaterpas.png; sourceTree = "<group>"; };
+		311560091AACDA1F00DF5546 /* poem1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poem1.png; sourceTree = "<group>"; };
+		3115600A1AACDA1F00DF5546 /* rembrandtvanrijn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rembrandtvanrijn.png; sourceTree = "<group>"; };
+		3115600B1AACDA1F00DF5546 /* rembrandtvanrijnimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rembrandtvanrijnimage.png; sourceTree = "<group>"; };
+		3115600C1AACDA1F00DF5546 /* rembrandtvanrijnmoved.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rembrandtvanrijnmoved.png; sourceTree = "<group>"; };
 		3134A0CE1A767A6B002F548D /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		3134A0D01A767AA4002F548D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3141F3861A7BBDF500CBB90B /* ProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
@@ -99,35 +143,11 @@
 		317484DD1A95E73E007ACE22 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		317484DE1A95E73E007ACE22 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		317484DF1A95E73E007ACE22 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
-		317484E51A95EBF1007ACE22 /* bartholomeusvanderhelst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bartholomeusvanderhelst.png; sourceTree = "<group>"; };
-		317484E61A95EBF1007ACE22 /* eilardbernhards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eilardbernhards.png; sourceTree = "<group>"; };
-		317484E71A95EBF1007ACE22 /* eilardbernhardsimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eilardbernhardsimage.png; sourceTree = "<group>"; };
-		317484E81A95EBF1007ACE22 /* ferdinandbol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ferdinandbol.png; sourceTree = "<group>"; };
-		317484E91A95EBF1007ACE22 /* gijsbertvandepoll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gijsbertvandepoll.png; sourceTree = "<group>"; };
-		317484EA1A95EBF1007ACE22 /* gijsbertvandepollimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gijsbertvandepollimage.png; sourceTree = "<group>"; };
-		317484EB1A95EBF1007ACE22 /* govertflinck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = govertflinck.png; sourceTree = "<group>"; };
-		317484EC1A95EBF1007ACE22 /* govertflinckimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = govertflinckimage.png; sourceTree = "<group>"; };
-		317484ED1A95EBF1007ACE22 /* harmenvandepoll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = harmenvandepoll.png; sourceTree = "<group>"; };
-		317484EE1A95EBF1007ACE22 /* harmenvandepollimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = harmenvandepollimage.png; sourceTree = "<group>"; };
-		317484EF1A95EBF1007ACE22 /* janvandepoll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = janvandepoll.png; sourceTree = "<group>"; };
-		317484F01A95EBF1007ACE22 /* janvandepollimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = janvandepollimage.png; sourceTree = "<group>"; };
-		317484F11A95EBF1007ACE22 /* johannesspilberg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = johannesspilberg.png; sourceTree = "<group>"; };
-		317484F21A95EBF1007ACE22 /* johannesspilbergimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = johannesspilbergimage.png; sourceTree = "<group>"; };
-		317484F31A95EBF1007ACE22 /* johannesspilbergtag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = johannesspilbergtag.png; sourceTree = "<group>"; };
-		317484F41A95EBF1007ACE22 /* joseramonalexanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joseramonalexanco.png; sourceTree = "<group>"; };
-		317484F51A95EBF1007ACE22 /* marouanechamakh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marouanechamakh.png; sourceTree = "<group>"; };
-		317484F61A95EBF1007ACE22 /* rembrandtvanrijn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rembrandtvanrijn.png; sourceTree = "<group>"; };
-		317484F71A95EBF1007ACE22 /* rembrandtvanrijnimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rembrandtvanrijnimage.png; sourceTree = "<group>"; };
-		317484F81A95EBF1007ACE22 /* rembrandtvanrijnmoved.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rembrandtvanrijnmoved.png; sourceTree = "<group>"; };
-		317484F91A95EBF1007ACE22 /* saintsebastian.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saintsebastian.png; sourceTree = "<group>"; };
-		317484FA1A95EBF1007ACE22 /* saintsebastian2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saintsebastian2.png; sourceTree = "<group>"; };
-		317484FB1A95EBF1007ACE22 /* saintsebastian3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saintsebastian3.png; sourceTree = "<group>"; };
 		31AEB1EB1A7B966800162DB0 /* EventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
 		31AEB1EF1A7B984800162DB0 /* PersonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonView.xib; sourceTree = "<group>"; };
 		31AEB1F11A7B99AE00162DB0 /* PersonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		31AF39091A9615C200DA58DB /* BeaconTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconTracker.swift; sourceTree = "<group>"; };
 		31AF390B1A96165200DA58DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		31EA5EDA1A9B795D007DDF25 /* AmsterdamMuseum.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AmsterdamMuseum.json; sourceTree = "<group>"; };
 		31EA5EE01A9C8771007DDF25 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
 		31EA5EE11A9C8771007DDF25 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
 		31EA5EE21A9C8771007DDF25 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
@@ -178,7 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				31EA5EF21A9C87BF007DDF25 /* libz.dylib in Frameworks */,
+				31155FE21AAB3A8E00DF5546 /* Crashlytics.framework in Frameworks */,
 				31AF390C1A96165200DA58DB /* CoreLocation.framework in Frameworks */,
+				31155FE31AAB3A8E00DF5546 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,32 +214,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		317484E41A95EBF1007ACE22 /* images */ = {
+		31155FED1AACDA1500DF5546 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				317484E51A95EBF1007ACE22 /* bartholomeusvanderhelst.png */,
-				317484E61A95EBF1007ACE22 /* eilardbernhards.png */,
-				317484E71A95EBF1007ACE22 /* eilardbernhardsimage.png */,
-				317484E81A95EBF1007ACE22 /* ferdinandbol.png */,
-				317484E91A95EBF1007ACE22 /* gijsbertvandepoll.png */,
-				317484EA1A95EBF1007ACE22 /* gijsbertvandepollimage.png */,
-				317484EB1A95EBF1007ACE22 /* govertflinck.png */,
-				317484EC1A95EBF1007ACE22 /* govertflinckimage.png */,
-				317484ED1A95EBF1007ACE22 /* harmenvandepoll.png */,
-				317484EE1A95EBF1007ACE22 /* harmenvandepollimage.png */,
-				317484EF1A95EBF1007ACE22 /* janvandepoll.png */,
-				317484F01A95EBF1007ACE22 /* janvandepollimage.png */,
-				317484F11A95EBF1007ACE22 /* johannesspilberg.png */,
-				317484F21A95EBF1007ACE22 /* johannesspilbergimage.png */,
-				317484F31A95EBF1007ACE22 /* johannesspilbergtag.png */,
-				317484F41A95EBF1007ACE22 /* joseramonalexanco.png */,
-				317484F51A95EBF1007ACE22 /* marouanechamakh.png */,
-				317484F61A95EBF1007ACE22 /* rembrandtvanrijn.png */,
-				317484F71A95EBF1007ACE22 /* rembrandtvanrijnimage.png */,
-				317484F81A95EBF1007ACE22 /* rembrandtvanrijnmoved.png */,
-				317484F91A95EBF1007ACE22 /* saintsebastian.png */,
-				317484FA1A95EBF1007ACE22 /* saintsebastian2.png */,
-				317484FB1A95EBF1007ACE22 /* saintsebastian3.png */,
+				31155FEE1AACDA1F00DF5546 /* alberttenbrink.png */,
+				31155FEF1AACDA1F00DF5546 /* andriesdegraeff.png */,
+				31155FF01AACDA1F00DF5546 /* bartholomeusvanderhelst.png */,
+				31155FF11AACDA1F00DF5546 /* ferdinandbol.png */,
+				31155FF21AACDA1F00DF5546 /* fransbanninckcocq.png */,
+				31155FF31AACDA1F00DF5546 /* fransbanninckcocqimage.png */,
+				31155FF41AACDA1F00DF5546 /* fransbanninckcocqtag.png */,
+				31155FF51AACDA1F00DF5546 /* fransoetgensvanwaveren.png */,
+				31155FF61AACDA1F00DF5546 /* govertflinck.png */,
+				31155FF71AACDA1F00DF5546 /* govertflinckimage.png */,
+				31155FF81AACDA1F00DF5546 /* govertflincktag.png */,
+				31155FF91AACDA1F00DF5546 /* hendrickvanuylenburgh.png */,
+				31155FFA1AACDA1F00DF5546 /* huydecoperhuis.png */,
+				31155FFB1AACDA1F00DF5546 /* jansix.png */,
+				31155FFC1AACDA1F00DF5546 /* janvos.png */,
+				31155FFD1AACDA1F00DF5546 /* jeanappelman.png */,
+				31155FFE1AACDA1F00DF5546 /* joanhuydecoper.png */,
+				31155FFF1AACDA1F00DF5546 /* joanhuydecoperimage.png */,
+				311560001AACDA1F00DF5546 /* joostvandenvondel-2.png */,
+				311560011AACDA1F00DF5546 /* joostvandenvondel.png */,
+				311560021AACDA1F00DF5546 /* jorisdewijze.png */,
+				311560031AACDA1F00DF5546 /* nachtwacht1.png */,
+				311560041AACDA1F00DF5546 /* nachtwacht2.png */,
+				311560051AACDA1F00DF5546 /* nachtwacht3.png */,
+				311560061AACDA1F00DF5546 /* nicolaesoetgensvanwaveren.png */,
+				311560071AACDA1F00DF5546 /* pietermeffert.png */,
+				311560081AACDA1F00DF5546 /* pieterwaterpas.png */,
+				311560091AACDA1F00DF5546 /* poem1.png */,
+				3115600A1AACDA1F00DF5546 /* rembrandtvanrijn.png */,
+				3115600B1AACDA1F00DF5546 /* rembrandtvanrijnimage.png */,
+				3115600C1AACDA1F00DF5546 /* rembrandtvanrijnmoved.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -252,6 +282,8 @@
 		31FF61261A71361E00B238F5 = {
 			isa = PBXGroup;
 			children = (
+				31155FE01AAB3A8E00DF5546 /* Crashlytics.framework */,
+				31155FE11AAB3A8E00DF5546 /* Fabric.framework */,
 				31EA5EF11A9C87BF007DDF25 /* libz.dylib */,
 				31AF390B1A96165200DA58DB /* CoreLocation.framework */,
 				31EA5EF01A9C877F007DDF25 /* AmsterdamMuseum-Bridging-Header.h */,
@@ -274,7 +306,8 @@
 		31FF61311A71361E00B238F5 /* AmsterdamMuseum */ = {
 			isa = PBXGroup;
 			children = (
-				31EA5EDA1A9B795D007DDF25 /* AmsterdamMuseum.json */,
+				31155FED1AACDA1500DF5546 /* images */,
+				31155FEB1AACD9D100DF5546 /* AmsterdamMuseum.json */,
 				31FF61341A71361E00B238F5 /* AppDelegate.swift */,
 				3104AC471A7FB17D00D9B3C2 /* Avatar.swift */,
 				31AF39091A9615C200DA58DB /* BeaconTracker.swift */,
@@ -313,7 +346,6 @@
 				31F46A9D1A91F250009C545A /* SplashView.xib */,
 				31F46AA71A9230C5009C545A /* SponsorsView.xib */,
 				31F93B8A1A79167E001E0B7C /* UserView.xib */,
-				317484E41A95EBF1007ACE22 /* images */,
 				31FF61381A71361E00B238F5 /* Main.storyboard */,
 				31FF61321A71361E00B238F5 /* Supporting Files */,
 			);
@@ -355,6 +387,7 @@
 				31FF612B1A71361E00B238F5 /* Sources */,
 				31FF612C1A71361E00B238F5 /* Frameworks */,
 				31FF612D1A71361E00B238F5 /* Resources */,
+				31155FDF1AAB3A7900DF5546 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -397,7 +430,7 @@
 						DevelopmentTeam = 5MY66TA232;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -431,44 +464,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311560251AACDA1F00DF5546 /* nicolaesoetgensvanwaveren.png in Resources */,
 				3104AC421A7F787600D9B3C2 /* LikeView.xib in Resources */,
-				317485071A95EBF1007ACE22 /* janvandepoll.png in Resources */,
+				311560121AACDA1F00DF5546 /* fransbanninckcocqimage.png in Resources */,
+				311560191AACDA1F00DF5546 /* huydecoperhuis.png in Resources */,
+				3115602A1AACDA1F00DF5546 /* rembrandtvanrijnimage.png in Resources */,
+				311560171AACDA1F00DF5546 /* govertflincktag.png in Resources */,
+				3115601C1AACDA1F00DF5546 /* jeanappelman.png in Resources */,
+				3115601D1AACDA1F00DF5546 /* joanhuydecoper.png in Resources */,
+				311560141AACDA1F00DF5546 /* fransoetgensvanwaveren.png in Resources */,
+				311560201AACDA1F00DF5546 /* joostvandenvondel.png in Resources */,
 				31F46AA61A921548009C545A /* SettingsProfileView.xib in Resources */,
-				317485051A95EBF1007ACE22 /* harmenvandepoll.png in Resources */,
-				317485001A95EBF1007ACE22 /* ferdinandbol.png in Resources */,
+				311560241AACDA1F00DF5546 /* nachtwacht3.png in Resources */,
 				31F93B8D1A791DD4001E0B7C /* EventView.xib in Resources */,
-				31EA5EDB1A9B795D007DDF25 /* AmsterdamMuseum.json in Resources */,
+				311560181AACDA1F00DF5546 /* hendrickvanuylenburgh.png in Resources */,
+				311560221AACDA1F00DF5546 /* nachtwacht1.png in Resources */,
 				31F46A9C1A91F06A009C545A /* LoginView.xib in Resources */,
-				317484FE1A95EBF1007ACE22 /* eilardbernhards.png in Resources */,
-				317485101A95EBF1007ACE22 /* rembrandtvanrijnmoved.png in Resources */,
 				31F46A9E1A91F250009C545A /* SplashView.xib in Resources */,
-				317485081A95EBF1007ACE22 /* janvandepollimage.png in Resources */,
+				311560101AACDA1F00DF5546 /* ferdinandbol.png in Resources */,
+				3115600E1AACDA1F00DF5546 /* andriesdegraeff.png in Resources */,
+				311560291AACDA1F00DF5546 /* rembrandtvanrijn.png in Resources */,
+				3115601F1AACDA1F00DF5546 /* joostvandenvondel-2.png in Resources */,
+				3115601E1AACDA1F00DF5546 /* joanhuydecoperimage.png in Resources */,
+				3115601B1AACDA1F00DF5546 /* janvos.png in Resources */,
 				31AEB1F01A7B984800162DB0 /* PersonView.xib in Resources */,
-				317485121A95EBF1007ACE22 /* saintsebastian2.png in Resources */,
-				3174850E1A95EBF1007ACE22 /* rembrandtvanrijn.png in Resources */,
-				317485011A95EBF1007ACE22 /* gijsbertvandepoll.png in Resources */,
+				311560261AACDA1F00DF5546 /* pietermeffert.png in Resources */,
 				31F46AA81A9230C5009C545A /* SponsorsView.xib in Resources */,
+				311560211AACDA1F00DF5546 /* jorisdewijze.png in Resources */,
 				31F93B8F1A7A5292001E0B7C /* CardHeaderView.xib in Resources */,
-				317485131A95EBF1007ACE22 /* saintsebastian3.png in Resources */,
-				317485041A95EBF1007ACE22 /* govertflinckimage.png in Resources */,
-				317485061A95EBF1007ACE22 /* harmenvandepollimage.png in Resources */,
+				311560161AACDA1F00DF5546 /* govertflinckimage.png in Resources */,
+				311560131AACDA1F00DF5546 /* fransbanninckcocqtag.png in Resources */,
+				3115602B1AACDA1F00DF5546 /* rembrandtvanrijnmoved.png in Resources */,
 				31FF613A1A71361E00B238F5 /* Main.storyboard in Resources */,
-				3174850B1A95EBF1007ACE22 /* johannesspilbergtag.png in Resources */,
-				3174850F1A95EBF1007ACE22 /* rembrandtvanrijnimage.png in Resources */,
-				317485111A95EBF1007ACE22 /* saintsebastian.png in Resources */,
 				3104AC461A7F971500D9B3C2 /* OpenSans-Light.ttf in Resources */,
-				317485021A95EBF1007ACE22 /* gijsbertvandepollimage.png in Resources */,
-				317485031A95EBF1007ACE22 /* govertflinck.png in Resources */,
+				311560111AACDA1F00DF5546 /* fransbanninckcocq.png in Resources */,
 				31F93B811A78FF30001E0B7C /* ShieldView.xib in Resources */,
+				311560151AACDA1F00DF5546 /* govertflinck.png in Resources */,
 				3141F3871A7BBDF500CBB90B /* ProfileView.xib in Resources */,
-				317485091A95EBF1007ACE22 /* johannesspilberg.png in Resources */,
-				317484FF1A95EBF1007ACE22 /* eilardbernhardsimage.png in Resources */,
-				3174850A1A95EBF1007ACE22 /* johannesspilbergimage.png in Resources */,
-				317484FD1A95EBF1007ACE22 /* bartholomeusvanderhelst.png in Resources */,
+				3115600D1AACDA1F00DF5546 /* alberttenbrink.png in Resources */,
 				31F93B8B1A79167E001E0B7C /* UserView.xib in Resources */,
+				311560281AACDA1F00DF5546 /* poem1.png in Resources */,
+				311560231AACDA1F00DF5546 /* nachtwacht2.png in Resources */,
+				311560271AACDA1F00DF5546 /* pieterwaterpas.png in Resources */,
+				3115600F1AACDA1F00DF5546 /* bartholomeusvanderhelst.png in Resources */,
 				31FF613C1A71361E00B238F5 /* Images.xcassets in Resources */,
-				3174850C1A95EBF1007ACE22 /* joseramonalexanco.png in Resources */,
-				3174850D1A95EBF1007ACE22 /* marouanechamakh.png in Resources */,
+				3115601A1AACDA1F00DF5546 /* jansix.png in Resources */,
+				31155FEC1AACD9D100DF5546 /* AmsterdamMuseum.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +521,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31155FDF1AAB3A7900DF5546 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 5e32d1b5b215397ac7f8b0459db9cb1005a12833 4b0e93444682a6accef8330d3b62278eb139ab5429716ca6bb708965db085023";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31FF612B1A71361E00B238F5 /* Sources */ = {
@@ -630,10 +687,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AmsterdamMuseum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AmsterdamMuseum-Bridging-Header.h";
 			};
 			name = Debug;
@@ -643,10 +707,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AmsterdamMuseum/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/AmsterdamMuseum-Bridging-Header.h";
 			};
 			name = Release;
